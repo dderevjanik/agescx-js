@@ -1,0 +1,36 @@
+#navbar{
+	padding: 5px 15px 5px 15px;
+	background-color: #000;
+}
+#navbar a{
+	padding: 5px 10px 5px 10px;
+	color: #fff;
+}
+#navbar .active>a{
+	color: gray;
+}
+#navbar .decoration{
+	padding: 5px 2px 5px 2px;
+	color: #fff;
+}
+#content{
+	padding: 0px 50px 10px 50px;
+}
+input[type="file"]{
+	margin-bottom: 20px;
+}
+.tab-content{
+	padding: 10px;
+}
+.control-inline{
+	margin-bottom: 10px;
+}
+.control-inline label{
+	display: inline;
+}
+.control-inline input{
+	display: inline-block !important;
+}
+.right{
+	float: right !important;
+}

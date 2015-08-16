@@ -1,0 +1,6 @@
+.settings/
+bower_components/
+node_modules/
+compiled/
+build/resources/js/
+*.bat
