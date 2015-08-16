@@ -17,40 +17,134 @@ class ScenarioData {
 		version: 1.22,
 		filename: "",
 		players: [
-			{name: "", nameId:0, 
-				active: 1, human: 0, civ: 0, unk1: 0}, // gaia
-			{name: "", nameId:0, 
-				active: 1, human: 1, civ: 0, unk1: 0}, // player 1
-			{name: "", nameId:0, 
-				active: 1, human: 0, civ: 0, unk1: 0}, // player 2 
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // player 3
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // player 4
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // player 5
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // player 6
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // player 7
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // player 8
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // ::player 9
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // ::player 10
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // ::player 11
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // ::player 12
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // ::player 13
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // ::player 14
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // ::player 15
-			{name: "", nameId:0, 
-				active: 0, human: 0, civ: 0, unk1: 0}, // ::player 16
+			{	// gaia
+				name: "", nameId:0, 
+				active: 1, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [],
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// player 1
+				name: "", nameId:0, 
+				active: 1, human: 1, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// player 2
+				name: "", nameId:0, 
+				active: 1, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			},  
+			{	// player 3
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			},
+			{	// player 4
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// player 5
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// player 6
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// player 7
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// player 8
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// ::player 9
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// ::player 10
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// ::player 11
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// ::player 12
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// ::player 13
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// ::player 14
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
+			{	// ::player 15
+				name: "", nameId:0, 
+				active: 0, human: 0, civ: 0, unk1: 0,
+				aiName: "", aiSource: "", aiType: 0,
+				age: 0,
+				diplomacy: [], alliedVict: 0,
+				disTechs: [], disBuildings: [], disUnits: []
+			}, 
 		],
 		messages: {
 			objectives: {id: 0, text: ""},
@@ -72,7 +166,27 @@ class ScenarioData {
 			height: 0,
 			exists: 0,
 			raw: ""
-		}
+		},
+		goals: {
+			conquest: 0,
+			unk1: 0,
+			relics: 0,
+			unk2: 0,
+			exploration: 0,
+			unk3: 0,
+			all: 0,
+			mode: 0,
+			score: 0,
+			time: 0
+		},
+		setup: {
+			allTech: 0,
+			aiType: 0,
+			startCam: [0, 0],
+			height: 0,
+			width: 0,
+		},
+		tiles: [],
 	}
 	
 	public write = (data: ASDataView) => {
@@ -148,10 +262,108 @@ class ScenarioData {
 		body.image.included = <number> data.getInt32()[0];
 		body.image.width = <number> data.getInt32()[0];
 		body.image.height = <number> data.getInt32()[0];
-		body.image.exists = <number> data.getInt32()[0];
+		body.image.exists = <number> data.getInt16()[0];
 		if (body.image.exists == -1 || body.image.exists == 2){
 			// @todo finish
 		}
+		
+		// player data #2 section
+		body.players.forEach(function(player){
+			data.getStr16();
+			data.getStr16();
+		});
+		
+		// ai name
+		playablePlayers.forEach(function(player){
+			player.aiName = data.getStr16()[0];
+		});
+		for (let i: number = 0; i < 8; i++){
+			data.getStr16();
+		}
+		
+		
+		// ai source
+		playablePlayers.forEach(function(player){
+			data.skip(8) // unknowns 2 & 3
+			player.aiSource = data.getStr32()[0];
+		});
+		for (let i: number = 0; i < 8; i++){
+			data.skip(8);
+			data.getStr32();
+		}
+		
+		// ai type
+		playablePlayers.forEach(function(player){
+			player.aiType = data.getInt8()[0];
+		});
+		data.skip(8); // skip non-playable players
+		data.skip(4); // separator
+		data.skip(16*24); // unused resources
+		data.skip(4); // another separator
+		
+		// scenario goals
+		body.goals.conquest = data.getInt32()[0];
+		body.goals.unk1 = data.getInt32()[0];
+		body.goals.relics = data.getInt32()[0];
+		body.goals.unk2 = data.getInt32()[0];
+		body.goals.exploration = data.getInt32()[0];
+		body.goals.unk3 = data.getInt32()[0];
+		body.goals.all = data.getInt32()[0];
+		body.goals.mode = data.getInt32()[0];
+		body.goals.score = data.getInt32()[0];
+		body.goals.time = data.getInt32()[0];
+		
+		playablePlayers.forEach(function(player){
+			player.diplomacy = data.getInt32(8);
+			data.skip(8*4);
+		});
+		data.skip(8*16*4);
+		
+		data.skip(11520); // unused space
+		data.skip(4); //separator
+		data.skip(16*4); // allied victory, ignored
+		
+		// Section: Disabled
+		data.skip(16*4); // techs count
+		playablePlayers.forEach(function(player){
+			player.disTechs = data.getInt32(30);
+		})
+		data.skip(4*8*30); // skip for another players
+		// @todo extra tech for 1.30 version
+		
+		data.skip(16*4); // units count
+		playablePlayers.forEach(function(player){
+			player.disUnits = data.getInt32(30);
+		});
+		data.skip(4*8*30); // for another players
+		// @todo extra units for 1.30 version
+		
+		data.skip(16*4); // buildings count
+		playablePlayers.forEach(function(player){
+			player.disBuildings = data.getInt32(20);
+		});
+		data.skip(4*8*20); // for another players
+		// @todo extra buildings for 1.30 version		
+		
+		data.skip(8); // unused
+		body.setup.allTech = data.getInt32()[0];
+		
+		allPlayers.forEach(function(player){
+			player.age = data.getUint32()[0];
+		});
+		data.skip(7*4); // for another players
+		
+		data.skip(4); // separator
+		body.setup.startCam = data.getInt32(2);
+		body.setup.aiType = data.getUint32()[0];
+		body.setup.width = data.getUint32()[0];
+		body.setup.height = data.getUint32()[0];
+		
+		for(let i: number = 0; i < (body.setup.width * body.setup.height); i++){
+			body.tiles.push(data.getUint8(3));
+		}
+		
+		
 		console.log(this);
 	}
 }
