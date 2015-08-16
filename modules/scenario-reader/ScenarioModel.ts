@@ -11,8 +11,8 @@ class ScenarioModel {
 	}
 	
 	public decompress(): void{
-		var view: DataView = new DataView(this._buffer, 0);
-		var asView: ASDataView = new ASDataView(view, 0);
+		let view: DataView = new DataView(this._buffer, 0);
+		let asView: ASDataView = new ASDataView(view, 0);
 		this._data.read(asView);
 	}
 	

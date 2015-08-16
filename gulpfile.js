@@ -8,3 +8,11 @@ gulp.task('default', function () {
       .pipe(concat('scenario-reader.js'))
       .pipe(gulp.dest('build/resources/js/'));
 });
+
+gulp.task('dist', function(){
+   return gulp.src('modules/scenario-reader/compiled/**/*.js')
+      .pipe(concat('scenario-reader.js'))
+      .pipe(uglify())
+      .pipe(minify())
+      .pipe(gulp.dest('build/resources/js/'));   
+});
