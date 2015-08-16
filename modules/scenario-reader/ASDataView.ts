@@ -101,7 +101,9 @@ class ASDataView {
 	}
 	
 	public getUint8(repeat: number = 1): Array<number>{
-		return this._repeater(repeat, this._data.getUint8, 1);
+		return this._repeater(repeat, (offset: number) => {
+			return this._data.getUint8(offset);
+			}, 1);
 	}
 	
 	public getInt16(repeat: number = 1): Array<number>{
@@ -145,11 +147,11 @@ class ASDataView {
 	 * @return array of readed data
 	 */
 	private _repeater(repeat: number, callback: Function, size: number): Array<number>{
-		var result: Array<any> = new Array<any>();
+		let result: Array<any> = new Array<any>();
 		//console.log("at start");
 		//console.log(callback);
-		var getfnc = callback.bind(this._data);			// bind function to _data object, otherwise we'll get an erro
-		for(var i: number = 0; i < repeat; i++){
+		let getfnc = callback.bind(this._data);			// bind function to _data object, otherwise we'll get an erro
+		for(let i: number = 0; i < repeat; i++){
 			//console.log(this.offset);
 			//console.log(getfnc);
 			result.push(getfnc(this.offset));
