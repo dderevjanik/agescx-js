@@ -21,129 +21,145 @@ class ScenarioData {
 				name: "", nameId:0, 
 				active: 1, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0, 
 				diplomacy: [],
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 1
 				name: "", nameId:0, 
 				active: 1, human: 1, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 2
 				name: "", nameId:0, 
 				active: 1, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			},  
 			{	// player 3
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			},
 			{	// player 4
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 5
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 6
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 7
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 8
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// ::player 9
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// ::player 10
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// ::player 11
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// ::player 12
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// ::player 13
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// ::player 14
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// ::player 15
 				name: "", nameId:0, 
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
-				age: 0,
+				age: 0, population: 100, 
+				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
 				diplomacy: [], alliedVict: 0,
-				disTechs: [], disBuildings: [], disUnits: []
+				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 		],
 		messages: {
@@ -187,6 +203,11 @@ class ScenarioData {
 			width: 0,
 		},
 		tiles: [],
+		units: [
+			[], [], [],
+			[], [], [],
+			[], [], [],
+		],
 	}
 	
 	public write = (data: ASDataView) => {
@@ -349,7 +370,7 @@ class ScenarioData {
 		body.setup.allTech = data.getInt32()[0];
 		
 		allPlayers.forEach(function(player){
-			player.age = data.getUint32()[0];
+			player.age = data.getInt32()[0];
 		});
 		data.skip(7*4); // for another players
 		
@@ -362,6 +383,38 @@ class ScenarioData {
 		for(let i: number = 0; i < (body.setup.width * body.setup.height); i++){
 			body.tiles.push(data.getUint8(3));
 		}
+		
+		data.skip(4); // number of units section
+		
+		playablePlayers.forEach(function(player){
+			player.food = data.getFloat32()[0];
+			player.wood = data.getFloat32()[0];
+			player.gold = data.getFloat32()[0];
+			player.stone = data.getFloat32()[0];
+			player.ore = data.getFloat32()[0];
+			data.skip(4); // padding
+			player.population = data.getFloat32()[0];	
+		});
+		
+		body.units.forEach(function(playerUnits){
+			let numOfUnits: number = data.getUint32()[0];
+			for(let i: number = 0; i < numOfUnits; i++){
+				playerUnits.push({
+					x: data.getFloat32()[0],
+					y: data.getFloat32()[0],
+					unk1: data.getFloat32()[0],
+					id: data.getUint32()[0],
+					type: data.getUint16()[0],
+					unk2: data.getInt8()[0],
+					angle: data.getFloat32()[0],
+					frame: data.getUint16()[0],
+					inId: data.getInt32()[0],
+				});				
+			}
+		});
+		
+		data.skip(4); // number of players, again
+		
 		
 		
 		console.log(this);
