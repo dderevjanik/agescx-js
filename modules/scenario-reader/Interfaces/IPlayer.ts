@@ -1,4 +1,4 @@
-interface IPlayer{
+interface IPlayer {
 	name: string,			// player in-game name
 	nameId: number,			// string Id for name
 	constName?: string,		// for internal purpuose
@@ -12,7 +12,9 @@ interface IPlayer{
 	
 	civ: number,			// civilization
 	age: number,			// starting age
+	color: number,			// color
 	population: number,		// max. population
+	
 	food: number,			// food
 	wood: number,			// wood
 	gold: number,			// gold
@@ -28,4 +30,7 @@ interface IPlayer{
 	disUnits: Array<number>,		// disabled units
 
 	unk1?: number,
+	unk2?: number,
+	unk3?: number,
+	
 }
