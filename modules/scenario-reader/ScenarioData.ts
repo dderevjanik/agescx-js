@@ -13,9 +13,7 @@ class ScenarioData {
 	}
 	
 	public data = {
-		nextId: 0,
 		version: 1.22,
-		filename: "",
 		players: [
 			{	// gaia
 				name: "", nameId:0, 
@@ -23,79 +21,79 @@ class ScenarioData {
 				aiName: "", aiSource: "", aiType: 0,
 				age: 0, population: 100, 
 				food: 0, wood: 0, gold: 0, stone: 0, ore: 0, 
-				diplomacy: [],
+				diplomacy: [], alliedVict: 0, startCam: [],
 				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 1
-				name: "", nameId:0, 
+				name: "", nameId:0, constName: "",
 				active: 1, human: 1, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
 				age: 0, population: 100, 
 				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
-				diplomacy: [], alliedVict: 0,
+				diplomacy: [], alliedVict: 0, startCam: [],
 				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 2
-				name: "", nameId:0, 
+				name: "", nameId:0, constName: "",
 				active: 1, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
 				age: 0, population: 100, 
 				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
-				diplomacy: [], alliedVict: 0,
+				diplomacy: [], alliedVict: 0, startCam: [],
 				disTechs: [], disBuildings: [], disUnits: [],
 			},  
 			{	// player 3
-				name: "", nameId:0, 
+				name: "", nameId:0, constName: "",
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
 				age: 0, population: 100, 
 				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
-				diplomacy: [], alliedVict: 0,
+				diplomacy: [], alliedVict: 0, startCam: [],
 				disTechs: [], disBuildings: [], disUnits: [],
 			},
 			{	// player 4
-				name: "", nameId:0, 
+				name: "", nameId:0, constName: "",
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
 				age: 0, population: 100, 
 				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
-				diplomacy: [], alliedVict: 0,
+				diplomacy: [], alliedVict: 0, startCam: [],
 				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 5
-				name: "", nameId:0, 
+				name: "", nameId:0, constName: "",
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
 				age: 0, population: 100, 
 				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
-				diplomacy: [], alliedVict: 0,
+				diplomacy: [], alliedVict: 0, startCam: [],
 				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 6
-				name: "", nameId:0, 
+				name: "", nameId:0, constName: "",
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
 				age: 0, population: 100, 
 				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
-				diplomacy: [], alliedVict: 0,
+				diplomacy: [], alliedVict: 0, startCam: [],
 				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 7
-				name: "", nameId:0, 
+				name: "", nameId:0, constName: "",
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
 				age: 0, population: 100, 
 				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
-				diplomacy: [], alliedVict: 0,
+				diplomacy: [], alliedVict: 0, startCam: [],
 				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// player 8
-				name: "", nameId:0, 
+				name: "", nameId:0, constName: "",
 				active: 0, human: 0, civ: 0, unk1: 0,
 				aiName: "", aiSource: "", aiType: 0,
 				age: 0, population: 100, 
 				food: 0, wood: 0, gold: 0, stone: 0, ore: 0,
-				diplomacy: [], alliedVict: 0,
+				diplomacy: [], alliedVict: 0, startCam: [],
 				disTechs: [], disBuildings: [], disUnits: [],
 			}, 
 			{	// ::player 9
@@ -201,6 +199,8 @@ class ScenarioData {
 			startCam: [0, 0],
 			height: 0,
 			width: 0,
+			nextId: 0,
+			filename: "",
 		},
 		tiles: [],
 		units: [
@@ -231,7 +231,7 @@ class ScenarioData {
 		var playablePlayers = this.data.players.slice(1, 9);  	// playable players 1-8
 		var allPlayers = this.data.players.slice(0, 9); 		// GAIA included
 		
-		body.nextId = <number> data.getUint32()[0];		// next unit Id
+		body.setup.nextId = <number> data.getUint32()[0];		// next unit Id
 		body.version = <number> data.getFloat32()[0];	// compressed data version
 		
 		// player ascii names (max. 256 chars)
@@ -259,7 +259,7 @@ class ScenarioData {
 		data.skip(4); // unknonw, @todo finish
 		data.skip(1); // just separator
 		
-		body.filename = <string> data.getStr16()[0];
+		body.setup.filename = <string> data.getStr16()[0];
 		
 		body.messages.objectives.id = <number> data.getInt32()[0];
 		body.messages.hints.id = <number> data.getInt32()[0];
@@ -415,7 +415,9 @@ class ScenarioData {
 		
 		data.skip(4); // number of players, again
 		
-		
+		playablePlayers.forEach(function(player){
+			
+		});
 		
 		console.log(this);
 	}
