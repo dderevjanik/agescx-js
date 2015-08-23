@@ -3,4 +3,5 @@ bower_components/
 node_modules/
 compiled/
 build/resources/js/
+modules/scenario-reader/build/
 *.bat
