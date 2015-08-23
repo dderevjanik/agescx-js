@@ -1,0 +1,31 @@
+{
+  "name": "agescxjs",
+  "version": "0.0.1",
+  "description": "import/export data from Age of Empires 2 scenario .scx files ",
+  "main": ".",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-minify": "^0.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dderevjanik/AgeScxJS.git"
+  },
+  "keywords": [
+    "agescx",
+    "aoe2",
+    "ageofempires",
+    "ageofempires2",
+    "scx"
+  ],
+  "author": "Daniel Derevjanik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dderevjanik/AgeScxJS/issues"
+  },
+  "homepage": "https://github.com/dderevjanik/AgeScxJS#readme"
+}
