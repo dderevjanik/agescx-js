@@ -1,46 +1,32 @@
 var gulp = require('gulp'),
-    minify = require('gulp-minify'),
-    uglify = require('gulp-uglify'),
-    concat = require('gulp-concat'),
-    tsc = require('gulp-typescript');
+      minify = require('gulp-minify'),
+      uglify = require('gulp-uglify'),
+      tsc = require('gulp-typescript');
 
-var srcPath = 'modules/scenario-reader/';
-var buildPath = 'modules/scenario-reader/build/';
+var srcPath = 'modules/scenario-reader/',
+      buildPath = 'build/js/';
 
-gulp.task('concat', function () {
-      return gulp.src(srcPath + 'build/js/*.js')
-            .pipe(concat('scenario-reader.js'))
-            .pipe(gulp.dest(srcPath + 'build/'));
-});
-
-/**
- * compile typescript to build/ with separated .js files
- */
 gulp.task('tsc', function(){
-      return gulp.src(srcPath + '*.ts')
+      var tsResult = gulp.src(srcPath + '**/*.ts')
             .pipe(tsc({
-                  target: 'es5',
-            }))
-            .pipe(gulp.dest(srcPath + 'build/js/'));      
+                  noImplicitAny: true,
+                  out: 'scenario-reader.js',
+                  target: 'es5'
+                  }));
+      return tsResult.js.pipe(gulp.dest(buildPath));
 });
 
-/**
- * makes js ready to distribution
- */
 gulp.task('finalize', function(){
-      return gulp.src(srcPath + 'build/')
+      gulp.src(buildPath + 'scenario-reader.js')
             .pipe(uglify())
             .pipe(minify())
-            .pipe(gulp.dest(srcPath + 'build/'));   
+            .pipe(gulp.dest(buildPath));   
 });
 
-/**
- * copy AgeScx module to test build/
- */
 gulp.task('copy', function(){
    gulp.src(srcPath + 'build/scenario-reader.js')
       .pipe(gulp.dest('build/'))   
 });
 
-gulp.task('default', ['tsc', 'concat', 'copy']);
-gulp.task('dist', ['tsc', 'concat', 'finalize']);
+gulp.task('default', ['tsc', 'copy']);
+gulp.task('dist', ['tsc', 'finalize']);
