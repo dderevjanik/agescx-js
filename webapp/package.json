@@ -1,0 +1,25 @@
+{
+  "name": "agescx",
+  "version": "0.1.0",
+  "description": "agescx implementation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "agescx",
+    "aoe",
+    "aoe2",
+    "ageofempires",
+    "ageofempires2",
+    "scx"
+  ],
+  "author": "Daniel Derevjanik",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^5.8.23",
+    "babel-loader": "^5.3.2",
+    "react": "^0.13.3",
+    "webpack": "^1.12.1"
+  }
+}

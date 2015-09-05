@@ -1,0 +1,26 @@
+{
+  "name": "agescx",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dderevjanik/AgeScxJS",
+  "authors": [
+    "Daniel Derevjanik <daniel.derevjanik@gmail.com>"
+  ],
+  "description": "agescx implementation",
+  "main": "index.html",
+  "keywords": [
+    "agescx",
+    "aoe",
+    "aoe2",
+    "ageofempires",
+    "ageofempires2",
+    "scx"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
