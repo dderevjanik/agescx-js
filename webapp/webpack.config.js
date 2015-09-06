@@ -1,7 +1,8 @@
 // webpack.config.js
 module.exports = {
-  entry: './src/components/app.jsx',
+  entry: './src/app.jsx',
   output: {
+    path: 'build/js',
     filename: 'bundle.js'       
   },
   resolveLoader: {

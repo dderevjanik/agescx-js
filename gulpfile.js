@@ -4,7 +4,7 @@ var gulp = require('gulp'),
       tsc = require('gulp-typescript');
 
 var srcPath = 'modules/scenario-reader/',
-      buildPath = 'build/js/';
+      buildPath = 'webapp/build/js/';
 
 gulp.task('tsc', function(){
       var tsResult = gulp.src(srcPath + '**/*.ts')
@@ -24,8 +24,8 @@ gulp.task('finalize', function(){
 });
 
 gulp.task('copy', function(){
-   gulp.src(srcPath + 'build/scenario-reader.js')
-      .pipe(gulp.dest('build/'))   
+   gulp.src(srcPath + 'webapp/build/scenario-reader.js')
+      .pipe(gulp.dest('webapp/build/'))   
 });
 
 gulp.task('default', ['tsc', 'copy']);
