@@ -1,0 +1,20 @@
+enum eCivilization {
+	Koreans = 0,	
+	Huns = 1,	
+	Mayans = 3,	
+	Aztecs = 4,	
+	Spanish = 5,	
+	Celts = 6,	
+	Mongols = 7,	
+	Vikings = 8,	
+	Turks = 9,	
+	Saracens = 10,	
+	Persians = 11,	
+	Byzantines = 12,	
+	Chinese = 13,	
+	Japanese = 14,	
+	Teutons = 15,	
+	Goths = 16,	
+	Franks = 17,	
+	Britons = 18	
+}
