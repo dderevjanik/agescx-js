@@ -3,8 +3,8 @@ interface IPlayer {
 	nameId: number,			// string Id for name
 	constName?: string,		// for internal purpuose
 	
-	active: number,			// is player active
-	human: number,			// is player human
+	active: boolean,			// is player active
+	human: boolean,			// is player human
 	
 	aiName: string,			// name of AI
 	aiSource: string,		// AI Source code
