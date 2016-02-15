@@ -1,6 +1,6 @@
-/// <reference path="../Interfaces/IUnit.ts"/>
+import IUnit from './../Interfaces/IUnit';
 
-const BlankUnit: IUnit = {
+const BlankUnit = (): IUnit => ({
     id: 0,
 	inId: -1,
 	type: 0,
@@ -10,4 +10,6 @@ const BlankUnit: IUnit = {
 	frame: 0,
 	unk1: 0,
 	unk2: 0
-};
+});
+
+export default BlankUnit; 

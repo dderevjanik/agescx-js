@@ -22,4 +22,6 @@ enum eCondition {
 	SelectedObjectsInArea = 21,
 	PoweredObjectsInArea = 22,
 	UnitsQueuedPastPopCap = 23,
-}
+};
+
+export default eCondition;

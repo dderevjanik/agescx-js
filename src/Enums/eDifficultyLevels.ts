@@ -4,4 +4,7 @@ enum eDifficultyLevels {
     Moderate = 2,
     Hard = 3,
     Hardest = 4
-}
+};
+
+export default eDifficultyLevels;
+ 

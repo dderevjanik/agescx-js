@@ -28,4 +28,6 @@ interface IEffect {
 	
 	soundFile: string,			// path to sound file
 	soundId: number,			// string Id of sound
-}
+};
+
+export default IEffect;

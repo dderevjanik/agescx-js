@@ -9,4 +9,6 @@ interface ITrigger {
 	desc: number,		// is objective
 	descOrd: number,	// objective order in instructions
 	text: string,		// objective text
-}
+};
+
+export default ITrigger;

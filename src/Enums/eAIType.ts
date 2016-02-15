@@ -24,4 +24,6 @@ enum eAIType {
     Oasis = 31,
     GhostLake = 32,
     Nomad = 33,
-}
+};
+
+export default eAIType;

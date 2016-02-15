@@ -233,7 +233,7 @@ class ScenarioData {
 	
 	public read = (data: ASDataView) => {
 		// unpcompressed header
-		var head = this.header;
+		const head = this.header;
 		head.version = <string> data.getChar(4).join("");	// scenario version
 		head.size = <number> data.getUint32()[0];			// size of header, excluding version and this
 		head.unknown1 = <number> data.getUint32()[0];		// ? unknown
@@ -244,9 +244,9 @@ class ScenarioData {
 		data.inflate(head.size + 8);
 		
 		// compressed data start here
-		var body = this.data;
-		var playablePlayers = this.data.players.slice(1, 9);  	// playable players 1-8
-		var allPlayers = this.data.players.slice(0, 9); 		// GAIA included
+		const body = this.data;
+		const playablePlayers = this.data.players.slice(1, 9);  	// playable players 1-8
+		const allPlayers = this.data.players.slice(0, 9); 		// GAIA included
 		
 		body.setup.nextId = <number> data.getUint32()[0];		// next unit Id
 		body.version = <number> data.getFloat32()[0];	// compressed data version

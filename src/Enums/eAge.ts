@@ -5,4 +5,6 @@ enum eAge {
     Castle = 2,
     Imperial = 3,
     PostImperial = 4
-}
+};
+
+export default eAge;

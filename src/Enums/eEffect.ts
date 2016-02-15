@@ -35,4 +35,6 @@ enum eEffect {
 	EnableUnit = 34,
 	DisableUnit = 35,
 	Flash = 36,
-}
+};
+
+export default eEffect;

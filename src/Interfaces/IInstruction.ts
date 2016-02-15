@@ -3,4 +3,6 @@ interface IInstruction {
 	order: number,
 	text: string,
 	delay: number
-}
+};
+
+export default IInstruction;

@@ -1,9 +1,9 @@
-/// <reference path="../Interfaces/IPlayer.ts"/>
-/// <reference path="../Enums/eCivilization.ts"/>
-/// <reference path="../Enums/ePlayerColor.ts"/>
-/// <reference path="../Enums/eAge.ts"/>
+import IPlayer from './../Interfaces/IPlayer';
+import eCivilization from './../enums/eCivilization';
+import ePlayerColor from './../enums/ePlayerColor';
+import eAge from './../enums/eAge';
 
-const blankPlayer: IPlayer = {
+const BlankPlayer = (): IPlayer => ({
     name: "",
     nameId: 0,
     constName: "",
@@ -30,4 +30,6 @@ const blankPlayer: IPlayer = {
     disTechs: [],
     disBuildings: [],
     disUnits: [],
-};
+});
+
+export default BlankPlayer;

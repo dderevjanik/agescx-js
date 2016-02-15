@@ -33,4 +33,6 @@ interface IPlayer {
 	unk2?: number,
 	unk3?: number,
 	
-}
+};
+
+export default IPlayer;

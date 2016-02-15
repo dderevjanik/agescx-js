@@ -40,4 +40,6 @@ enum eTerrain {
 	IceRoad = 38,
 	FungusRoad = 39,
 	RoadB = 40,
-}
+};
+
+export default eTerrain;

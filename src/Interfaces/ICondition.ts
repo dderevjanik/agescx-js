@@ -16,4 +16,6 @@ interface ICondition {
 		number, number],
 	
 	unknown: number,
-}
+};
+
+export default ICondition;

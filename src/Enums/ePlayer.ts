@@ -8,4 +8,6 @@ enum ePlayer {
 	Player6 = 6,
 	Player7 = 7,
 	Player8 = 8,
-}
+};
+
+export default ePlayer;

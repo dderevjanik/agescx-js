@@ -17,4 +17,6 @@ enum eCivilization {
 	Mayans = 16,	
 	Huns = 17,	
 	Koreans = 18	
-}
+};
+
+export default eCivilization;

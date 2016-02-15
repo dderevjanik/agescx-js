@@ -8,4 +8,6 @@ interface IUnit {
 	frame: number,		// unit frame
 	unk1?: number,
 	unk2?: number,
-}
+};
+
+export default IUnit;

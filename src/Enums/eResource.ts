@@ -126,4 +126,6 @@ enum eResource {
 	P7Razings = 124,
 	P8Razings = 125
 	// @todo add more resource type
-}
+};
+
+export default eResource;

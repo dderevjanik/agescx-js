@@ -7,4 +7,6 @@ enum ePlayerColor {
     Purple = 5,
     Gray = 6,
     Orange = 7
-}
+};
+
+export default ePlayerColor;
