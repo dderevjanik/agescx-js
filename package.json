@@ -4,7 +4,7 @@
   "description": "import/export data from Age of Empires 2 scenario .scx files ",
   "main": "src/main.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,11 @@
   ],
   "author": "Daniel Derevjanik",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dderevjanik/AgeScxJS/issues"
-  },
-  "homepage": "https://github.com/dderevjanik/AgeScxJS#readme"
+  "homepage": "https://github.com/dderevjanik/AgeScxJS#readme",
+  "devDependencies": {
+    "babel-core": "^6.5.2",
+    "babel-loader": "^6.2.2",
+    "ts-loader": "^0.8.1",
+    "webpack": "^1.12.13"
+  }
 }

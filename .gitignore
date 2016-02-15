@@ -1,7 +1,3 @@
-.settings/
-bower_components/
+build/
 node_modules/
-compiled/
-build/resources/js/
-modules/scenario-reader/build/
-*.bat
+npm-debug.log
