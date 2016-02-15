@@ -12,11 +12,11 @@ enum eCivilization {
 	Vikings = 11,	
 	Mongols = 12,	
 	Celts = 13,	
-	Spanish = 14,	
-	Aztecs = 15,	
-	Mayans = 16,	
-	Huns = 17,	
-	Koreans = 18	
+	Spanish = 14,   // The Conquerors	
+	Aztecs = 15,	// The Conquerors
+	Mayans = 16,	// The Conquerors
+	Huns = 17,	    // The Conquerors
+	Koreans = 18	// The Conquerors
 };
 
 export default eCivilization;

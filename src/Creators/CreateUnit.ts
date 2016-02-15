@@ -1,8 +1,8 @@
 import IUnit from './../Interfaces/IUnit';
 
-const BlankUnit = (): IUnit => ({
-    id: 0,
-	inId: -1,
+const CreateUnit = (): IUnit => ({
+	id: 0,
+	inId: 0,
 	type: 0,
 	x: 0,
 	y: 0,
@@ -12,4 +12,4 @@ const BlankUnit = (): IUnit => ({
 	unk2: 0
 });
 
-export default BlankUnit; 
+export default CreateUnit;
