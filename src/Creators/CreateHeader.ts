@@ -1,11 +1,13 @@
-const BlankHeader = (version: string = "1.21") => ({
-    version: version,
+import IHeader from './../interfaces/IHeader';
+
+const CreateHeader = (version: string = "1.21"): IHeader => ({
+    version: "",
     size: 0,
-    unknown1: 2,
     lastSave: 20,
     instructions: "",
-    unknown2: 0,
     players: 8,
+    unknown1: 2,
+    unknown2: 0,
 });
 
-export default BlankHeader;
+export default CreateHeader;

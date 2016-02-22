@@ -1,14 +1,15 @@
-const webpack = require('webpack'), 
+const webpack = require('webpack'),
     path = require('path');
 
-module.exports = {  
+module.exports = {
     cache: true,
-    entry: ['./src/ScenarioData.ts'],
+    entry: ['./src/Scenario.ts'],
     debug: true,
     devtools: 'eval',
     output: {
-        path: __dirname + '/build/',
-        filename: 'zbundle.js'
+        path: path.resolve(__dirname + 'build'),
+        publicPath: '/build/',
+        filename: 'bundle.js'
     },
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
@@ -18,7 +19,10 @@ module.exports = {
     ],
     module: {
         loaders: [
-            { test: /\.ts$/, loader: 'ts-loader' }
+            {
+                test: /\.ts$/,
+                loader: 'ts-loader'
+            }
         ]
     }
 };

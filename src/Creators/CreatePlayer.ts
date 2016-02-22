@@ -7,8 +7,8 @@ const BlankPlayer = (): IPlayer => ({
     name: "",
     nameId: 0,
     constName: "",
-    active: false,
-    human: false,
+    active: 0,
+    human: 0,
     civ: eCivilization.Britons,
     unk1: 0,
     unk2: 0,
@@ -30,6 +30,7 @@ const BlankPlayer = (): IPlayer => ({
     disTechs: [],
     disBuildings: [],
     disUnits: [],
+    units: []
 });
 
 export default BlankPlayer;
