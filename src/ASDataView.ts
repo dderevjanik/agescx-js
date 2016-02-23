@@ -1,4 +1,5 @@
 declare var pako;
+
 /**
  * AgeScx Data view
  * supports reading and writing primitive types
@@ -6,7 +7,7 @@ declare var pako;
  * moved forward about size of 'DataType'
  */
 class ASDataView {
-	
+
 	/**
 	 * current position in scenario file
 	 */
@@ -15,7 +16,7 @@ class ASDataView {
 	 * original DataView from JS API
 	 */
 	private _data: DataView = null;
-	
+
 	/**
 	 * @param dataView it's DataView object from JS Api. It helps to read/write 'DataType'
 	 * @param offset starting offset, optionally at 0 position in scenario file
@@ -24,7 +25,7 @@ class ASDataView {
 		this.offset = offset;
 		this._data = dataView;
 	}
-	
+
 	/**
 	 * skip number of bytes from current offset
 	 * @param bytes number of bytes to skip
@@ -34,7 +35,7 @@ class ASDataView {
 		this.offset += bytes;
 		return this.offset;
 	}
-	
+
 	/**
 	 * will jump to offset from starting point
 	 * @param offset to jump
@@ -42,7 +43,7 @@ class ASDataView {
 	public toOffset(offset: number){
 		this.offset = offset;
 	}
-	
+
 	/**
 	 * will inflate dataview
 	 * @param offset default 0, a point from which deflate
@@ -53,7 +54,7 @@ class ASDataView {
 		this._data = new DataView(inflated.buffer);
 		this.offset = 0; //restart position
 	}
-	
+
 	/**
 	 * get bytes
 	 * @param repeat number of bytes to retrieve
@@ -62,7 +63,7 @@ class ASDataView {
 		this.offset += repeat;
 		return new Uint8Array(this._data.buffer.slice(this.offset-repeat, repeat));
 	}
-	
+
 	/**
 	 * @param repeat number of char(s) to retrieve
 	 * @description size of char is 1 byte
@@ -105,11 +106,11 @@ class ASDataView {
 		}
 		return result;
 	}
-	
+
 	/**
 	 * @param repeat number of Int8(s) to retrieve
 	 * @return array of 8-bit length Int(s)
-	 */	
+	 */
 	public getInt8(repeat: number = 1): Array<number>{
 		return this._repeater(repeat, (offset: number) => {
 			return this._data.getInt8(offset);
@@ -119,67 +120,67 @@ class ASDataView {
 	/**
 	 * @param repeat number of UInt8(s) to retrieve
 	 * @return array of 8-bit length UInt(s)
-	 */	
+	 */
 	public getUint8(repeat: number = 1): Array<number>{
 		return this._repeater(repeat, (offset: number) => {
 			return this._data.getUint8(offset);
 			}, 1);
 	}
-	
+
 	/**
 	 * @param repeat number of Int16(s) to retrieve
 	 * @return array of 16-bit length Int(s)
-	 */	
+	 */
 	public getInt16(repeat: number = 1): Array<number>{
 		return this._repeater(repeat, (offset: number) => {
 			return this._data.getInt16(offset, true);
 			}, 2);
 	}
-	
+
 	/**
 	 * @param repeat number of UInt16(s) to retrieve
 	 * @return array of 16-bit length UInt(s)
-	 */	
+	 */
 	public getUint16(repeat: number = 1): Array<number>{
 		return this._repeater(repeat, (offset: number) => {
 			return this._data.getUint16(offset, true);
 			}, 2);
 	}
-	
+
 	/**
 	 * @param repeat number of Int32(s) to retrieve
 	 * @return array of 32-bit length Int(s)
-	 */	
+	 */
 	public getInt32(repeat: number = 1): Array<number>{
 		return this._repeater(repeat, (offset: number) => {
 			return this._data.getInt32(offset, true);
 			}, 4);
 	}
-	
+
 	/**
 	 * @param repeat number of UInt32(s) to retrieve
 	 * @return array of 32-bit length UInt(s)
-	 */	
+	 */
 	public getUint32(repeat: number = 1): Array<number>{
 		return this._repeater(repeat, (offset: number) => {
 			return this._data.getUint32(offset, true);
 			}, 4);
 	}
-	
+
 	/**
 	 * @param repeat number of float32(s) to retrieve
 	 * @return array of 32-bit length float(s)
-	 */	
+	 */
 	public getFloat32(repeat: number = 1): Array<number>{
 		return this._repeater(repeat, (offset: number) => {
 			return this._data.getFloat32(offset, true);
 			}, 4);
 	}
-	
+
 	/**
 	 * @param repeat number of float64(s) to retrieve
 	 * @return array of 64-bit length float(s)
-	 */	
+	 */
 	public getFloat64(repeat: number = 1): Array<number>{
 		return this._repeater(repeat, this._data.getFloat64, 8);
 	}
@@ -199,5 +200,7 @@ class ASDataView {
 		}
 		return result;
 	}
-	
+
 }
+
+export default ASDataView;

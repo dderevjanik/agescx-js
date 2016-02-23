@@ -1,8 +1,9 @@
 import CreateScenario from './Creators/CreateScenario';
+import ASDataView from './ASDataView';
 import {readTile} from './Structures/Tile';
 import {readUnit} from './Structures/Unit';
 
-const readScenario = (data: ASDataView) => {
+const readScenario = (data: ASDataView, debug: boolean = false) => {
 
     // unpcompressed header
     const Scenario = CreateScenario();

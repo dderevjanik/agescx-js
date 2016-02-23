@@ -6,10 +6,11 @@ module.exports = {
     entry: ['./src/Scenario.ts'],
     debug: true,
     devtools: 'eval',
+    target: 'node',
     output: {
         path: path.resolve(__dirname + 'build'),
         publicPath: '/build/',
-        filename: 'bundle.js'
+        filename: 'main.js'
     },
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']

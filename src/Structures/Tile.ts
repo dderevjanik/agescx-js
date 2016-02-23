@@ -1,4 +1,5 @@
 import ITile from './../interfaces/ITile';
+import ASDataView from './../ASDataView';
 
 export const readTile = (data: ASDataView): ITile => ({
     type: <number> data.getUint8()[0],

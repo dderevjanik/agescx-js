@@ -1,4 +1,5 @@
 import IUnit from './../interfaces/IUnit';
+import ASDataView from './../ASDataView';
 
 export const readUnit = (data: ASDataView): IUnit => ({
     x: <number> data.getFloat32()[0],
