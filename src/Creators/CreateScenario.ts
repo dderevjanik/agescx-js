@@ -9,15 +9,15 @@ const CreateScenario = (): IScenario => ({
     header: CreateHeader(),
     version: 1.22,
     players: [
-        CreatePlayer(),
-        CreatePlayer(),
-        CreatePlayer(),
-        CreatePlayer(),
-        CreatePlayer(),
-        CreatePlayer(),
-        CreatePlayer(),
-        CreatePlayer(),
-        CreatePlayer(),
+        CreatePlayer(), // GAIA
+        CreatePlayer(), // Player 1
+        CreatePlayer(), // Player 2
+        CreatePlayer(), // Player 3
+        CreatePlayer(), // Player 4
+        CreatePlayer(), // Player 5
+        CreatePlayer(), // Player 6
+        CreatePlayer(), // Player 7
+        CreatePlayer(), // Player 8
     ],
     messages: {
         objectives: CreateMessage(),

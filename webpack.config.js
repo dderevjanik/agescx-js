@@ -5,12 +5,13 @@ module.exports = {
     cache: true,
     entry: ['./src/Scenario.ts'],
     debug: true,
-    devtools: 'eval',
-    target: 'node',
+    devtools: 'source-map',
+    target: 'web',
     output: {
-        path: path.resolve(__dirname + 'build'),
+        path: path.resolve(__dirname + '/build'),
         publicPath: '/build/',
-        filename: 'main.js'
+        filename: 'main.js',
+        library: 'agescx'
     },
     resolve: {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
