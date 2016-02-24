@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AgeScx</title>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/1.0.0/pako.min.js"></script>
+    <script src="build/main.js"></script>
+    <script>
+        function openFile(e) {
+            console.log('uploading a scenario');
+            var inpFile = event.target;
+
+            var reader = new FileReader();
+            reader.onload = function() {
+                console.log('scenario uploaded');
+                var arrayBuffer = reader.result;
+                agescx.readScenario(arrayBuffer, true);
+            }
+            reader.readAsArrayBuffer(inpFile.files[0]);
+        };
+        console.log(this);
+    </script>
+    <h1>AgeScx - JS</h1>
+    <p>This is demo how agescx works in browser enviroment</p>
+    <p>Please, upload a scenario (currently is only supported 1.22 version)</p>
+    <input type="file" id="inpScenario" placeholder="select a scenario to upload" onchange="openFile(event)"/>
+</body>
+</html>
