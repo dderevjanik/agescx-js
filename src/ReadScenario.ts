@@ -3,8 +3,16 @@ import ASDataView from './ASDataView';
 import {readTile} from './Structures/Tile';
 import {readUnit} from './Structures/Unit';
 import IPlayer from './Interfaces/IPlayer';
-
-type MyNumber = number;
+import {readHeader} from './Partials/Header';
+import {readPlayerData1} from './Partials/PlayerData1';
+import {readPlayerData2} from './Partials/PlayerData2';
+import {readPlayerData3} from './Partials/PlayerData3';
+import {readPlayerData4} from './Partials/PlayerData4';
+import {readGoals} from './Partials/Goals';
+import {readMessages} from './Partials/Messages';
+import {readCinematics} from './Partials/Cinematics';
+import {readImage} from './Partials/Image';
+import {readDisabled} from './Partials/Disabled';
 
 const readScenario = (data: ASDataView, debug: boolean = false) => {
 
@@ -15,18 +23,10 @@ const readScenario = (data: ASDataView, debug: boolean = false) => {
     const playablePlayers = Scenario.players.slice(1, 9);
     const allPlayers = Scenario.players.slice(0, 9);
 
-    const head = Scenario.header;
-    head.version = <string> data.getChar(4).join("");	// scenario version
-    head.size = <number> data.getUint32()[0];			// size of header, excluding version and this
-    head.unknown1 = <number> data.getUint32()[0];		// ? unknown
-    head.lastSave = <number> data.getUint32()[0];		// last save game timestamp
-    head.instructions = <string> data.getStr32()[0];	// instructions before a start
-    head.unknown2 = <number> data.getInt32()[0];		// ? unknown
-    head.players = <number> data.getInt32()[0];			// number of players
+    readHeader(Scenario, data);
+    if (debug) console.log(`AgeScx: header loaded, version = ${Scenario.header.version}`);
 
-    if (debug) console.log(`AgeScx: header loaded, version = ${head.version}`);
-
-    data.inflate(head.size + 8);
+    data.inflate(Scenario.header.size + 8);
     Scenario.setup.nextId = <number> data.getUint32()[0];// next unit Id
     Scenario.version = <number> data.getFloat32()[0];	// compressed data version
 
@@ -44,16 +44,9 @@ const readScenario = (data: ASDataView, debug: boolean = false) => {
     });
     data.skip(7*4) // skip non-playable players
 
-    // player data#1 section
-    allPlayers.forEach((player: IPlayer) => {
-        player.active = <number> data.getUint32()[0];	// is active
-        player.human = <number> data.getUint32()[0];	// is human
-        player.civ = <number> data.getInt32()[0];		// player civilization
-        player.unk1 = <number> data.getUint32()[0];		// ? unknown
-    });
-    data.skip(7*16); // skip non-playable players
+    readPlayerData1(Scenario, data);
 
-    if (debug) console.log(`AgeScx: Player Data #1`);
+    if (debug) console.log(`AgeScx: Player Data #1 - Basic Info`);
 
     data.skip(4); // unknown, @todo finish
     data.skip(4); // unknonw, @todo finish
@@ -62,89 +55,27 @@ const readScenario = (data: ASDataView, debug: boolean = false) => {
     Scenario.setup.filename = <string> data.getStr16()[0];
 
     // messages section
-    Scenario.messages.objectives.id = <number> data.getInt32()[0];
-    Scenario.messages.hints.id = <number> data.getInt32()[0];
-    Scenario.messages.victory.id = <number> data.getInt32()[0];
-    Scenario.messages.loss.id = <number> data.getInt32()[0];
-    Scenario.messages.history.id = <number> data.getInt32()[0];
-    Scenario.messages.scout.id = <number> data.getInt32()[0]; // 1.22>
-
-    Scenario.messages.objectives.text = <string> data.getStr16()[0];
-    Scenario.messages.hints.text = <string> data.getStr16()[0];
-    Scenario.messages.victory.text = <string> data.getStr16()[0];
-    Scenario.messages.loss.text = <string> data.getStr16()[0];
-    Scenario.messages.history.text = <string> data.getStr16()[0];
-    Scenario.messages.scout.text = <string> data.getStr16()[0]; // 1.22>
+    readMessages(Scenario, data);
 
     if (debug) console.log(`AgeScx: Messages`);
 
-    Scenario.cinematics.intro = <string> data.getStr16()[0];
-    Scenario.cinematics.defeat = <string> data.getStr16()[0];
-    Scenario.cinematics.victory = <string> data.getStr16()[0];
+    readCinematics(Scenario, data);
 
     if (debug) console.log(`AgeScx: Cinematics`);
 
-    Scenario.image.filename = <string> data.getStr16()[0];
-    Scenario.image.included = <number> data.getInt32()[0];
-    Scenario.image.width = <number> data.getInt32()[0];
-    Scenario.image.height = <number> data.getInt32()[0];
-    Scenario.image.exists = <number> data.getInt16()[0];
-    if ((Scenario.image.exists) === -1 || (Scenario.image.exists === 2)){
-        // @todo finish
-    }
+    readImage(Scenario, data);
 
     if (debug) console.log(`AgeScx: Background Image`);
 
-    // player data #2 section
-    Scenario.players.forEach((player: IPlayer) => {
-        data.getStr16();
-        data.getStr16();
-    });
+    readPlayerData2(Scenario, data);
 
-    if (debug) console.log(`AgeScx: Players Data #2`);
-    console.log(Scenario);
-
-    // ai name
-    playablePlayers.forEach((player: IPlayer) => {
-        player.aiName = data.getStr16()[0];
-    });
-    for (let i: number = 0; i < 8; i++){
-        data.getStr16();
-    }
-
-    // ai source
-    playablePlayers.forEach((player: IPlayer) => {
-        data.skip(8) // unknowns 2 & 3
-        player.aiSource = data.getStr32()[0];
-    });
-    for (let i: number = 0; i < 8; i++){
-        data.skip(8);
-        data.getStr32();
-    }
-
-    // ai type
-    playablePlayers.forEach((player: IPlayer) => {
-        player.aiType = data.getInt8()[0];
-    });
-    data.skip(8); // skip non-playable players
-    data.skip(4); // separator
-
-    if (debug) console.log(`AgeScx: AI Section`);
+    if (debug) console.log(`AgeScx: Player Data #2 - AI section`);
 
     data.skip(16*24); // unused resources
     data.skip(4); // another separator
 
     // scenario goals
-    Scenario.goals.conquest = data.getInt32()[0];
-    Scenario.goals.unk1 = data.getInt32()[0];
-    Scenario.goals.relics = data.getInt32()[0];
-    Scenario.goals.unk2 = data.getInt32()[0];
-    Scenario.goals.exploration = data.getInt32()[0];
-    Scenario.goals.unk3 = data.getInt32()[0];
-    Scenario.goals.all = data.getInt32()[0];
-    Scenario.goals.mode = data.getInt32()[0];
-    Scenario.goals.score = data.getInt32()[0];
-    Scenario.goals.time = data.getInt32()[0];
+    readGoals(Scenario, data);
 
     if (debug) console.log(`AgeScx: Scenario Goals`);
 
@@ -160,27 +91,7 @@ const readScenario = (data: ASDataView, debug: boolean = false) => {
 
     if (debug) console.log(`AgeScx: Diplomacy`);
 
-    // Section: Disabled
-    data.skip(16*4); // techs count
-    playablePlayers.forEach((player: IPlayer) => {
-        player.disTechs = data.getInt32(30);
-    })
-    data.skip(4*8*30); // skip for another players
-    // @todo extra tech for 1.30 version
-
-    data.skip(16*4); // units count
-    playablePlayers.forEach((player: IPlayer) => {
-        player.disUnits = data.getInt32(30);
-    });
-    data.skip(4*8*30); // for another players
-    // @todo extra units for 1.30 version
-
-    data.skip(16*4); // buildings count
-    playablePlayers.forEach((player: IPlayer) => {
-        player.disBuildings = data.getInt32(20);
-    });
-    data.skip(4*8*20); // for another players
-    // @todo extra buildings for 1.30 version
+    readDisabled(Scenario, data);
 
     if (debug) console.log(`AgeScx: Disables`);
 
@@ -208,15 +119,9 @@ const readScenario = (data: ASDataView, debug: boolean = false) => {
 
     data.skip(4); // number of units section
 
-    playablePlayers.forEach((player: IPlayer) => {
-        player.food = data.getFloat32()[0];
-        player.wood = data.getFloat32()[0];
-        player.gold = data.getFloat32()[0];
-        player.stone = data.getFloat32()[0];
-        player.ore = data.getFloat32()[0];
-        data.skip(4); // padding
-        player.population = data.getFloat32()[0];
-    });
+    readPlayerData3(Scenario, data);
+
+    if (debug) console.log(`AgeScx: Player Data #3 - Resources`);
 
     allPlayers.forEach((player: IPlayer) => {
         const numOfUnits: number = data.getUint32()[0];
@@ -225,26 +130,13 @@ const readScenario = (data: ASDataView, debug: boolean = false) => {
         }
     });
 
+    if (debug) console.log(`AgeScx: Scenario Units`);
+
     data.skip(4); // number of players, again
 
-    playablePlayers.forEach((player: IPlayer) => {
-        player.constName = data.getStr16()[0];
-        player.startCam = [data.getFloat32()[0], data.getFloat32()[0]];
-        data.skip(4); // skip duplicated camera X and camera Y
-        data.skip(1); // skip allyVictory, duplicated
-        const numOfDipl: number = data.getUint16()[0];
-        data.skip(numOfDipl*1);
-        data.skip(9*4) // player / diplomacy
-        player.color = data.getUint32()[0];
-        player.unk2 = data.getFloat32()[0];
-        player.unk3 = data.getUint16()[0];
-        if (player.unk2 === 2.0){
-            data.skip(8*1);
-        }
-        data.skip(player.unk3*44);
-        data.skip(7*1);
-        data.skip(4);
-    });
+    readPlayerData4(Scenario, data);
+
+    if (debug) console.log(`AgeScx: Player Data #4 - Advanced`);
 
     data.skip(8); // unknown, 1.6
     data.skip(1); // unknown

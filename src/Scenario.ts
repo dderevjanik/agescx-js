@@ -31,3 +31,5 @@ export default {
     readScenario: readScenario,
     readScenarioNode: readScenarioNode
 };
+
+console.log('starting from node enviroment');

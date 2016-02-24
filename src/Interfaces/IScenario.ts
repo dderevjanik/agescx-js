@@ -1,41 +1,21 @@
 import IPlayer from './IPlayer';
-import IMessage from './Imessage';
 import IImage from './IImage';
 import ITile from './ITile';
 import IUnit from './IUnit';
 import ITrigger from './ITrigger';
 import IHeader from './IHeader';
+import IGoals from './IGoals';
+import ICinematics from './ICinematics';
+import IMessages from './IMessages';
 
 interface IScenario {
     header: IHeader,
     version: number,
     players: Array<IPlayer>,
-    messages: {
-        objectives: IMessage,
-        hints: IMessage,
-        victory: IMessage,
-        loss: IMessage,
-        history: IMessage,
-        scout: IMessage
-    },
-    cinematics: {
-        intro: string,
-        defeat: string,
-        victory: string,
-    },
+    messages: IMessages,
+    cinematics: ICinematics,
     image: IImage,
-    goals: {
-        conquest: number,
-        relics: number,
-        exploration: number,
-        mode: number,
-        score: number,
-        time: number,
-        all: number,
-        unk1: number,
-        unk2: number,
-        unk3: number
-    },
+    goals: IGoals,
     setup: {
         allTech: number,
         aiType: number,
