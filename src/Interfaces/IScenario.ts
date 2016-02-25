@@ -26,7 +26,8 @@ interface IScenario {
         filename: string
     }
     tiles: Array<ITile>,
-    triggers: Array<ITrigger>
+    triggers: Array<ITrigger>,
+    triggersOrd: Array<number>
 };
 
 export default IScenario;

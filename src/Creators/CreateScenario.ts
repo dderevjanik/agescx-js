@@ -62,7 +62,8 @@ const CreateScenario = (): IScenario => ({
         filename: ""
     },
     tiles: [],
-    triggers: []
+    triggers: [],
+    triggersOrd: []
 });
 
 export default CreateScenario;

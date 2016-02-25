@@ -13,6 +13,8 @@ import {readMessages} from './Partials/Messages';
 import {readCinematics} from './Partials/Cinematics';
 import {readImage} from './Partials/Image';
 import {readDisabled} from './Partials/Disabled';
+import {readUnits} from './Partials/Units';
+import {readTriggers} from './Partials/Triggers';
 
 const readScenario = (data: ASDataView, debug: boolean = false) => {
 
@@ -24,6 +26,7 @@ const readScenario = (data: ASDataView, debug: boolean = false) => {
     const allPlayers = Scenario.players.slice(0, 9);
 
     readHeader(Scenario, data);
+
     if (debug) console.log(`AgeScx: header loaded, version = ${Scenario.header.version}`);
 
     data.inflate(Scenario.header.size + 8);
@@ -123,12 +126,7 @@ const readScenario = (data: ASDataView, debug: boolean = false) => {
 
     if (debug) console.log(`AgeScx: Player Data #3 - Resources`);
 
-    allPlayers.forEach((player: IPlayer) => {
-        const numOfUnits: number = data.getUint32()[0];
-        for(let i: number = 0; i < numOfUnits; i++){
-            player.units.push(readUnit(data));
-        }
-    });
+    readUnits(Scenario, data);
 
     if (debug) console.log(`AgeScx: Scenario Units`);
 
@@ -141,13 +139,11 @@ const readScenario = (data: ASDataView, debug: boolean = false) => {
     data.skip(8); // unknown, 1.6
     data.skip(1); // unknown
 
-    /*
-    let numOfTrigs: number = data.getUint32()[0];
-    for (let i: number = 0; i < numOfTrigs; i++){
+    readTriggers(Scenario, data);
 
-    }
-    */
-    console.log(this);
+    if (debug) console.log(`AgeScx: Triggers`);
+
+    console.log(Scenario);
 };
 
 export default readScenario;

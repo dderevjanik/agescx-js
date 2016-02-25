@@ -11,6 +11,11 @@ const CreateTrigger = (): ITrigger => ({
 	desc: 0,
 	descOrd: 0,
 	text: "",
+
+    effects: [],
+    effectsOrd: [],
+    conditions: [],
+    conditionsOrd: []
 });
 
 export default CreateTrigger;
