@@ -28,5 +28,8 @@
     "typescript": "^1.8.2",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "example": "git+https://github.com/dderevjanik/asdata.git"
   }
 }

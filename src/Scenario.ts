@@ -1,5 +1,5 @@
 import readScenarioData from './ReadScenario';
-import ASDataView from './ASDataView';
+import ASData from 'asdata';
 import {createASDataView} from './Utils/FileUtils';
 
 declare var require; // for NodeJS enviroment

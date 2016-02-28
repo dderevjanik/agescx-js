@@ -1,9 +1,9 @@
-import ASDataView from './../ASDataView';
+import ASData from 'asdata';
 
 /**
  * Create ASDataView from buffer
  * @param {ArrayBuffer} arrayBuffer - file buffer
- * @retunr {ASDataView}
+ * @retunr {ASData}
  */
 export const createASDataView = (arrayBuffer: ArrayBuffer) =>
-    new ASDataView(new DataView(arrayBuffer));
+    new ASData(arrayBuffer);

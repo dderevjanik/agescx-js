@@ -1,15 +1,15 @@
 import IScenario from './../Interfaces/IScenario';
 import IPlayer from './../Interfaces/IPlayer';
-import ASDataView from './../ASDataView';
+import ASData from 'asdata';
 
-export const readPlayerData1 = (scenario: IScenario, data: ASDataView): void => {
+export const readPlayerData1 = (scenario: IScenario, data: ASData): void => {
     const allPlayers: Array<IPlayer> = scenario.players;
 
     allPlayers.forEach((player: IPlayer) => {
-        player.active = data.getUint32()[0];	// is active
-        player.human = data.getUint32()[0];	// is human
-        player.civ = data.getInt32()[0];		// player civilization
-        player.unk1 = data.getUint32()[0];		// ? unknown
+        player.active = data.getUint32();	// is active
+        player.human = data.getUint32();	// is human
+        player.civ = data.getInt32();		// player civilization
+        player.unk1 = data.getUint32();		// ? unknown
     });
     data.skip(7*16); // skip non-playable players
 };
