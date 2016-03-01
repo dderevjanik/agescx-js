@@ -2,7 +2,7 @@ import readScenarioData from './ReadScenario';
 import ASData from 'asdata';
 import {createASDataView} from './Utils/FileUtils';
 
-declare var require; // for NodeJS enviroment
+declare const require; // for NodeJS enviroment
 
 /**
  * Read uploaded scenario
@@ -20,7 +20,7 @@ export const readScenario = (arrayBuffer: ArrayBuffer, debug: boolean = false) =
  * @param {boolean} debug - turn on/off console logs
  * @return {Scenario}
  */
-export const readScenarioNode = (path: string, debug: boolean = false) => {
+export const readScenarioFile = (path: string, debug: boolean = false) => {
     const fs = require('fs');
     const file = fs.readFileSync(path);
 
@@ -29,7 +29,5 @@ export const readScenarioNode = (path: string, debug: boolean = false) => {
 
 export default {
     readScenario: readScenario,
-    readScenarioNode: readScenarioNode
+    readScenarioFile: readScenarioFile
 };
-
-console.log('starting from node enviroment');

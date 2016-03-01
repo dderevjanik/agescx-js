@@ -2,10 +2,13 @@
   "name": "agescxjs",
   "version": "0.0.1",
   "description": "import/export data from Age of Empires 2 scenario .scx files ",
-  "main": "src/main.ts",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "webpack",
-    "dev": "webpack-dev-server"
+    "dev": "webpack-dev-server --config webpack-dev.config.js",
+    "build": "npm run build:web && npm run build:noe",
+    "build:web": "webpack --config webpack.web.config.js",
+    "build:node": "webpack --config webpack.node.config.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
