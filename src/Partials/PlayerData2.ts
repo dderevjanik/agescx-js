@@ -20,7 +20,7 @@ export const readPlayerData2 = (scenario: IScenario, data: ASData): void => {
 
     // ai source
     playablePlayers.forEach((player: IPlayer) => {
-        data.skip(8) // unknowns 2 & 3
+        data.skip(8); // unknowns 2 & 3
         player.aiSource = data.getStr32();
     });
     for (let i: number = 0; i < 8; i++){

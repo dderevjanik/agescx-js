@@ -1,8 +1,8 @@
 import IMessage from './../Interfaces/IMessage';
 
-const CreateMessage = (): IMessage => ({
+const createMessage = (): IMessage => ({
     id: 0,
-    text: ""
+    text: ''
 });
 
-export default CreateMessage;
+export default createMessage;

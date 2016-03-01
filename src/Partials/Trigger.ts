@@ -31,7 +31,6 @@ export const readTrigger = (scenario: IScenario, data: ASData): ITrigger => {
         trigger.effectsOrd.push(data.getInt32());
     }
 
-
     const conditionsCount: number = data.getUint32();
     for(let i: number = 0; i < conditionsCount; i++) {
         trigger.conditions.push(readCondition(data));

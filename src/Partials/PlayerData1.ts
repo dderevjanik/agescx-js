@@ -11,5 +11,5 @@ export const readPlayerData1 = (scenario: IScenario, data: ASData): void => {
         player.civ = data.getInt32();		// player civilization
         player.unk1 = data.getUint32();		// ? unknown
     });
-    data.skip(7*16); // skip non-playable players
+    data.skip(7 * 16); // skip non-playable players
 };

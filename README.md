@@ -35,9 +35,20 @@ const Scenario = AgeScx.readScenarioNode('path/to/scenario.scx');
 ### Browser
 
 In browser, you can only use compiled version of agescx. Is smaller, uglified and without types. You have
-to include agescxjs in script tag on your website. You can find compiled version in `agescx-js/compiled/agescxjs.js`
+to include agescxjs in script tag on your website. You can find compiled version in `agescx-js/dist/web/agescx.min.js`
 
 ```html
-<script src="agescxjs.js"/>
+<script src="agescx-js/dist/web/agescx.min.js"/>
 ```
+
+## Running dev mode
+
+```
+git clone https://github.com/dderevjanik/agescx-js.git
+cd agescx-js
+npm install
+npm run dev
+```
+
+in browser, go to `localhost:8080`
 

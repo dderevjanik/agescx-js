@@ -1,5 +1,4 @@
 import readScenarioData from './ReadScenario';
-import ASData from 'asdata';
 import {createASDataView} from './Utils/FileUtils';
 
 declare const require; // for NodeJS enviroment

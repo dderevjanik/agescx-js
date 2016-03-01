@@ -1,5 +1,4 @@
 import IScenario from './../Interfaces/IScenario';
-import ITrigger from './../Interfaces/ITrigger';
 import {readTrigger} from './Trigger';
 import ASData from 'asdata';
 

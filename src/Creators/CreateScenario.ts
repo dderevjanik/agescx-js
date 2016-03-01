@@ -1,44 +1,42 @@
 import IScenario from './../Interfaces/IScenario';
-import CreatePlayer from './CreatePlayer';
-import CreateTrigger from './CreateTrigger';
-import CreateUnit from './CreateUnit';
-import CreateMessage from './CreateMessage';
-import CreateHeader from './CreateHeader';
+import createPlayer from './createPlayer';
+import createMessage from './createMessage';
+import createHeader from './CreateHeader';
 
-const CreateScenario = (): IScenario => ({
-    header: CreateHeader(),
+const createScenario = (): IScenario => ({
+    header: createHeader(),
     version: 1.22,
     players: [
-        CreatePlayer(), // GAIA
-        CreatePlayer(), // Player 1
-        CreatePlayer(), // Player 2
-        CreatePlayer(), // Player 3
-        CreatePlayer(), // Player 4
-        CreatePlayer(), // Player 5
-        CreatePlayer(), // Player 6
-        CreatePlayer(), // Player 7
-        CreatePlayer(), // Player 8
+        createPlayer(), // GAIA
+        createPlayer(), // Player 1
+        createPlayer(), // Player 2
+        createPlayer(), // Player 3
+        createPlayer(), // Player 4
+        createPlayer(), // Player 5
+        createPlayer(), // Player 6
+        createPlayer(), // Player 7
+        createPlayer(), // Player 8
     ],
     messages: {
-        objectives: CreateMessage(),
-        hints: CreateMessage(),
-        victory: CreateMessage(),
-        loss: CreateMessage(),
-        history: CreateMessage(),
-        scout: CreateMessage()
+        objectives: createMessage(),
+        hints: createMessage(),
+        victory: createMessage(),
+        loss: createMessage(),
+        history: createMessage(),
+        scout: createMessage()
     },
     cinematics: {
-        intro: "",
-        defeat: "",
-        victory: ""
+        intro: '',
+        defeat: '',
+        victory: ''
     },
     image: {
-        filename: "",
+        filename: '',
         included: 0,
         width: 0,
         height: 0,
         exists: 0,
-        raw: ""
+        raw: ''
     },
     goals: {
         conquest: 0,
@@ -59,11 +57,11 @@ const CreateScenario = (): IScenario => ({
         height: 0,
         width: 0,
         nextId: 0,
-        filename: ""
+        filename: ''
     },
     tiles: [],
     triggers: [],
     triggersOrd: []
 });
 
-export default CreateScenario;
+export default createScenario;

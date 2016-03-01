@@ -5,10 +5,11 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "webpack-dev-server --config webpack-dev.config.js",
-    "build": "npm run build:web && npm run build:noe",
+    "build": "npm run lint && npm run build:web && npm run build:node",
     "build:web": "webpack --config webpack.web.config.js",
     "build:node": "webpack --config webpack.node.config.js",
-    "prepublish": "npm run build"
+    "lint": "tslint src/**/*.js",
+    "prepublish": "npm run lint && npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,11 +29,12 @@
     "babel-core": "^6.5.2",
     "babel-loader": "^6.2.2",
     "ts-loader": "^0.8.1",
+    "tslint": "^3.5.0",
     "typescript": "^1.8.2",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "example": "git+https://github.com/dderevjanik/asdata.git"
+    "asdata": "git+https://github.com/dderevjanik/asdata.git"
   }
 }

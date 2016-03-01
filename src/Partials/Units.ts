@@ -8,7 +8,7 @@ export const readUnits = (scenario: IScenario, data: ASData): void => {
 
     allPlayers.forEach((player: IPlayer) => {
         const numOfUnits: number = data.getUint32();
-        for(let i: number = 0; i < numOfUnits; i++){
+        for(let i: number = 0; i < numOfUnits; i++) {
             player.units.push(readUnit(data));
         }
     });
