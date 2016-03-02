@@ -1,3 +1,4 @@
+import {point} from './../Utils/DataTypes';
 import IUnit from './IUnit';
 
 interface IPlayer {
@@ -25,7 +26,7 @@ interface IPlayer {
 
     diplomacy: Array<number>;    // diplomacy with others
     alliedVict?: number;         // is allied victory
-    startCam?: [number, number]; // starting camera
+    startCam?: point;   // starting camera
 
     disTechs: Array<number>;     // disabled techs
     disBuildings: Array<number>; // disabled buildings

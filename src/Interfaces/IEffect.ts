@@ -1,3 +1,5 @@
+import {point, area} from './../Utils/DataTypes';
+
 interface IEffect {
     type: number;      // effect type
     check: number;     // check
@@ -11,9 +13,8 @@ interface IEffect {
     source: number; // source player
     target: number; // targetplayer
 
-    location: [number, number]; // location
-    area: [number, number,      // area
-        number, number];
+    location: point; // location
+    area: area;
 
     unitId: number;         // selected unit id
     unitName: number;       // unit name

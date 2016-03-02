@@ -1,3 +1,5 @@
+import {area} from './../Utils/DataTypes';
+
 interface ICondition {
     type: number;       // condition type
     check: number;      // checked
@@ -10,8 +12,7 @@ interface ICondition {
     tech: number;       // technology id
     timer: number;      // how much time
     unknown: number;
-    area: [number, number, // area
-        number, number];
+    area: area;
     unitGroup: number;
     unitType: number;
     aiSignal: number;      // ai signal

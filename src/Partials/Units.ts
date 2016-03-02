@@ -1,6 +1,6 @@
 import IScenario from './../Interfaces/IScenario';
 import IPlayer from './../Interfaces/IPlayer';
-import {readUnit} from './../Structures/Unit';
+import {readUnit} from './Unit';
 import ASData from 'asdata';
 
 export const readUnits = (scenario: IScenario, data: ASData): void => {
