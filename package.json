@@ -8,8 +8,7 @@
     "build": "npm run lint && npm run build:web && npm run build:node",
     "build:web": "webpack --config webpack.web.config.js",
     "build:node": "webpack --config webpack.node.config.js",
-    "lint": "tslint src/**/*.js",
-    "prepublish": "npm run lint && npm run build"
+    "lint": "tslint src/**/*.ts"
   },
   "repository": {
     "type": "git",
