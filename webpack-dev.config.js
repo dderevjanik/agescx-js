@@ -15,6 +15,11 @@ module.exports = {
         library: 'agescx'
     },
     resolve: webpackConfig.resolve,
-    plugins: webpackConfig.plugins,
+    plugins: [
+        new webpack.DefinePlugin({
+            'NODE_ENV': '"development"',
+        }),
+        new webpack.optimize.UglifyJsPlugin()
+    ],
     module: webpackConfig.module
 };

@@ -1,3 +1,4 @@
+/* tslint:disable:no-any */
 interface IImage {
     filename: string;
     included: number;

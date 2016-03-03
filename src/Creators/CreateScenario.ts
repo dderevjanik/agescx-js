@@ -5,7 +5,7 @@ import createHeader from './CreateHeader';
 
 const createScenario = (): IScenario => ({
     header: createHeader(),
-    version: 1.22,
+    version: '1.22',
     players: [
         createPlayer(), // GAIA
         createPlayer(), // Player 1

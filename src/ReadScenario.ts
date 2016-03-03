@@ -1,26 +1,27 @@
 import * as Reader from './Reader';
+import debug from './Utils/Debug';
 import ASData from 'asdata';
 import CreateScenario from './Creators/CreateScenario';
 import IPlayer from './Interfaces/IPlayer';
+import IScenario from './Interfaces/IScenario';
 
-const readScenario = (data: ASData, debug: boolean = false) => {
+const readScenario = (data: ASData) => {
+    const scenario: IScenario = CreateScenario();
+    const allPlayers: Array<IPlayer> = scenario.players.slice(0, 9);
+    const startTime: number = new Date().getTime();
 
-    if (debug) console.log(`AgeScx: starting reading scenario`);
+    debug(`AgeScx: starting reading scenario`);
 
     // unpcompressed header
-    const scenario = CreateScenario();
-    const playablePlayers = scenario.players.slice(1, 9);
-    const allPlayers = scenario.players.slice(0, 9);
-
     Reader.readHeader(scenario, data);
 
-    if (debug) console.log(`AgeScx: header loaded, version = ${scenario.header.version}`);
+    debug(`AgeScx: header loaded, version = ${scenario.header.version}`);
 
-    data.inflate(scenario.header.size + 8);
-    scenario.setup.nextId = data.getUint32();// next unit Id
-    scenario.version = data.getFloat32();	// compressed data version
+    data.inflate(scenario.header.size + 8);          // inflate data
+    scenario.setup.nextId = data.getUint32();        // next unit Id
+    scenario.version = data.getFloat32().toFixed(2); // compressed data version
 
-    if (debug) console.log(`AgeScx: compressed data version = ${scenario.version}`);
+    debug(`AgeScx: Compressed data version = ${scenario.version}`);
 
     // player ascii names (max. 256 chars)
     allPlayers.forEach((player: IPlayer) => { // ? GAIA LAST
@@ -36,7 +37,7 @@ const readScenario = (data: ASData, debug: boolean = false) => {
 
     Reader.readPlayerData1(scenario, data);
 
-    if (debug) console.log(`AgeScx: Player Data #1 - Basic Info`);
+    debug(`AgeScx: Player Data #1 - Basic Info`);
 
     data.skip(4); // unknown, @todo finish
     data.skip(4); // unknonw, @todo finish
@@ -47,19 +48,19 @@ const readScenario = (data: ASData, debug: boolean = false) => {
     // messages section
     Reader.readMessages(scenario, data);
 
-    if (debug) console.log(`AgeScx: Messages`);
+    debug(`AgeScx: Messages`);
 
     Reader.readCinematics(scenario, data);
 
-    if (debug) console.log(`AgeScx: Cinematics`);
+    debug(`AgeScx: Cinematics`);
 
     Reader.readImage(scenario, data);
 
-    if (debug) console.log(`AgeScx: Background Image`);
+    debug(`AgeScx: Background Image, included = ${scenario.image.included}`);
 
     Reader.readPlayerData2(scenario, data);
 
-    if (debug) console.log(`AgeScx: Player Data #2 - AI section`);
+    debug(`AgeScx: Player Data #2 - AI section`);
 
     data.skip(16 * 24); // unused resources
     data.skip(4); // another separator
@@ -67,25 +68,19 @@ const readScenario = (data: ASData, debug: boolean = false) => {
     // scenario goals
     Reader.readGoals(scenario, data);
 
-    if (debug) console.log(`AgeScx: scenario Goals`);
+    debug(`AgeScx: Scenario Goals`);
 
-    playablePlayers.forEach((player: IPlayer) => {
-        for(let i: number = 0; i < 8; i++) {
-            player.diplomacy.push(data.getInt32());
-        }
-        data.skip(8 * 4);
-    });
-    data.skip(8 * 16 * 4);
+    Reader.readDiplomacy(scenario, data);
+
+    debug(`AgeScx: Diplomacy`);
 
     data.skip(11520); // unused space
     data.skip(4); // separator
     data.skip(16 * 4); // allied victory, ignored
 
-    if (debug) console.log(`AgeScx: Diplomacy`);
-
     Reader.readDisabled(scenario, data);
 
-    if (debug) console.log(`AgeScx: Disables`);
+    debug(`AgeScx: Disables`);
 
     data.skip(8); // unused
     scenario.setup.allTech = data.getInt32();
@@ -101,36 +96,38 @@ const readScenario = (data: ASData, debug: boolean = false) => {
     scenario.setup.width = data.getUint32();
     scenario.setup.height = data.getUint32();
 
-    if (debug) console.log(`AgeScx: scenario setup`);
+    debug(`AgeScx: Scenario setup`);
 
     Reader.readTiles(scenario, data);
 
-    if (debug) console.log(`AgeScx: scenario tiles`);
+    debug(`AgeScx: Scenario tiles, count = ${scenario.tiles.length}`);
 
     data.skip(4); // number of units section
 
     Reader.readPlayerData3(scenario, data);
 
-    if (debug) console.log(`AgeScx: Player Data #3 - Resources`);
+    debug(`AgeScx: Player Data #3 - Resources`);
 
     Reader.readUnits(scenario, data);
 
-    if (debug) console.log(`AgeScx: scenario Units`);
+    debug(`AgeScx: Scenario Units`);
 
     data.skip(4); // number of players, again
 
     Reader.readPlayerData4(scenario, data);
 
-    if (debug) console.log(`AgeScx: Player Data #4 - Advanced`);
+    debug(`AgeScx: Player Data #4 - Advanced`);
 
     data.skip(8); // unknown, 1.6
     data.skip(1); // unknown
 
     Reader.readTriggers(scenario, data);
 
-    if (debug) console.log(`AgeScx: Triggers`);
+    debug(`AgeScx: Triggers, count = ${scenario.triggers.length}`);
 
-    console.log(scenario);
+    debug(scenario);
+
+    debug(`Agescx: Scenario loaded, time = ${new Date().getTime() - startTime}ms`);
 };
 
 export default readScenario;

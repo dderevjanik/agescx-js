@@ -9,8 +9,8 @@ declare const require; // for NodeJS enviroment
  * @param {ArrayBuffer} path - path to file
  * @return {Scenario}
  */
-export const readScenario = (arrayBuffer: ArrayBuffer, debug: boolean = false) =>
-    readScenarioData(createASDataView(arrayBuffer), debug);
+export const readScenario = (arrayBuffer: ArrayBuffer) =>
+    readScenarioData(createASDataView(arrayBuffer));
 
 /**
  * Read scenario from a path
@@ -19,11 +19,11 @@ export const readScenario = (arrayBuffer: ArrayBuffer, debug: boolean = false) =
  * @param {boolean} debug - turn on/off console logs
  * @return {Scenario}
  */
-export const readScenarioFile = (path: string, debug: boolean = false) => {
+export const readScenarioFile = (path: string) => {
     const fs = require('fs');
     const file = fs.readFileSync(path);
 
-    return readScenarioData(createASDataView(file.buffer), debug);
+    return readScenarioData(createASDataView(file.buffer));
 };
 
 export default {

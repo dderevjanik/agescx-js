@@ -9,7 +9,7 @@ import IMessages from './IMessages';
 
 interface IScenario {
     header: IHeader;
-    version: number;
+    version: string;
     players: Array<IPlayer>;
     messages: IMessages;
     cinematics: ICinematics;

@@ -12,6 +12,5 @@ module.exports = {
         libraryTarget: 'commonjs'
     },
     resolve: webpackConfig.resolve,
-    plugins: webpackConfig.plugins,
     module: webpackConfig.module
 };

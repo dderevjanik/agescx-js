@@ -1,5 +1,6 @@
 export {readCinematics} from './Partials/Cinematics';
 export {readCondition} from './Partials/Condition';
+export {readDiplomacy} from './Partials/Diplomacy';
 export {readDisabled} from './Partials/Disabled';
 export {readEffect} from './Partials/Effect';
 export {readGoals} from './Partials/Goals';

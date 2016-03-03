@@ -1,5 +1,8 @@
 # AgeScxJS
 
+![Travis](https://travis-ci.com/dderevjanik/agescx-js.svg?token=4Xa5bKD1752yZy67EZmR&branch=master)
+![CircleCi](https://circleci.com/gh/dderevjanik/agescx-js/tree/master.svg?style=shield&circle-token=300c71444e312588d73d59155a33fef4d33b8647)
+
 Age of empires 2 scenario de/compress module for nodejs
 
 ![BigLogo](http://dderevjanik.github.io/agescx/img/aoe2-mediavel-small.jpg)
