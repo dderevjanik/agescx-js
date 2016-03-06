@@ -1,4 +1,4 @@
-declare const require;
+const require;
 
 require('./Scenarios/DefaultTest.ts');
 require('./Scenarios/MessagesTest.ts');

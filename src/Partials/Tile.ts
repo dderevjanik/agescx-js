@@ -1,4 +1,4 @@
-import ITile from './../interfaces/ITile';
+import ITile from './../Interfaces/ITile';
 import ASData from 'asdata';
 
 export const readTile = (data: ASData): ITile => ({

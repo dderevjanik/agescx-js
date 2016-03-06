@@ -1,4 +1,4 @@
-import IHeader from './../interfaces/IHeader';
+import IHeader from './../Interfaces/IHeader';
 
 const createHeader = (version: string = '1.21'): IHeader => ({
     version: '',

@@ -1,6 +1,6 @@
 import IScenario from './../Interfaces/IScenario';
-import createPlayer from './createPlayer';
-import createMessage from './createMessage';
+import createPlayer from './CreatePlayer';
+import createMessage from './CreateMessage';
 import createHeader from './CreateHeader';
 
 const createScenario = (): IScenario => ({

@@ -1,7 +1,7 @@
 import IPlayer from './../Interfaces/IPlayer';
-import eCivilization from './../enums/eCivilization';
-import ePlayerColor from './../enums/ePlayerColor';
-import eAge from './../enums/eAge';
+import eCivilization from './../Enums/eCivilization';
+import ePlayerColor from './../Enums/ePlayerColor';
+import eAge from './../Enums/eAge';
 
 const createPlayer = (): IPlayer => ({
     name: '',

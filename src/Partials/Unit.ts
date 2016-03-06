@@ -1,4 +1,4 @@
-import IUnit from './../interfaces/IUnit';
+import IUnit from './../Interfaces/IUnit';
 import ASData from 'asdata';
 
 export const readUnit = (data: ASData): IUnit => ({
