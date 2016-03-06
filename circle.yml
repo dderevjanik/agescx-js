@@ -4,9 +4,9 @@ machine:
 dependencies:
   pre:
     - npm install -g tslint
-    - npm install -g tsd
+    - npm install -g typings
     - npm install -g jasmine
-    - tsd install
+    - typings install
 test:
   override:
     - npm run test

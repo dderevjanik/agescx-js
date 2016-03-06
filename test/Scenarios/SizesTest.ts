@@ -1,4 +1,3 @@
-/// <reference path="../../typings/jasmine/jasmine.d.ts"/>
 import Scenario from '../../src/Scenario';
 import IScenario from '../../src/Interfaces/IScenario';
 

@@ -4,5 +4,9 @@
         "module": "commonjs",
         "noImplicitAny": false,
         "noLib": false
-    }
+    },
+    "exclude": [
+        "node_modules",
+        "typings"
+    ]
 }

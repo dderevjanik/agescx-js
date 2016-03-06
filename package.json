@@ -28,12 +28,9 @@
   "license": "MIT",
   "homepage": "https://github.com/dderevjanik/AgeScxJS#readme",
   "devDependencies": {
-    "babel-core": "^6.5.2",
-    "babel-loader": "^6.2.2",
     "jasmine": "^2.4.1",
     "ts-loader": "^0.8.1",
     "tslint": "^3.5.0",
-    "typescript": "^1.8.2",
     "webpack": "^1.12.13",
     "webpack-dev-server": "^1.14.1"
   },

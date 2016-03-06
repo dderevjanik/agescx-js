@@ -745,30 +745,30 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	var createPlayer_1 = __webpack_require__(27);
-	var createMessage_1 = __webpack_require__(31);
+	var CreatePlayer_1 = __webpack_require__(27);
+	var CreateMessage_1 = __webpack_require__(31);
 	var CreateHeader_1 = __webpack_require__(32);
 	var createScenario = function () { return ({
 	    header: CreateHeader_1.default(),
 	    version: '1.22',
 	    players: [
-	        createPlayer_1.default(),
-	        createPlayer_1.default(),
-	        createPlayer_1.default(),
-	        createPlayer_1.default(),
-	        createPlayer_1.default(),
-	        createPlayer_1.default(),
-	        createPlayer_1.default(),
-	        createPlayer_1.default(),
-	        createPlayer_1.default(),
+	        CreatePlayer_1.default(),
+	        CreatePlayer_1.default(),
+	        CreatePlayer_1.default(),
+	        CreatePlayer_1.default(),
+	        CreatePlayer_1.default(),
+	        CreatePlayer_1.default(),
+	        CreatePlayer_1.default(),
+	        CreatePlayer_1.default(),
+	        CreatePlayer_1.default(),
 	    ],
 	    messages: {
-	        objectives: createMessage_1.default(),
-	        hints: createMessage_1.default(),
-	        victory: createMessage_1.default(),
-	        loss: createMessage_1.default(),
-	        history: createMessage_1.default(),
-	        scout: createMessage_1.default()
+	        objectives: CreateMessage_1.default(),
+	        hints: CreateMessage_1.default(),
+	        victory: CreateMessage_1.default(),
+	        loss: CreateMessage_1.default(),
+	        history: CreateMessage_1.default(),
+	        scout: CreateMessage_1.default()
 	    },
 	    cinematics: {
 	        intro: '',
