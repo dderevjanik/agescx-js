@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-    - "4.1"
+    - "5.7.1"
 before_script:
     - npm install -g tslint
     - npm install -g tsd
