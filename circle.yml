@@ -1,0 +1,12 @@
+machine:
+  node:
+    version: 5.7.1
+dependencies:
+  pre:
+    - npm install -g tslint
+    - npm install -g tsd
+    - npm install -g jasmine
+    - tsd install
+test:
+  override:
+    - npm run test
