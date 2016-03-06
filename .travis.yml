@@ -3,4 +3,9 @@ node_js:
     - "4.1"
 before_script:
     - npm install -g tslint
-script: npm run build
+    - npm install -g tsd
+    - npm install -g jasmine
+    - tsd install
+script:
+    - npm run test
+    - npm run build

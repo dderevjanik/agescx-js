@@ -61,7 +61,8 @@ const createScenario = (): IScenario => ({
     },
     tiles: [],
     triggers: [],
-    triggersOrd: []
+    triggersOrd: [],
+    decompressTime: 0
 });
 
 export default createScenario;

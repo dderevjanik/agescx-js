@@ -1,5 +1,7 @@
+/* tslint:disable:no-any */
 import readScenarioData from './ReadScenario';
 import {createASDataView} from './Utils/FileUtils';
+import IScenario from './Interfaces/IScenario';
 
 declare const require; // for NodeJS enviroment
 
@@ -9,7 +11,7 @@ declare const require; // for NodeJS enviroment
  * @param {ArrayBuffer} path - path to file
  * @return {Scenario}
  */
-export const readScenario = (arrayBuffer: ArrayBuffer) =>
+export const readScenario = (arrayBuffer: ArrayBuffer): IScenario =>
     readScenarioData(createASDataView(arrayBuffer));
 
 /**
@@ -19,11 +21,10 @@ export const readScenario = (arrayBuffer: ArrayBuffer) =>
  * @param {boolean} debug - turn on/off console logs
  * @return {Scenario}
  */
-export const readScenarioFile = (path: string) => {
+export const readScenarioFile = (path: string): IScenario => {
     const fs = require('fs');
-    const file = fs.readFileSync(path);
-
-    return readScenarioData(createASDataView(file.buffer));
+    const file: any = fs.readFileSync(path);
+    return readScenarioData(createASDataView(file));
 };
 
 export default {

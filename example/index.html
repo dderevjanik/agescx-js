@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AgeScx</title>
+    <link href="css/jsontree.css" rel="stylesheet">
+    <script src="js/jsontree.min.js"></script>
+</head>
+<body>
+    <script src="../build/index.js"></script>
+    <script>
+        function openFile(e) {
+            console.log('uploading a scenario');
+            var inpFile = event.target;
+
+            var reader = new FileReader();
+            reader.onload = function() {
+                console.log('scenario uploaded');
+                var arrayBuffer = reader.result;
+                var scenario = agescx.readScenario(arrayBuffer, true);
+                for(var i = 0; i < scenario.players.length; i++) {
+                    scenario.players[i].units = 'Cannot Render in HTML';
+                    scenario.players[i].disBuildings = 'Cannot Render in HTML';
+                    scenario.players[i].disUnits = 'Cannot Render in HTML';
+                    scenario.players[i].disTechs = 'Cannot Render in HTML';
+                    scenario.players[i].diplomacy = 'Cannot Render in HTML';
+                }
+                scenario.tiles = 'Cannot Render in HTML';
+                scenario.triggers = 'Cannot Render in HTML';
+
+                document.getElementById('scenario').innerHTML = JSONTree.create(scenario, {indent: 4});
+            }
+            reader.readAsArrayBuffer(inpFile.files[0]);
+        };
+    </script>
+    <h1>AgeScx - JS</h1>
+    <p>This is demo how agescx works in browser enviroment</p>
+    <p>Please, upload a scenario (currently is only supported 1.22 version)</p>
+    <input type="file" id="inpScenario" placeholder="select a scenario to upload" onchange="openFile(event)"/>
+    <div id="scenario">
+        <!-- scenario as json tree -->
+    </div>
+</body>
+</html>

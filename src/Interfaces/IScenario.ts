@@ -27,6 +27,7 @@ interface IScenario {
     tiles: Array<ITile>;
     triggers: Array<ITrigger>;
     triggersOrd: Array<number>;
+    decompressTime: number; // @todo Add debug section for time, chunks and othr.
 };
 
 export default IScenario;
