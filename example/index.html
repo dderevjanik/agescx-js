@@ -21,9 +21,9 @@
                 var scenario = agescx.readScenario(arrayBuffer, true);
                 for(var i = 0; i < scenario.players.length; i++) {
                     scenario.players[i].units = scenario.players[i].units.slice(0, 10).concat([msg]);
-                    scenario.players[i].disBuildings = scenario.players[i].disBuildings.slice(0, 10).concat([msg]);
-                    scenario.players[i].disUnits = scenario.players[i].disUnits.slice(0, 10).concat([msg]);
-                    scenario.players[i].disTechs = scenario.players[i].disTechs.slice(0, 10).concat([msg]);
+                    scenario.players[i].disabled.buildings = scenario.players[i].disabled.buildings.slice(0, 10).concat([msg]);
+                    scenario.players[i].disabled.units = scenario.players[i].disabled.units.slice(0, 10).concat([msg]);
+                    scenario.players[i].disabled.techs = scenario.players[i].disabled.techs.slice(0, 10).concat([msg]);
                 }
                 scenario.tiles = scenario.tiles.slice(0, 10).concat([msg]);
                 scenario.triggers = scenario.triggers.slice(0, 10).concat([msg]);

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "webpack --config webpack.test.config.js && jasmine JASMINE_CONFIG_PATH=jasmine.json",
     "dev": "webpack-dev-server --config webpack-dev.config.js",
-    "build": "npm run lint && npm run build:web && npm run build:node",
+    "build": "npm run lint:src && npm run build:web && npm run build:node",
     "build:web": "webpack --config webpack.web.config.js",
     "build:node": "webpack --config webpack.node.config.js",
     "lint": "npm run lint:src && npm run lint:test",

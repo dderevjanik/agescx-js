@@ -20,7 +20,8 @@ module.exports = {
         new webpack.DefinePlugin({
             'PROCESS_ENV': '"web"',
             'VERSION': JSON.stringify(require('./package.json').version)
-        })
+        }),
+        new webpack.optimize.UglifyJsPlugin()
     ],
     module: webpackConfig.module
 };
