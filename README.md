@@ -2,6 +2,8 @@
 
 ![Travis](https://travis-ci.com/dderevjanik/agescx-js.svg?token=4Xa5bKD1752yZy67EZmR&branch=master)
 ![CircleCi](https://circleci.com/gh/dderevjanik/agescx-js/tree/master.svg?style=shield&circle-token=300c71444e312588d73d59155a33fef4d33b8647)
+![DavidDM](https://david-dm.org/dderevjanik/agescx-js.svg)
+![CodeClimate](https://img.shields.io/codeclimate/github/dderevjanik/agescx-js.svg)
 
 Age of empires 2 scenario de/compress module for nodejs
 
