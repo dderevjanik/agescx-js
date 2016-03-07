@@ -5,6 +5,9 @@ import CreateScenario from './Creators/CreateScenario';
 import IPlayer from './Interfaces/IPlayer';
 import IScenario from './Interfaces/IScenario';
 
+declare const VERSION: string;
+declare const PROCESS_ENV: string;
+
 const readScenario = (data: ASData): IScenario => {
     const scenario: IScenario = CreateScenario();
     const allPlayers: Array<IPlayer> = scenario.players.slice(0, 9);
@@ -132,7 +135,13 @@ const readScenario = (data: ASData): IScenario => {
 
     debug(`Agescx: Scenario loaded, time = ${decompressTime}ms`);
 
-    scenario.decompressTime = decompressTime;
+    const endTime: number = new Date().getTime();
+
+    scenario.debug.startTime = startTime;
+    scenario.debug.endTime = endTime;
+    scenario.debug.decompressTime = decompressTime;
+    scenario.debug.version = VERSION;
+    scenario.debug.environment = PROCESS_ENV;
 
     return scenario;
 };

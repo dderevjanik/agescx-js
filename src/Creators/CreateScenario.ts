@@ -62,7 +62,13 @@ const createScenario = (): IScenario => ({
     tiles: [],
     triggers: [],
     triggersOrd: [],
-    decompressTime: 0
+    debug: {
+        version: '',
+        startTime: 0,
+        endTime: 0,
+        environment: '',
+        decompressTime: 0
+    }
 });
 
 export default createScenario;

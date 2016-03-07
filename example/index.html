@@ -9,6 +9,7 @@
 <body>
     <script src="../build/index.js"></script>
     <script>
+        var msg = '...';
         function openFile(e) {
             console.log('uploading a scenario');
             var inpFile = event.target;
@@ -19,16 +20,16 @@
                 var arrayBuffer = reader.result;
                 var scenario = agescx.readScenario(arrayBuffer, true);
                 for(var i = 0; i < scenario.players.length; i++) {
-                    scenario.players[i].units = 'Cannot Render in HTML';
-                    scenario.players[i].disBuildings = 'Cannot Render in HTML';
-                    scenario.players[i].disUnits = 'Cannot Render in HTML';
-                    scenario.players[i].disTechs = 'Cannot Render in HTML';
-                    scenario.players[i].diplomacy = 'Cannot Render in HTML';
+                    scenario.players[i].units = scenario.players[i].units.slice(0, 10).concat([msg]);
+                    scenario.players[i].disBuildings = scenario.players[i].disBuildings.slice(0, 10).concat([msg]);
+                    scenario.players[i].disUnits = scenario.players[i].disUnits.slice(0, 10).concat([msg]);
+                    scenario.players[i].disTechs = scenario.players[i].disTechs.slice(0, 10).concat([msg]);
                 }
-                scenario.tiles = 'Cannot Render in HTML';
-                scenario.triggers = 'Cannot Render in HTML';
+                scenario.tiles = scenario.tiles.slice(0, 10).concat([msg]);
+                scenario.triggers = scenario.triggers.slice(0, 10).concat([msg]);
 
                 document.getElementById('scenario').innerHTML = JSONTree.create(scenario, {indent: 4});
+                document.getElementById('warn').innerHTML = "Html will display max 10 unit per player";
             }
             reader.readAsArrayBuffer(inpFile.files[0]);
         };
@@ -37,6 +38,7 @@
     <p>This is demo how agescx works in browser enviroment</p>
     <p>Please, upload a scenario (currently is only supported 1.22 version)</p>
     <input type="file" id="inpScenario" placeholder="select a scenario to upload" onchange="openFile(event)"/>
+    <h3 id="warn"></h3>
     <div id="scenario">
         <!-- scenario as json tree -->
     </div>

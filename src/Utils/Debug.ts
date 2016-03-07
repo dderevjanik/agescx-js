@@ -1,7 +1,7 @@
 /* tslint:disable:no-any */
-declare const NODE_ENV;
+declare const PROCESS_ENV;
 
-const isDev: boolean = (NODE_ENV === 'development');
+const isDev: boolean = (PROCESS_ENV === 'development');
 
 const debug = (text: any): any =>
     (isDev) ? console.log(text) : undefined;

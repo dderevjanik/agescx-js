@@ -7,7 +7,10 @@ module.exports = {
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
     },
     plugins: [
-        new webpack.optimize.UglifyJsPlugin()
+        new webpack.optimize.UglifyJsPlugin(),
+        new webpack.DefinePlugin({
+            'VERSION': JSON.stringify(require('./package.json').version)
+        })
     ],
     module: {
         loaders: [

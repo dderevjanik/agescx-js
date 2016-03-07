@@ -7,7 +7,8 @@ module.exports = {
     resolve: webpackConfig.resolve,
     plugins: [
         new webpack.DefinePlugin({
-            'NODE_ENV': '"test"',
+            'PROCESS_ENV': '"test"',
+            'VERSION': JSON.stringify(require('./package.json').version)
         })
     ],
     module: {

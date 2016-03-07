@@ -6,6 +6,7 @@ import IHeader from './IHeader';
 import IGoals from './IGoals';
 import ICinematics from './ICinematics';
 import IMessages from './IMessages';
+import IDebug from './IDebug';
 
 interface IScenario {
     header: IHeader;
@@ -27,7 +28,7 @@ interface IScenario {
     tiles: Array<ITile>;
     triggers: Array<ITrigger>;
     triggersOrd: Array<number>;
-    decompressTime: number; // @todo Add debug section for time, chunks and othr.
+    debug: IDebug;
 };
 
 export default IScenario;

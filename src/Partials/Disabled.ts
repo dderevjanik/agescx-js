@@ -8,7 +8,7 @@ export const readDisabled = (scenario: IScenario, data: ASData): void => {
     data.skip(16 * 4); // techs count
     playablePlayers.forEach((player: IPlayer) => {
         for(let i: number = 0; i < 30; i++) {
-            player.disTechs.push(data.getInt32());
+            player.disabled.techs.push(data.getUint32());
         }
     });
     data.skip(4 * 8 * 30); // skip for another players
@@ -17,7 +17,7 @@ export const readDisabled = (scenario: IScenario, data: ASData): void => {
     data.skip(16 * 4); // units count
     playablePlayers.forEach((player: IPlayer) => {
         for(let i: number = 0; i < 30; i++) {
-            player.disUnits.push(data.getInt32());
+            player.disabled.units.push(data.getUint32());
         }
     });
     data.skip(4 * 8 * 30); // for another players
@@ -26,7 +26,7 @@ export const readDisabled = (scenario: IScenario, data: ASData): void => {
     data.skip(16 * 4); // buildings count
     playablePlayers.forEach((player: IPlayer) => {
         for(let i: number = 0; i < 20; i++) {
-            player.disBuildings.push(data.getInt32());
+            player.disabled.buildings.push(data.getUint32());
         }
     });
     data.skip(4 * 8 * 20); // for another players

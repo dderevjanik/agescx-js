@@ -16,6 +16,11 @@ module.exports = {
         libraryTarget: 'var'
     },
     resolve: webpackConfig.resolve,
-    plugins: webpackConfig.plugins,
+    plugins: [
+        new webpack.DefinePlugin({
+            'PROCESS_ENV': '"web"',
+            'VERSION': JSON.stringify(require('./package.json').version)
+        })
+    ],
     module: webpackConfig.module
 };

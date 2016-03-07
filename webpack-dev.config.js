@@ -17,7 +17,8 @@ module.exports = {
     resolve: webpackConfig.resolve,
     plugins: [
         new webpack.DefinePlugin({
-            'NODE_ENV': '"development"',
+            'PROCESS_ENV': '"development"',
+            'VERSION': JSON.stringify(require('./package.json').version)
         }),
         new webpack.optimize.UglifyJsPlugin()
     ],

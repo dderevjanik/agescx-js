@@ -1,5 +1,6 @@
 import {point} from './../Utils/DataTypes';
 import IUnit from './IUnit';
+import IDisabled from './IDisabled';
 
 interface IPlayer {
     name: string;       // player in-game name
@@ -28,9 +29,7 @@ interface IPlayer {
     alliedVict?: number;         // is allied victory
     startCam?: point;   // starting camera
 
-    disTechs: Array<number>;     // disabled techs
-    disBuildings: Array<number>; // disabled buildings
-    disUnits: Array<number>;     // disabled units
+    disabled: IDisabled;
 
     unk1?: number;
     unk2?: number;

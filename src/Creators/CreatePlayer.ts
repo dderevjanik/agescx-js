@@ -27,9 +27,11 @@ const createPlayer = (): IPlayer => ({
     diplomacy: [],
     alliedVict: 0,
     startCam: [0, 0],
-    disTechs: [],
-    disBuildings: [],
-    disUnits: [],
+    disabled: {
+        techs: [],
+        units: [],
+        buildings: []
+    },
     units: []
 });
 
