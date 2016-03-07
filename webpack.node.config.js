@@ -13,7 +13,6 @@ module.exports = {
     },
     resolve: webpackConfig.resolve,
     plugins: [
-        new webpack.optimize.UglifyJsPlugin(),
         new webpack.DefinePlugin({
             'PROCESS_ENV': '"node"',
             'VERSION': JSON.stringify(require('./package.json').version)

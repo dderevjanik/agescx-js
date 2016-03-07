@@ -1,7 +1,8 @@
 # Todo
 
+- [ ] :runner: Add Docs
 - [x] Split `readScenario.ts` into smaller sections, check [documentation](http://dderevjanik.github.io/agescx/formatscx/)
-- [ ] :runner: Implement tests (Jake?)
+- [x] Implement tests (Jake?)
 - [x] Better debug
 - [x] Use primitive types in app
 - [x] TSlinter
