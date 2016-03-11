@@ -19,7 +19,6 @@
 - [mongolia.scx](mongolia.scx)
 - [nomad.scx](nomad.scx)
 - [oasis.scx](oasis.scx)
-- [README.MD](README.MD)
 - [rivers.scx](rivers.scx)
 - [salt-marsh.scx](salt-marsh.scx)
 - [scandinavia.scx](scandinavia.scx)

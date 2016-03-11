@@ -5,6 +5,7 @@
 Scenario object:
 
 - [Cinematics](#cinematics)
+- [Debug](#debug)
 - [Goals](#goals)
 - [Header](#header)
 - [Image](#image)
@@ -12,13 +13,13 @@ Scenario object:
     - [Message](#message)
 - [Players](#players)
     - [Units](#units)
+        - [Disabled](#disabled)
 - [Setup](#setup)
 - [Tiles](#tiles)
 - [Triggers](#triggers)
     - [Conditions](#conditions)
     - [Effects](#effects)
 - [Version](#version)
-- [Debug](#debug)
 
 ## Cinematics
 
@@ -27,6 +28,16 @@ Scenario object:
 | defeat            | string            | filename          |
 | intro             | string            | filename          |
 | victory           | string            | filename          |
+
+## Debug
+
+| Name              | Type                          | Desc                              |
+|-------------------|-------------------------------|-----------------------------------|
+| decompressTime    | number                        | decompression time                |
+| startTime         | number                        | starting date of decompression    |
+| endTime           | number                        | ending date of decompresion       |
+| version           | string                        | agescx version                    |
+| environment       | string                        | web or node                       |
 
 ## Goals
 
@@ -106,9 +117,7 @@ Players property is array of [Players](#player)
 | color             | number                      | player color          |
 | constName         | string                      | const name            |
 | diplomacy         | Array of number             | stance to players     |
-| disBuildings      | Array of number             | ids to dis. build.    |
-| disTechs          | Array of number             | ids to dis. build.    |
-| disUnits          | Array of number             | ids to dis. build.    |
+| disabled          | [Disabled](#disabled)       |                       |
 | food              | number                      | starting food         |
 | gold              | number                      | starting gold         |
 | human             | number                      | ? is human            |
@@ -120,7 +129,15 @@ Players property is array of [Players](#player)
 | stone             | number                      | starting stone        |
 | units             | Array of [units](#units)    | units                 |
 
-### Units
+#### Disabled
+
+| Name              | Type                        | Desc                  |
+|-------------------|-----------------------------|-----------------------|
+| buildings         | Array of number             | ids of dis. build.    |
+| techs             | Array of number             | ids of dis. techs.    |
+| units             | Array of number             | ids of dis. units.    |
+
+#### Units
 
 | Name              | Type                        | Desc                  |
 |-------------------|-----------------------------|-----------------------|
@@ -141,9 +158,8 @@ Players property is array of [Players](#player)
 | filename          | string                      | unit type             |
 | height            | number                      | scenario height       |
 | nextId            | number                      | next unit id          |
-| startCam          | \[number, number]\          | starting camera x, y  |
+| startCam          | \[number, number\]          | starting camera x, y  |
 | width             | number                      | scenario width        |
-
 
 ## Tiles
 
@@ -166,8 +182,25 @@ Players property is array of [Players](#player)
 
 ### Trigger
 
-| Name              | Type                          | Desc                  |
-|-------------------|-------------------------------|-----------------------|
+| Name              | Type                              | Desc                          |
+|-------------------|-----------------------------------|-------------------------------|
+| conditions        | Array of [Condition](#condition)  | list of conditions            |
+| conditionsOrd     | Array of number                   | conditions order              |
+| desc              | number                            | ? description                 |
+| descOrd           | number                            | description order on object.  |
+| effects           | Array of [Effect](#effect)        | list of effects               |
+| effectsOrd        | Array of number                   | effects order                 |
+| enable            | number                            | ? enabled                     |
+| loop              | number                            | ? loop                        |
+| name              | string                            | trigger name                  |
+| strId             | number                            | trigger string id             |
+| text              | string                            | description to display        |
+| timeStart         | number                            | time before start             |
 
+#### Condition
 
-## Debug
+TODO
+
+#### Effect
+
+TODO
