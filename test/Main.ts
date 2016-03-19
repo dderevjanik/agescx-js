@@ -1,4 +1,4 @@
-/// <reference path="../typings/main/ambient/jasmine/jasmine.d.ts"/>
+/// <reference path="../typings/main/ambient/jasmine/index.d.ts"/>
 declare let require;
 
 require('./Scenarios/DefaultTest.ts');
