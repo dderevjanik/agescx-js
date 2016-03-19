@@ -2,7 +2,7 @@
 
 ## Table of Contents
 
-Scenario object:
+Scenario object (ordered):
 
 - [Cinematics](#cinematics)
 - [Debug](#debug)
@@ -199,8 +199,46 @@ Players property is array of [Players](#player)
 
 #### Condition
 
-TODO
+| Name              | Type                              | Desc                          |
+|-------------------|-----------------------------------|-------------------------------|
+| aiSignal          | number                            | AI Signal                     |
+| area              | \[number, number, number, number\]| affected area                 |
+| amount            | number                            | amount of resources           |
+| check             | number                            | ? is checked                  |
+| resource          | number                            | resource                      |
+| source            | number                            | source player                 |
+| tech              | number                            | technology                    |
+| timer             | number                            | how much time                 |
+| type              | number                            | effect type                   |
+| unitId            | number                            | unit id                       |
+| unitGroup         | number                            | unit group                    |
+| unitName          | number                            | unit name                     |
+| unitObject        | number                            | unit object                   |
+| unitType          | number                            | unit type                     |
 
 #### Effect
 
-TODO
+| Name              | Type                              | Desc                          |
+|-------------------|-----------------------------------|-------------------------------|
+| aiGoal            | number                            | activate AI goal              |
+| area              | \[number, number, number, number\]| affected area                 |
+| check             | number                            | ? is checked                  |
+| diplomacy         | number                            | diplomacy stance to change    |
+| instrId           | number                            | instruction string id         |
+| instrPanel        | number                            | instruction order             |
+| instrText         | number                            | instruction text              |
+| instrTime         | number                            | how long display a text       |
+| location          | \[number, number\]                | location                      |
+| resource          | number                            | resource type                 |
+| source            | number                            | source player                 |
+| soundId           | number                            | string id of sound            |
+| soundFile         | number                            | path to sound file            |
+| target            | number                            | target player                 |
+| tech              | number                            | research tech by id           |
+| triggerId         | number                            | de/activate trigger id        |
+| type              | number                            | effect type                   |
+| unitId            | number                            | selected unit id              |
+| unitGroup         | number                            | unit group                    |
+| unitName          | number                            | unit name                     |
+| unitType          | number                            | unit type                     |
+| unitIds           | Array of number                   | selected unit ids             |
