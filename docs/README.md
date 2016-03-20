@@ -1,4 +1,6 @@
-# Table of Contents
+# Docs
+
+## Table of Contents
 
 - [Tutorial](Tutorial.md)
 - [Scenario](Scenario.md)
@@ -13,10 +15,13 @@
     - [Setup](Scenario.md/#setup)
     - [Tiles](Scenario.md/#tiles)
     - [Triggers](Scenario.md/#triggers)
-        - [Conditions](Scenario.md/#conditions)
-        - [Effects](Scenario.md/#effects)
+        - [Condition](Scenario.md/#condition)
+        - [Effect](Scenario.md/#effect)
     - [Version](Scenario.md/#version)
     - [Debug](Scenario.md/#debug)
-- [Glossary](Glossary.md)
-    - [Scx](Glossary.md/#scx)
-    - [Typescript](Glossary.md/#typescript)
+- [Enums](enums/README.md)
+    - [AI Types](Aitypes.md)
+    - [Civilizations](Civilizations.md)
+    - [Conditions](Conditions.md)
+    - [Effects](Effects.md)
+    - [Player Colors](PlayerColors.md)

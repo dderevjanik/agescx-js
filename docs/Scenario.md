@@ -17,8 +17,8 @@ Scenario object (ordered):
 - [Setup](#setup)
 - [Tiles](#tiles)
 - [Triggers](#triggers)
-    - [Conditions](#conditions)
-    - [Effects](#effects)
+    - [Conditions](#condition)
+    - [Effects](#effect)
 - [Version](#version)
 
 ## Cinematics
@@ -79,14 +79,14 @@ Scenario object (ordered):
 
 ## Messages
 
-| Name              | Type              | Desc              |
-|-------------------|-------------------|-------------------|
-| hints             | Message           |                   |
-| history           | Message           |                   |
-| loss              | Message           |                   |
-| objectives        | Message           |                   |
-| scout             | Message           |                   |
-| victory           | Message           |                   |
+| Name              | Type                | Desc              |
+|-------------------|---------------------|-------------------|
+| hints             | [Message](#message) |                   |
+| history           | [Message](#message) |                   |
+| loss              | [Message](#message) |                   |
+| objectives        | [Message](#message) |                   |
+| scout             | [Message](#message) |                   |
+| victory           | [Message](#message) |                   |
 
 ### Message
 
@@ -105,29 +105,29 @@ Players property is array of [Players](#player)
 
 ### Player
 
-| Name              | Type                        | Desc                  |
-|-------------------|-----------------------------|-----------------------|
-| active            | number                      | ? is active           |
-| age               | number                      | start age             |
-| aiName            | string                      | start age             |
-| aiSource          | string                      | source code of AI     |
-| aiType            | number                      | type of AI            |
-| alliedVict        | number                      | allied victory        |
-| civ               | number                      | civilization          |
-| color             | number                      | player color          |
-| constName         | string                      | const name            |
-| diplomacy         | Array of number             | stance to players     |
-| disabled          | [Disabled](#disabled)       |                       |
-| food              | number                      | starting food         |
-| gold              | number                      | starting gold         |
-| human             | number                      | ? is human            |
-| name              | string                      | player name           |
-| nameId            | number                      | string id for name    |
-| ore               | number                      | starting ore          |
-| population        | number                      | max population        |
-| startCam          | \[number, number\]          | starting camera       |
-| stone             | number                      | starting stone        |
-| units             | Array of [units](#units)    | units                 |
+| Name              | Type                        | Desc                                        |
+|-------------------|-----------------------------|---------------------------------------------|
+| active            | number                      | ? is active                                 |
+| age               | number                      | start age                                   |
+| aiName            | string                      | ai name                                     |
+| aiSource          | string                      | source code of AI                           |
+| aiType            | number                      | [enum.aitype](enums/AiTypes.md)             |
+| alliedVict        | number                      | allied victory                              |
+| civ               | number                      | [enum.civilization](enums/Civilizations.md) |
+| color             | number                      | [enum.playerColor](enums/PlayerColors.md)   |
+| constName         | string                      | const name                                  |
+| diplomacy         | Array of number             | stance to players                           |
+| disabled          | [Disabled](#disabled)       |                                             |
+| food              | number                      | starting food                               |
+| gold              | number                      | starting gold                               |
+| human             | number                      | ? is human                                  |
+| name              | string                      | player name                                 |
+| nameId            | number                      | string id for name                          |
+| ore               | number                      | starting ore                                |
+| population        | number                      | max population                              |
+| startCam          | \[number, number\]          | starting camera                             |
+| stone             | number                      | starting stone                              |
+| units             | Array of [units](#units)    | units                                       |
 
 #### Disabled
 
@@ -182,20 +182,20 @@ Players property is array of [Players](#player)
 
 ### Trigger
 
-| Name              | Type                              | Desc                          |
-|-------------------|-----------------------------------|-------------------------------|
-| conditions        | Array of [Condition](#condition)  | list of conditions            |
-| conditionsOrd     | Array of number                   | conditions order              |
-| desc              | number                            | ? description                 |
-| descOrd           | number                            | description order on object.  |
-| effects           | Array of [Effect](#effect)        | list of effects               |
-| effectsOrd        | Array of number                   | effects order                 |
-| enable            | number                            | ? enabled                     |
-| loop              | number                            | ? loop                        |
-| name              | string                            | trigger name                  |
-| strId             | number                            | trigger string id             |
-| text              | string                            | description to display        |
-| timeStart         | number                            | time before start             |
+| Name              | Type                              | Desc                                  |
+|-------------------|-----------------------------------|---------------------------------------|
+| conditions        | Array of [Condition](#condition)  | [enum.condition](enums/conditions.md) |
+| conditionsOrd     | Array of number                   | conditions order                      |
+| desc              | number                            | ? description                         |
+| descOrd           | number                            | description order on object.          |
+| effects           | Array of [Effect](#effect)        | list of effects                       |
+| effectsOrd        | Array of number                   | effects order                         |
+| enable            | number                            | ? enabled                             |
+| loop              | number                            | ? loop                                |
+| name              | string                            | trigger name                          |
+| strId             | number                            | trigger string id                     |
+| text              | string                            | description to display                |
+| timeStart         | number                            | time before start                     |
 
 #### Condition
 
@@ -218,27 +218,27 @@ Players property is array of [Players](#player)
 
 #### Effect
 
-| Name              | Type                              | Desc                          |
-|-------------------|-----------------------------------|-------------------------------|
-| aiGoal            | number                            | activate AI goal              |
-| area              | \[number, number, number, number\]| affected area                 |
-| check             | number                            | ? is checked                  |
-| diplomacy         | number                            | diplomacy stance to change    |
-| instrId           | number                            | instruction string id         |
-| instrPanel        | number                            | instruction order             |
-| instrText         | number                            | instruction text              |
-| instrTime         | number                            | how long display a text       |
-| location          | \[number, number\]                | location                      |
-| resource          | number                            | resource type                 |
-| source            | number                            | source player                 |
-| soundId           | number                            | string id of sound            |
-| soundFile         | number                            | path to sound file            |
-| target            | number                            | target player                 |
-| tech              | number                            | research tech by id           |
-| triggerId         | number                            | de/activate trigger id        |
-| type              | number                            | effect type                   |
-| unitId            | number                            | selected unit id              |
-| unitGroup         | number                            | unit group                    |
-| unitName          | number                            | unit name                     |
-| unitType          | number                            | unit type                     |
-| unitIds           | Array of number                   | selected unit ids             |
+| Name              | Type                              | Desc                             |
+|-------------------|-----------------------------------|----------------------------------|
+| aiGoal            | number                            | activate AI goal                 |
+| area              | \[number, number, number, number\]| affected area                    |
+| check             | number                            | ? is checked                     |
+| diplomacy         | number                            | diplomacy stance to change       |
+| instrId           | number                            | instruction string id            |
+| instrPanel        | number                            | instruction order                |
+| instrText         | number                            | instruction text                 |
+| instrTime         | number                            | how long display a text          |
+| location          | \[number, number\]                | location                         |
+| resource          | number                            | resource type                    |
+| source            | number                            | source player                    |
+| soundId           | number                            | string id of sound               |
+| soundFile         | number                            | path to sound file               |
+| target            | number                            | target player                    |
+| tech              | number                            | research tech by id              |
+| triggerId         | number                            | de/activate trigger id           |
+| type              | number                            | [enum.effect](enums/effects.md)  |
+| unitId            | number                            | selected unit id                 |
+| unitGroup         | number                            | unit group                       |
+| unitName          | number                            | unit name                        |
+| unitType          | number                            | unit type                        |
+| unitIds           | Array of number                   | selected unit ids                |
