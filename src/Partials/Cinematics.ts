@@ -9,3 +9,7 @@ export const readCinematics = (scenario: IScenario, data: ASData): void => {
     cinematics.defeat = data.getStr16();
     cinematics.victory = data.getStr16();
 };
+
+export default {
+    readCinematics: readCinematics
+};

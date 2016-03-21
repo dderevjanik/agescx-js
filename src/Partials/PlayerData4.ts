@@ -29,3 +29,7 @@ export const readPlayerData4 = (scenario: IScenario, data: ASData): void => {
         data.skip(4);
     });
 };
+
+export default {
+    readPlayerData4: readPlayerData4
+};

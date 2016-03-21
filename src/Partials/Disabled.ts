@@ -32,3 +32,7 @@ export const readDisabled = (scenario: IScenario, data: ASData): void => {
     data.skip(4 * 8 * 20); // for another players
     // @todo extra buildings for 1.30 version
 };
+
+export default {
+    readDisabled: readDisabled
+};

@@ -26,3 +26,7 @@ export const readCondition = (data: ASData): ICondition => {
 
     return condition;
 };
+
+export default {
+    readCondition: readCondition
+};

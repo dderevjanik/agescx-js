@@ -22,7 +22,7 @@ interface IEffect {
     unitType: number;       // unit type
     unitIds: Array<number>; // selected unit ids
 
-    instrId: number;    // instruciton string Id
+    instrId: number;    // instruction string Id
     instrPanel: number; // instuction order
     instrText: string;  // text to display
     instrTime: number;  // how long display a text

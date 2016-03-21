@@ -39,3 +39,7 @@ export const readTrigger = (scenario: IScenario, data: ASData): ITrigger => {
 
     return trigger;
 };
+
+export default {
+    readTrigger: readTrigger
+};

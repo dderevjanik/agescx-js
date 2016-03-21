@@ -12,3 +12,7 @@ export const readUnit = (data: ASData): IUnit => ({
     frame: data.getUint16(),
     inId: data.getInt32()
 });
+
+export default {
+    readUnit: readUnit
+};

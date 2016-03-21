@@ -12,7 +12,7 @@ export const readEffect = (data: ASData): IEffect => {
     effect.resource = data.getInt32();
     effect.diplomacy = data.getInt32();
 
-    const unitsCount = data.getInt32();
+    const unitsCount: number = data.getInt32();
 
     effect.unitId = data.getInt32();
     effect.unitName = data.getInt32();
@@ -25,11 +25,11 @@ export const readEffect = (data: ASData): IEffect => {
     effect.triggerId = data.getInt32();
     effect.location = [
         data.getInt32(), data.getInt32()
-        ];
+    ];
     effect.area = [
         data.getInt32(), data.getInt32(),
         data.getInt32(), data.getInt32()
-        ];
+    ];
     effect.unitGroup = data.getInt32();
     effect.unitType = data.getInt32();
     effect.instrPanel = data.getInt32(); // @Todo: InstrOrd?
@@ -41,4 +41,8 @@ export const readEffect = (data: ASData): IEffect => {
     }
 
     return effect;
+};
+
+export default {
+    readEffect: readEffect
 };

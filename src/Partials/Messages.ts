@@ -19,3 +19,7 @@ export const readMessages = (scenario: IScenario, data: ASData): void => {
     messages.history.text = data.getStr16();
     messages.scout.text = data.getStr16(); // 1.22>
 };
+
+export default {
+    readMessages: readMessages
+};

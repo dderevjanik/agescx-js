@@ -28,3 +28,7 @@ export const readImage = (scenario: IScenario, data: ASData): void => {
         data.skip(sizeImage);
     }
 };
+
+export default {
+    readImage: readImage
+};

@@ -13,3 +13,7 @@ export const readDiplomacy = (scenario: IScenario, data: ASData): void => {
     });
     data.skip(8 * 16 * 4); // skip other players
 };
+
+export default {
+    readDiplomacy: readDiplomacy
+};

@@ -13,3 +13,7 @@ export const readPlayerData1 = (scenario: IScenario, data: ASData): void => {
     });
     data.skip(7 * 16); // skip non-playable players
 };
+
+export default {
+    readPlayerData1: readPlayerData1
+};

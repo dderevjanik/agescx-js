@@ -9,3 +9,7 @@ export const readTiles = (scenario: IScenario, data: ASData) => {
         scenario.tiles.push(readTile(data));
     }
 };
+
+export default {
+    readTiles: readTiles
+};

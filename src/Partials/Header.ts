@@ -13,3 +13,7 @@ export const readHeader = (scenario: IScenario, data: ASData): void => {
     header.unknown2 = data.getInt32();     // ? unknown
     header.players = data.getInt32();
 };
+
+export default {
+    readHeader: readHeader
+};

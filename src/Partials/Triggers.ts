@@ -10,3 +10,7 @@ export const readTriggers = (scenario: IScenario, data: ASData): void => {
     }
 
 };
+
+export default {
+    readTriggers: readTriggers
+};

@@ -15,3 +15,7 @@ export const readPlayerData3 = (scenario: IScenario, data: ASData): void => {
         player.population = data.getFloat32();
     });
 };
+
+export default {
+    readPlayerData3: readPlayerData3
+};

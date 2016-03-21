@@ -6,3 +6,7 @@ export const readTile = (data: ASData): ITile => ({
     level: data.getUint8(),
     unk1: data.getUint8()
 });
+
+export default {
+    readTile: readTile
+};

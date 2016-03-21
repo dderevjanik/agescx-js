@@ -16,3 +16,7 @@ export const readGoals = (scenario: IScenario, data: ASData): void => {
     goals.score = data.getInt32();
     goals.time = data.getInt32();
 };
+
+export default {
+    readGoals: readGoals
+};
