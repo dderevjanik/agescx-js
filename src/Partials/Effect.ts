@@ -1,4 +1,5 @@
 import IEffect from './../Interfaces/IEffect';
+import {readStructures} from './../Utils/RWUtils';
 import CreateEffect from './../Creators/CreateEffect';
 import ASData from 'asdata';
 
@@ -36,9 +37,7 @@ export const readEffect = (data: ASData): IEffect => {
     effect.instrText = data.getStr32();
     effect.soundFile = data.getStr32();
 
-    for(let i: number = 0; i < unitsCount; i++) {
-        effect.unitIds.push(data.getInt32());
-    }
+    effect.unitIds = readStructures(unitsCount, () => data.getInt32());
 
     return effect;
 };

@@ -1,14 +1,11 @@
 import IScenario from './../Interfaces/IScenario';
 import {readTrigger} from './Trigger';
+import {readStructures} from './../Utils/RWUtils';
 import ASData from 'asdata';
 
 export const readTriggers = (scenario: IScenario, data: ASData): void => {
     const count: number = data.getUint32();
-
-    for(let i: number = 0; i < count; i++) {
-        scenario.triggers.push(readTrigger(scenario, data));
-    }
-
+    scenario.triggers = readStructures(count, () => readTrigger(scenario, data));
 };
 
 export default {
