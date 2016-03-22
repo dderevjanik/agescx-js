@@ -3,7 +3,7 @@
 - [ ] Support HD and UPatch versions
 - [ ] Webpack test config with HOT
 - [ ] Make unknows standard
-- [ ] Write support for agescx
+- [ ] Scenario writing
 - [ ] Test functions
 - [ ] :runner: Add Docs
 - [x] Split `readScenario.ts` into smaller sections, check [documentation](http://dderevjanik.github.io/agescx/formatscx/)
