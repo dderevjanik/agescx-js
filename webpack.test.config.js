@@ -1,3 +1,6 @@
+/**
+ * Webpack config for running a test, not HOT
+ */
 const webpack = require('webpack'),
     webpackConfig = require('./webpack.config.js'),
     path = require('path');

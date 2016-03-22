@@ -1,5 +1,7 @@
 # Scenario Random Maps - v 1.21
 
+If you want to download scenario, right click on it and **save link as**
+
 - [arabia.scx](arabia.scx)
 - [archipelago.scx](archipelago.scx)
 - [arena.scx](arena.scx)
