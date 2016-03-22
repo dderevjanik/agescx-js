@@ -1,3 +1,6 @@
+/**
+ * Webpack config for production for NODE environment
+ */
 const webpack = require('webpack'),
     webpackConfig = require('./webpack.config.js'),
     path = require('path');

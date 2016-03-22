@@ -1,5 +1,7 @@
 # Todo
 
+- [ ] Support HD and UPatch versions
+- [ ] Webpack test config with HOT
 - [ ] Make unknows standard
 - [ ] Write support for agescx
 - [ ] Test functions

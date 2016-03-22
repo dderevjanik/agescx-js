@@ -1,3 +1,6 @@
+/**
+ * Webpack config for hot reloading, lint checking and serving example page
+ */
 const webpack = require('webpack'),
     webpackConfig = require('./webpack.config.js'),
     path = require('path');

@@ -64,8 +64,11 @@ npm run dev
 
 ### Npm scripts
 
-- `npm run dev` run webpack-dev-server and enable debug
-- `npm run build` build project for production
-- `npm run build:web` build project only for browsers
-- `npm run build:node` build project only for node
-- `npm run lint` lint all .ts files
+- `npm run test` run test
+- `npm run dev` run dev version with hot-reloading
+- `npm run build` lint and build project for both environments
+- `npm run build:web` build project for web, targeting es5, minified
+- `npm run build:node` build project for node with `d.ts` support
+- `npm run lint` run lint:src and lint:test
+- `npm run lint:src` lint all .ts files in src
+- `npm run lint:test` lint all test files

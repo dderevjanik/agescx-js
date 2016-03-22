@@ -55,7 +55,16 @@ const Scenario = AgeScx.readScenarioNode('path/to/scenario.scx');
 
 ## Contributing
 
-Check [TODO.md List](TODO.md) for more information about project status
+Check [TODO.md List](TODO.md) for more information about project status.
+
+Global dependencies
+
+```
+npm install -g tsc
+npm install -g tsd
+npm install -g webpack
+npm install -g jasmine
+```
 
 ### Running dev mode
 
