@@ -1,6 +1,7 @@
 import IScenario from './../Interfaces/IScenario';
 import IPlayer from './../Interfaces/IPlayer';
 import debug from './../Utils/Debug';
+import {readStructures} from './../Utils/RWUtils';
 import {readUnit} from './Unit';
 import ASData from 'asdata';
 
