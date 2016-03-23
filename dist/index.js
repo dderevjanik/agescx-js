@@ -54,7 +54,7 @@
 	"use strict";
 	/* tslint:disable:no-any */
 	var ReadScenario_1 = __webpack_require__(2);
-	var FileUtils_1 = __webpack_require__(34);
+	var FileUtils_1 = __webpack_require__(36);
 	/**
 	 * Read uploaded scenario
 	 * @desc this function works only in web browser enviroment
@@ -72,7 +72,7 @@
 	 * @return {Scenario}
 	 */
 	exports.readScenarioFile = function (path) {
-	    var fs = __webpack_require__(53);
+	    var fs = __webpack_require__(55);
 	    var file = fs.readFileSync(path);
 	    return ReadScenario_1.default(FileUtils_1.createASDataView(file));
 	};
@@ -329,7 +329,7 @@
 
 	"use strict";
 	/**
-	 * Read structure
+	 * Read structures
 	 * @param {number} count - number of structures to read
 	 * @param {function} readFunction - a function, which return an readed structure
 	 * @return {Array<T>}
@@ -833,8 +833,10 @@
 
 	"use strict";
 	var CreatePlayer_1 = __webpack_require__(28);
-	var CreateMessage_1 = __webpack_require__(32);
-	var CreateHeader_1 = __webpack_require__(33);
+	var CreateGoals_1 = __webpack_require__(32);
+	var CreateSetup_1 = __webpack_require__(33);
+	var CreateMessage_1 = __webpack_require__(34);
+	var CreateHeader_1 = __webpack_require__(35);
 	var createScenario = function () { return ({
 	    header: CreateHeader_1.default(),
 	    version: '1.22',
@@ -870,27 +872,8 @@
 	        exists: 0,
 	        raw: ''
 	    },
-	    goals: {
-	        conquest: 0,
-	        relics: 0,
-	        exploration: 0,
-	        all: 0,
-	        mode: 0,
-	        score: 0,
-	        time: 0,
-	        unk1: 0,
-	        unk2: 0,
-	        unk3: 0
-	    },
-	    setup: {
-	        allTech: 0,
-	        aiType: 0,
-	        startCam: [0, 0],
-	        height: 0,
-	        width: 0,
-	        nextId: 0,
-	        filename: ''
-	    },
+	    goals: CreateGoals_1.default(),
+	    setup: CreateSetup_1.default(),
 	    tiles: [],
 	    triggers: [],
 	    triggersOrd: [],
@@ -1025,6 +1008,45 @@
 /***/ function(module, exports) {
 
 	"use strict";
+	var createGoals = function () { return ({
+	    conquest: 0,
+	    relics: 0,
+	    exploration: 0,
+	    all: 0,
+	    mode: 0,
+	    score: 0,
+	    time: 0,
+	    unk1: 0,
+	    unk2: 0,
+	    unk3: 0
+	}); };
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = createGoals;
+
+
+/***/ },
+/* 33 */
+/***/ function(module, exports) {
+
+	"use strict";
+	var createSetup = function () { return ({
+	    allTech: 0,
+	    aiType: 0,
+	    startCam: [0, 0],
+	    height: 0,
+	    width: 0,
+	    nextId: 0,
+	    filename: ''
+	}); };
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.default = createSetup;
+
+
+/***/ },
+/* 34 */
+/***/ function(module, exports) {
+
+	"use strict";
 	var createMessage = function () { return ({
 	    id: 0,
 	    text: ''
@@ -1034,7 +1056,7 @@
 
 
 /***/ },
-/* 33 */
+/* 35 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1055,12 +1077,12 @@
 
 
 /***/ },
-/* 34 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	/* tslint:disable:no-any */
-	var asdata_1 = __webpack_require__(35);
+	var asdata_1 = __webpack_require__(37);
 	/**
 	 * Create ASDataView from buffer
 	 * @param {ArrayBuffer} arrayBuffer - file buffer
@@ -1072,14 +1094,14 @@
 
 
 /***/ },
-/* 35 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	var ENV_BROWSER = (typeof (window) !== 'undefined') ? true : false;
 	var ENV_NODE = !(ENV_BROWSER);
-	var zlib = (ENV_NODE) ? __webpack_require__(36) : null;
-	var pako = (ENV_BROWSER) ? __webpack_require__(37) : null;
+	var zlib = (ENV_NODE) ? __webpack_require__(38) : null;
+	var pako = (ENV_BROWSER) ? __webpack_require__(39) : null;
 	/**
 	 * Initialize function polyfil for client-side pako library
 	 * @retunr {IReadPolyfil}
@@ -1288,23 +1310,23 @@
 
 
 /***/ },
-/* 36 */
+/* 38 */
 /***/ function(module, exports) {
 
 	module.exports = require("zlib");
 
 /***/ },
-/* 37 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Top level file is just a mixin of submodules & constants
 	'use strict';
 
-	var assign    = __webpack_require__(38).assign;
+	var assign    = __webpack_require__(40).assign;
 
-	var deflate   = __webpack_require__(39);
-	var inflate   = __webpack_require__(47);
-	var constants = __webpack_require__(51);
+	var deflate   = __webpack_require__(41);
+	var inflate   = __webpack_require__(49);
+	var constants = __webpack_require__(53);
 
 	var pako = {};
 
@@ -1314,7 +1336,7 @@
 
 
 /***/ },
-/* 38 */
+/* 40 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1422,17 +1444,17 @@
 
 
 /***/ },
-/* 39 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	var zlib_deflate = __webpack_require__(40);
-	var utils        = __webpack_require__(38);
-	var strings      = __webpack_require__(45);
-	var msg          = __webpack_require__(44);
-	var ZStream      = __webpack_require__(46);
+	var zlib_deflate = __webpack_require__(42);
+	var utils        = __webpack_require__(40);
+	var strings      = __webpack_require__(47);
+	var msg          = __webpack_require__(46);
+	var ZStream      = __webpack_require__(48);
 
 	var toString = Object.prototype.toString;
 
@@ -1805,16 +1827,16 @@
 
 
 /***/ },
-/* 40 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
-	var utils   = __webpack_require__(38);
-	var trees   = __webpack_require__(41);
-	var adler32 = __webpack_require__(42);
-	var crc32   = __webpack_require__(43);
-	var msg     = __webpack_require__(44);
+	var utils   = __webpack_require__(40);
+	var trees   = __webpack_require__(43);
+	var adler32 = __webpack_require__(44);
+	var crc32   = __webpack_require__(45);
+	var msg     = __webpack_require__(46);
 
 	/* Public constants ==========================================================*/
 	/* ===========================================================================*/
@@ -3576,13 +3598,13 @@
 
 
 /***/ },
-/* 41 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	var utils = __webpack_require__(38);
+	var utils = __webpack_require__(40);
 
 	/* Public constants ==========================================================*/
 	/* ===========================================================================*/
@@ -4784,7 +4806,7 @@
 
 
 /***/ },
-/* 42 */
+/* 44 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4822,7 +4844,7 @@
 
 
 /***/ },
-/* 43 */
+/* 45 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4869,7 +4891,7 @@
 
 
 /***/ },
-/* 44 */
+/* 46 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -4888,14 +4910,14 @@
 
 
 /***/ },
-/* 45 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// String encode/decode helpers
 	'use strict';
 
 
-	var utils = __webpack_require__(38);
+	var utils = __webpack_require__(40);
 
 
 	// Quick check if we can use fast array to bin string conversion
@@ -5079,7 +5101,7 @@
 
 
 /***/ },
-/* 46 */
+/* 48 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -5114,19 +5136,19 @@
 
 
 /***/ },
-/* 47 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	var zlib_inflate = __webpack_require__(48);
-	var utils        = __webpack_require__(38);
-	var strings      = __webpack_require__(45);
-	var c            = __webpack_require__(51);
-	var msg          = __webpack_require__(44);
-	var ZStream      = __webpack_require__(46);
-	var GZheader     = __webpack_require__(52);
+	var zlib_inflate = __webpack_require__(50);
+	var utils        = __webpack_require__(40);
+	var strings      = __webpack_require__(47);
+	var c            = __webpack_require__(53);
+	var msg          = __webpack_require__(46);
+	var ZStream      = __webpack_require__(48);
+	var GZheader     = __webpack_require__(54);
 
 	var toString = Object.prototype.toString;
 
@@ -5521,17 +5543,17 @@
 
 
 /***/ },
-/* 48 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	var utils         = __webpack_require__(38);
-	var adler32       = __webpack_require__(42);
-	var crc32         = __webpack_require__(43);
-	var inflate_fast  = __webpack_require__(49);
-	var inflate_table = __webpack_require__(50);
+	var utils         = __webpack_require__(40);
+	var adler32       = __webpack_require__(44);
+	var crc32         = __webpack_require__(45);
+	var inflate_fast  = __webpack_require__(51);
+	var inflate_table = __webpack_require__(52);
 
 	var CODES = 0;
 	var LENS = 1;
@@ -7030,7 +7052,7 @@
 
 
 /***/ },
-/* 49 */
+/* 51 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -7362,13 +7384,13 @@
 
 
 /***/ },
-/* 50 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 
 
-	var utils = __webpack_require__(38);
+	var utils = __webpack_require__(40);
 
 	var MAXBITS = 15;
 	var ENOUGH_LENS = 852;
@@ -7695,7 +7717,7 @@
 
 
 /***/ },
-/* 51 */
+/* 53 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -7751,7 +7773,7 @@
 
 
 /***/ },
-/* 52 */
+/* 54 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -7797,7 +7819,7 @@
 
 
 /***/ },
-/* 53 */
+/* 55 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
