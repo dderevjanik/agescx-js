@@ -1,11 +1,11 @@
 interface IGoals {
-    conquest: number;
-    relics: number;
-    exploration: number;
-    mode: number;
-    score: number;
-    time: number;
-    all: number;
+    conquest: number;       // crush all enemies
+    relics: number;         // num. of relics
+    exploration: number;    // of many % you have to discover
+    mode: number;           // mode
+    score: number;          // how much score is needed to win
+    time: number;           // time for scenario
+    all: number;            // all goals
     unk1: number;
     unk2: number;
     unk3: number;

@@ -1,5 +1,7 @@
 import IScenario from './../Interfaces/IScenario';
 import createPlayer from './CreatePlayer';
+import createGoals from './CreateGoals';
+import createSetup from './CreateSetup';
 import createMessage from './CreateMessage';
 import createHeader from './CreateHeader';
 
@@ -38,27 +40,8 @@ const createScenario = (): IScenario => ({
         exists: 0,
         raw: ''
     },
-    goals: {
-        conquest: 0,
-        relics: 0,
-        exploration: 0,
-        all: 0,
-        mode: 0,
-        score: 0,
-        time: 0,
-        unk1: 0,
-        unk2: 0,
-        unk3: 0
-    },
-    setup: {
-        allTech: 0,
-        aiType: 0,
-        startCam: [0, 0],
-        height: 0,
-        width: 0,
-        nextId: 0,
-        filename: ''
-    },
+    goals: createGoals(),
+    setup: createSetup(),
     tiles: [],
     triggers: [],
     triggersOrd: [],

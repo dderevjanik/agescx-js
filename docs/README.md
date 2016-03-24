@@ -25,7 +25,7 @@
     - [Version](Scenario.md/#version) scenario version
     - [Debug](Scenario.md/#debug) informations for developers
 - [Enums](enums/README.md)
-    - [AI Types](enums/Aitypes.md)
+    - [AI Types](enums/AiTypes.md)
     - [Civilizations](enums/Civilizations.md)
     - [Conditions](enums/Conditions.md)
     - [Effects](enums/Effects.md)
