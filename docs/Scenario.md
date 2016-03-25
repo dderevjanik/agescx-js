@@ -2,24 +2,28 @@
 
 ## Table of Contents
 
-Scenario object (ordered):
+Scenario object (alph. ordered):
 
-- [Cinematics](#cinematics)
-- [Debug](#debug)
-- [Goals](#goals)
-- [Header](#header)
-- [Image](#image)
-- [Messages](#messages)
-    - [Message](#message)
-- [Players](#players)
-    - [Units](#units)
-        - [Disabled](#disabled)
-- [Setup](#setup)
-- [Tiles](#tiles)
-- [Triggers](#triggers)
-    - [Conditions](#condition)
-    - [Effects](#effect)
-- [Version](#version)
+- [Cinematics](#cinematics) movies
+- [Goals](#goals) scenario goals
+- [Header](#header) timestamp, basic info, scenario objectives
+- [Image](#image) background image
+- [Messages](#messages) objectives, hints, scout etc.
+    - [Message](#message) specific message
+- [Players](#players) list of players
+    - [Player](#player) informatiom about player
+        - [Disabled](#disabled) list of disabled units, techs and buildings
+        - [Units](#units) list of units
+            - [Unit](#unit) information about unit
+- [Setup](#setup) map size, global goals
+- [Tiles](#tiles) list of tiles
+    - [Tile](#tile) informatiom about tile
+- [Triggers](#triggers)  list of triggers
+    - [Trigger](#trigger) information about trigger
+        - [Condition](#condition) informatiom about condition
+        - [Effect](#effect) informatiom about effect
+- [Version](#version) scenario version
+- [Debug](#debug) informations for developers
 
 ## Cinematics
 
@@ -184,7 +188,7 @@ Players property is array of [Players](#player)
 
 | Name              | Type                              | Desc                                  |
 |-------------------|-----------------------------------|---------------------------------------|
-| conditions        | Array of [Condition](#condition)  | [enum.condition](enums/conditions.md) |
+| conditions        | Array of [Condition](#condition)  | list of conditions                    |
 | conditionsOrd     | Array of number                   | conditions order                      |
 | desc              | number                            | ? description                         |
 | descOrd           | number                            | description order on object.          |
