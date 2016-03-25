@@ -25,3 +25,4 @@
     - [Conditions](enums/Conditions.md)
     - [Effects](enums/Effects.md)
     - [Player Colors](enums/PlayerColors.md)
+    - [Scenario Sizes](enums/ScenarioSizes.md)

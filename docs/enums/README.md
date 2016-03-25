@@ -7,3 +7,4 @@
 - [Conditions](Conditions.md)
 - [Effects](Effects.md)
 - [Player Colors](PlayerColors.md)
+- [Scenario Sizes](ScenarioSizes.md)
