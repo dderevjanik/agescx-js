@@ -32,22 +32,22 @@ add script tag.
 ```
 
 To open any scenario file in your browser, first you need to upload a file to and then read Arraybuffer from it.
-Small example how to proper load scenario in browser.
+Small example how to proper load scenario in browser should looks like.
 
 ```html
 <script>
-    function openFile(e) {
-        console.log('uploading a scenario');
-        var inpFile = event.target;
+function openFile(e) {
+    console.log('uploading a scenario');
+    var inpFile = event.target;
 
-        var reader = new FileReader();
-        reader.onload = function() {
-            console.log('scenario uploaded');
-            var arrayBuffer = reader.result;
-            agescx.readScenario(arrayBuffer, true);
-        }
-        reader.readAsArrayBuffer(inpFile.files[0]);
-    };
+    var reader = new FileReader();
+    reader.onload = function() {
+        console.log('scenario uploaded');
+        var arrayBuffer = reader.result;
+        agescx.readScenario(arrayBuffer, true);
+    }
+    reader.readAsArrayBuffer(inpFile.files[0]);
+};
 </script>
 <input type="file" id="inpScenario" placeholder="select a scenario to upload" onchange="openFile(event)"/>
 ```
@@ -59,6 +59,10 @@ To start dev version of AgeScx
 ```
 git clone https://github.com/dderevjanik/agescx-js.git
 cd agescx-js
+npm install -g typings
+npm install -g tsc
+npm install -g jasmine
+typings install
 npm run dev
 ```
 

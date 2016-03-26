@@ -30,76 +30,18 @@ Works on server or client side in same way.
 
 ## Usage
 
-### Browser
-
-In browser, you can only use compiled version of agescx. Is smaller,
-uglified and without types. You have to include agescxjs in script tag on
-your website. You can find compiled version in
-`agescx-js/dist/web/agescx.min.js`
-
-```html
-<script src="agescx-js/dist/web/agescx.min.js"/>
-```
-
-### NodeJS
-
-AgeScxJS comes also with definetly typed, which means you can use data
-types in your project. That makes agescx on server-side powerfull.
-
-```js
-// ES6 with System Modules
-import AgeScx from 'agescx-js'
-
-const Scenario = AgeScx.readScenarioNode('path/to/scenario.scx');
-```
-
-## Contributing
-
-Check [TODO.md List](TODO.md) for more information about project status.
-
-Global dependencies
-
-```
-npm install -g tsc
-npm install -g tsd
-npm install -g webpack
-npm install -g jasmine
-```
-
-### Running dev mode
-
-```
-git clone https://github.com/dderevjanik/agescx-js.git
-cd agescx-js
-npm install
-npm run dev
-```
-
-in browser, go to `localhost:8080/example`
+See [Tutorial](docs/Tutorial.md) how to use agescx both in Browser and Node environments
 
 ## Docs
 
-- [Tutorial](docs/Tutorial.md) how to use agescx
-- How [Scenario JSON](docs/Scenario.md) structure looks like
-- [Glossary](docs/Glossary.md) common words
-
+- [Scenario Structure](docs/Scenario.md) to see output structure of AgeScx
+- [List of Enums](docs/enums/README.md) used in Scenarios
 
 ## Others
 
 Agescx has also several scenarios created in different Age of Empires 2
 versions to test them. If you're curious in them or you want to test agescx
 funcitonality, go to [Scenario Section](scenario/README.md)
-
-### Npm scripts
-
-- `npm run test` run test
-- `npm run dev` run dev version with hot-reloading
-- `npm run build` lint and build project for both environments
-- `npm run build:web` build project for web, targeting es5, minified
-- `npm run build:node` build project for node with `d.ts` support
-- `npm run lint` run lint:src and lint:test
-- `npm run lint:src` lint all .ts files in src
-- `npm run lint:test` lint all test files
 
 ## License (MIT)
 

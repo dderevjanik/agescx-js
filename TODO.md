@@ -14,5 +14,13 @@
 - [x] Fix 'fs' module error
 - [x] Update ASDataView
 - [x] Create `gh-pages` for demo
+- [ ] Support several AoE 2 versions
+    - [ ] Age of Empires, 1997
+    - [ ] Age of Kings, 1999
+    - [x] The Conquerors, 2000
+    - [ ] UserPatch
+    - [ ] HD, 2013
+    - [ ] The Forgotten, 2013
+    - [ ] The African Kingdoms, 2015
 
 :runner: - in progress

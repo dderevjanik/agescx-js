@@ -5,6 +5,7 @@
 Scenario object (alph. ordered):
 
 - [Cinematics](#cinematics) movies
+- [Debug](#debug) informations for developers
 - [Goals](#goals) scenario goals
 - [Header](#header) timestamp, basic info, scenario objectives
 - [Image](#image) background image
@@ -23,7 +24,6 @@ Scenario object (alph. ordered):
         - [Condition](#condition) informatiom about condition
         - [Effect](#effect) informatiom about effect
 - [Version](#version) scenario version
-- [Debug](#debug) informations for developers
 
 ## Cinematics
 

@@ -4,4 +4,5 @@ declare let require;
 require('./Scenarios/DefaultTest.ts');
 require('./Scenarios/MessagesTest.ts');
 require('./Scenarios/CinematicsImageTest.ts');
+require('./Scenarios/RandomTest.ts');
 require('./Scenarios/SizesTest.ts');
