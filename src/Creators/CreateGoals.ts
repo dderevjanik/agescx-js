@@ -8,9 +8,9 @@ const createGoals = (): IGoals => ({
     mode: 0,
     score: 0,
     time: 0,
-    unk1: 0,
-    unk2: 0,
-    unk3: 0
+    unknown1: 0,
+    unknown2: 0,
+    unknown3: 0
 });
 
 export default createGoals;

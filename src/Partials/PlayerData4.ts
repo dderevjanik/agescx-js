@@ -16,12 +16,12 @@ export const readPlayerData4 = (scenario: IScenario, data: ASData): void => {
         data.skip(numOfDipl * 1);
         data.skip(9 * 4); // player / diplomacy
         player.color = data.getUint32();
-        player.unk2 = data.getFloat32();
-        player.unk3 = data.getUint16();
-        if (player.unk2 === 2.0){   // undefined
+        player.unknown2 = data.getFloat32();
+        player.unknown3 = data.getUint16();
+        if (player.unknown2 === 2.0){   // undefined
             data.skip(8 * 1);
         }
-        data.skip(player.unk3 * 44);
+        data.skip(player.unknown3 * 44);
         data.skip(7 * 1);
         data.skip(4);
     });

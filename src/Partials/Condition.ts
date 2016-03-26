@@ -15,7 +15,7 @@ export const readCondition = (data: ASData): ICondition => {
     condition.source = data.getInt32();
     condition.tech = data.getInt32();
     condition.timer = data.getInt32();
-    condition.unknown = data.getInt32();
+    condition.unknown1 = data.getInt32();
     condition.area = [
         data.getInt32(), data.getInt32(),
         data.getInt32(), data.getInt32()

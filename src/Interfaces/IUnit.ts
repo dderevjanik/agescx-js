@@ -6,8 +6,8 @@ interface IUnit {
     y: number;     // y position in scenario
     angle: number; // unit angle
     frame: number; // unit frame
-    unk1?: number;
-    unk2?: number;
+    unknown1?: number;
+    unknown2?: number;
 };
 
 export default IUnit;

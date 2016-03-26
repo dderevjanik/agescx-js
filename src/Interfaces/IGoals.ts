@@ -6,9 +6,9 @@ interface IGoals {
     score: number;          // how much score is needed to win
     time: number;           // time for scenario
     all: number;            // all goals
-    unk1: number;
-    unk2: number;
-    unk3: number;
+    unknown1: number;
+    unknown2: number;
+    unknown3: number;
 };
 
 export default IGoals;

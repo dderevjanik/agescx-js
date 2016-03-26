@@ -8,8 +8,8 @@ const createUnit = (): IUnit => ({
     y: 0,
     angle: 0,
     frame: 0,
-    unk1: 0,
-    unk2: 0
+    unknown1: 0,
+    unknown2: 0
 });
 
 export default createUnit;

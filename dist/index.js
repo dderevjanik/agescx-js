@@ -261,7 +261,7 @@
 	    condition.source = data.getInt32();
 	    condition.tech = data.getInt32();
 	    condition.timer = data.getInt32();
-	    condition.unknown = data.getInt32();
+	    condition.unknown1 = data.getInt32();
 	    condition.area = [
 	        data.getInt32(), data.getInt32(),
 	        data.getInt32(), data.getInt32()
@@ -293,7 +293,7 @@
 	    source: 0,
 	    tech: 0,
 	    timer: 0,
-	    unknown: 0,
+	    unknown1: 0,
 	    area: [0, 0, 0, 0],
 	    unitGroup: 0,
 	    unitType: 0,
@@ -468,11 +468,11 @@
 	exports.readGoals = function (scenario, data) {
 	    var goals = scenario.goals;
 	    goals.conquest = data.getInt32();
-	    goals.unk1 = data.getInt32();
+	    goals.unknown1 = data.getInt32();
 	    goals.relics = data.getInt32();
-	    goals.unk2 = data.getInt32();
+	    goals.unknown2 = data.getInt32();
 	    goals.exploration = data.getInt32();
-	    goals.unk3 = data.getInt32();
+	    goals.unknown3 = data.getInt32();
 	    goals.all = data.getInt32();
 	    goals.mode = data.getInt32();
 	    goals.score = data.getInt32();
@@ -576,7 +576,7 @@
 	        player.active = data.getUint32(); // is active
 	        player.human = data.getUint32(); // is human
 	        player.civ = data.getInt32(); // player civilization
-	        player.unk1 = data.getUint32(); // ? unknown
+	        player.unknown1 = data.getUint32(); // ? unknown
 	    });
 	    data.skip(7 * 16); // skip non-playable players
 	};
@@ -667,12 +667,12 @@
 	        data.skip(numOfDipl * 1);
 	        data.skip(9 * 4); // player / diplomacy
 	        player.color = data.getUint32();
-	        player.unk2 = data.getFloat32();
-	        player.unk3 = data.getUint16();
-	        if (player.unk2 === 2.0) {
+	        player.unknown2 = data.getFloat32();
+	        player.unknown3 = data.getUint16();
+	        if (player.unknown2 === 2.0) {
 	            data.skip(8 * 1);
 	        }
-	        data.skip(player.unk3 * 44);
+	        data.skip(player.unknown3 * 44);
 	        data.skip(7 * 1);
 	        data.skip(4);
 	    });
@@ -691,7 +691,7 @@
 	exports.readTile = function (data) { return ({
 	    type: data.getUint8(),
 	    level: data.getUint8(),
-	    unk1: data.getUint8()
+	    unknown1: data.getUint8()
 	}); };
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = {
@@ -778,10 +778,10 @@
 	exports.readUnit = function (data) { return ({
 	    x: data.getFloat32(),
 	    y: data.getFloat32(),
-	    unk1: data.getFloat32(),
+	    unknown1: data.getFloat32(),
 	    id: data.getUint32(),
 	    type: data.getUint16(),
-	    unk2: data.getInt8(),
+	    unknown2: data.getInt8(),
 	    angle: data.getFloat32(),
 	    frame: data.getUint16(),
 	    inId: data.getInt32()
@@ -904,9 +904,9 @@
 	    active: 0,
 	    human: 0,
 	    civ: eCivilization_1.default.Britons,
-	    unk1: 0,
-	    unk2: 0,
-	    unk3: 0,
+	    unknown1: 0,
+	    unknown2: 0,
+	    unknown3: 0,
 	    aiName: '',
 	    aiSource: '',
 	    aiType: 0,
@@ -1016,9 +1016,9 @@
 	    mode: 0,
 	    score: 0,
 	    time: 0,
-	    unk1: 0,
-	    unk2: 0,
-	    unk3: 0
+	    unknown1: 0,
+	    unknown2: 0,
+	    unknown3: 0
 	}); };
 	Object.defineProperty(exports, "__esModule", { value: true });
 	exports.default = createGoals;

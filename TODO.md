@@ -2,7 +2,7 @@
 
 - [ ] Support HD and UPatch versions
 - [ ] Webpack test config with HOT
-- [ ] Make unknows standard
+- [x] Make unknows standard
 - [ ] Scenario writing
 - [ ] Test functions
 - [ ] :runner: Add Docs

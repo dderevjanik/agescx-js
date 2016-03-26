@@ -31,9 +31,9 @@ interface IPlayer {
 
     disabled: IDisabled;
 
-    unk1?: number;
-    unk2?: number;
-    unk3?: number;
+    unknown1?: number;
+    unknown2?: number;
+    unknown3?: number;
 
     units: Array<IUnit>;
 };

@@ -11,7 +11,7 @@ interface ICondition {
     source: number;     // source player
     tech: number;       // technology id
     timer: number;      // how much time
-    unknown: number;
+    unknown1: number;
     area: area;
     unitGroup: number;
     unitType: number;

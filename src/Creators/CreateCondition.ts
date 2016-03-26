@@ -11,7 +11,7 @@ const createCondition = (): ICondition => ({
     source: 0,
     tech: 0,
     timer: 0,
-    unknown: 0,
+    unknown1: 0,
     area: [0, 0, 0, 0],
     unitGroup: 0,
     unitType: 0,

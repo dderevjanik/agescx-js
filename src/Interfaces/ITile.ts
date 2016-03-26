@@ -1,7 +1,7 @@
 interface ITile {
     type: number;
     level: number;
-    unk1: number;
+    unknown1: number;
 };
 
 export default ITile;
