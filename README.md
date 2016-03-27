@@ -28,20 +28,17 @@ do with this module.
 
 Works on server or client side in same way.
 
-## Usage
-
-See [Tutorial](docs/Tutorial.md) how to use agescx both in Browser and Node environments
-
 ## Docs
 
 - [Scenario Structure](docs/Scenario.md) to see output structure of AgeScx
 - [List of Enums](docs/enums/README.md) used in Scenarios
+- See [Tutorial](docs/Tutorial.md) how to use agescx both in Browser and Node environments
 
 ## Others
 
 Agescx has also several scenarios created in different Age of Empires 2
 versions to test them. If you're curious in them or you want to test agescx
-funcitonality, go to [Scenario Section](scenario/README.md)
+functionality, go to [Scenario Section](scenarios/README.md)
 
 ## License (MIT)
 
