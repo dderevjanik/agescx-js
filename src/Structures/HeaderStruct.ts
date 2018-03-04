@@ -1,12 +1,33 @@
 import ASData from "asdata";
 
 export type HeaderStruct = {
+  /**
+   * Scenario version
+   */
   version: string;
+  /**
+   * Size of uncompressed header
+   */
   size: number;
+  /**
+   * Unknown
+   */
   unknown1: number;
+  /**
+   * Last saved
+   */
   lastSave: number;
+  /**
+   * Scenario instructions
+   */
   instructions: string;
+  /**
+   * Unknown
+   */
   unknown2: number;
+  /**
+   * Number of players
+   */
   players: number;
 };
 

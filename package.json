@@ -1,0 +1,49 @@
+{
+  "name": "agescx",
+  "version": "1.0.0",
+  "description": "![Travis](https://travis-ci.com/dderevjanik/agescx-js.svg?token=4Xa5bKD1752yZy67EZmR&branch=master)\r ![CircleCi](https://circleci.com/gh/dderevjanik/agescx-js/tree/master.svg?style=shield&circle-token=300c71444e312588d73d59155a33fef4d33b8647)\r ![DavidDM](https://david-dm.org/dderevjanik/agescx-js.svg)\r ![CodeClimate](https://img.shields.io/codeclimate/github/dderevjanik/agescx-js.svg)",
+  "main": "webpack-dev.config.js",
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ],
+    "collectCoverage": false,
+    "testEnvironment": "node"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "dependencies": {
+    "@types/jest": "^22.1.4",
+    "@types/node": "^9.4.6",
+    "asdata": "git+https://git@github.com/dderevjanik/asdata.git",
+    "linqts": "^1.10.0",
+    "xml-parser": "^1.2.1"
+  },
+  "devDependencies": {
+    "jest": "^22.4.2",
+    "ts-jest": "^22.4.1",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dderevjanik/agescx-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dderevjanik/agescx-js/issues"
+  },
+  "homepage": "https://github.com/dderevjanik/agescx-js#readme"
+}

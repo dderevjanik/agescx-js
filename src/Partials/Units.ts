@@ -10,7 +10,7 @@ export const readUnits = (scenario: IScenario, data: ASData): void => {
 
     allPlayers.forEach((player: IPlayer, index: number) => {
         const numOfUnits: number = data.getUint32();
-        debug(`AgeScx: Player #${index} num. of units = ${numOfUnits}`);
+        // debug(`AgeScx: Player #${index} num. of units = ${numOfUnits}`);
         player.units = readStructures(numOfUnits, () => readUnit(data));
     });
 };
