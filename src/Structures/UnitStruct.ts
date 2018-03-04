@@ -1,15 +1,15 @@
 import ASData from 'asdata';
 
 export type UnitStruct = {
-    x: number;
-    y: number;
-    unknown1: number;
-    id: number;
-    unit: number;
-    unknown2: number;
-    rotation: number;
-    initialFrame: number;
-    garissonId: number;
+  x: number;
+  y: number;
+  unknown1: number;
+  id: number;
+  unit: number;
+  unknown2: number;
+  rotation: number;
+  initialFrame: number;
+  garissonId: number;
 };
 
 export function readUnit(data: ASData): UnitStruct {
@@ -22,6 +22,6 @@ export function readUnit(data: ASData): UnitStruct {
     unknown2: data.getUint8(),
     rotation: data.getFloat32(),
     initialFrame: data.getUint16(),
-    garissonId: data.getUint32(),
-  }
+    garissonId: data.getUint32()
+  };
 }

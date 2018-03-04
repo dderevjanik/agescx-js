@@ -1,7 +1,7 @@
-import IScenario from "./../Interfaces/IScenario";
-import IPlayer from "./../Interfaces/IPlayer";
-import { readStructures } from "./../Utils/RWUtils";
-import ASData from "asdata";
+import IScenario from './../Interfaces/IScenario';
+import IPlayer from './../Interfaces/IPlayer';
+import { readStructures } from './../Utils/RWUtils';
+import ASData from 'asdata';
 
 export const readDiplomacy = (scenario: IScenario, data: ASData): void => {
   const playablePlayers: Array<IPlayer> = scenario.players.slice(1, 9);

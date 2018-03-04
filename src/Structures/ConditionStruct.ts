@@ -1,5 +1,5 @@
-import ASData from "asdata";
-import { readArea, AreaStruct } from "./AreaStruct";
+import ASData from 'asdata';
+import { readArea, AreaStruct } from './AreaStruct';
 
 export type ConditionStruct = {
   type: number;

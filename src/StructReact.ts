@@ -1,9 +1,9 @@
 import ASData from 'asdata';
 import { readFileSync } from 'fs';
 // structus
-import { readHeader} from './Structures/HeaderStruct';
+import { readHeader } from './Structures/HeaderStruct';
 import { readCompressedHeaderStruct } from './Structures/CompressedHeaderStruct';
-import { readMessages }  from './Structures/MessagesStruct';
+import { readMessages } from './Structures/MessagesStruct';
 import { readCinematic } from './Structures/CinematicStruct';
 import { readPlayerData2 } from './Structures/PlayerData2Struct';
 import Scenario from './Scenario';
@@ -37,8 +37,6 @@ const disables = readDisablesStruct(compressed);
 const map = readMapStruct(compressed);
 const units = readUnitsStruct(compressed);
 
-
-
 /**
  * Old
  */
@@ -48,7 +46,6 @@ const osc = Scenario.readScenarioFile('../scenarios/1.21/random/arabia.scx');
 // console.log(osc.header.size);
 // console.log(osc.setup.nextId);
 // console.log(osc.messages);
-
 
 // console.log(compressedHeader.version2);
 // console.log(compressedHeader.nextUnitId);

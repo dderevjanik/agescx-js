@@ -9,26 +9,26 @@ import IMessages from './IMessages';
 import IDebug from './IDebug';
 
 interface IScenario {
-    header: IHeader;
-    version: string;
-    players: Array<IPlayer>;
-    messages: IMessages;
-    cinematics: ICinematics;
-    image: IImage;
-    goals: IGoals;
-    setup: {
-        allTech: number;
-        aiType: number;
-        startCam: Array<number>;
-        height: number;
-        width: number;
-        nextId: number;
-        filename: string
-    };
-    tiles: Array<ITile>;
-    triggers: Array<ITrigger>;
-    triggersOrd: Array<number>;
-    debug: IDebug;
-};
+  header: IHeader;
+  version: string;
+  players: Array<IPlayer>;
+  messages: IMessages;
+  cinematics: ICinematics;
+  image: IImage;
+  goals: IGoals;
+  setup: {
+    allTech: number;
+    aiType: number;
+    startCam: Array<number>;
+    height: number;
+    width: number;
+    nextId: number;
+    filename: string;
+  };
+  tiles: Array<ITile>;
+  triggers: Array<ITrigger>;
+  triggersOrd: Array<number>;
+  debug: IDebug;
+}
 
 export default IScenario;

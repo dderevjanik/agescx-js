@@ -8,5 +8,4 @@ declare const Buffer;
  * @param {ArrayBuffer} arrayBuffer - file buffer
  * @retunr {ASData}
  */
-export const createASDataView = (arrayBuffer: any): ASData =>
-    new ASData(arrayBuffer);
+export const createASDataView = (arrayBuffer: any): ASData => new ASData(arrayBuffer);

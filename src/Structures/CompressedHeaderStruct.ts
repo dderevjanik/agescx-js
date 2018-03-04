@@ -1,4 +1,4 @@
-import ASData from "asdata";
+import ASData from 'asdata';
 import { PlayerData1Struct, readPlayerData1 } from './PlayerData1Struct';
 
 export type CompressedHeaderStruct = {
@@ -14,12 +14,12 @@ export type CompressedHeaderStruct = {
 };
 
 const repeat = <T>(callback: () => T, count: number): T[] => {
-    const result: T[] = [];
-    for(let i = 0; i < count; i++) {
-        result.push(callback());
-    }
-    return result;
-}
+  const result: T[] = [];
+  for (let i = 0; i < count; i++) {
+    result.push(callback());
+  }
+  return result;
+};
 
 export function readCompressedHeaderStruct(data: ASData): CompressedHeaderStruct {
   return {

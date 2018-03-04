@@ -1,5 +1,5 @@
-import ASData from "asdata";
-import { LocationStruct } from "./LocationStruct";
+import ASData from 'asdata';
+import { LocationStruct } from './LocationStruct';
 
 export type PlayerData4Struct = {
   constName: string;

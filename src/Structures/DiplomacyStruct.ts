@@ -1,20 +1,19 @@
 import ASData from 'asdata';
 
-
 const repeat = <T>(callback: () => T, count: number): T[] => {
   const result: T[] = [];
-  for(let i = 0; i < count; i++) {
-      result.push(callback());
+  for (let i = 0; i < count; i++) {
+    result.push(callback());
   }
   return result;
-}
+};
 
 export type DiplomacyStruct = {
   diplomacies: number[][];
   unused: number;
   separator: number;
   alliedVictories: number[];
-}
+};
 
 export function readDiplomacy(data: ASData): DiplomacyStruct {
   return {

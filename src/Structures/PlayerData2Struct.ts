@@ -1,6 +1,6 @@
 import ASData from 'asdata';
-import {AIStruct, readAIStruct } from './AIStruct';
-import { readResourceStruct, ResourceStruct } from "./ResourceStruct";
+import { AIStruct, readAIStruct } from './AIStruct';
+import { readResourceStruct, ResourceStruct } from './ResourceStruct';
 
 export type PlayerData2Struct = {
   unknown1: [string, string][];
@@ -13,11 +13,11 @@ export type PlayerData2Struct = {
 
 const repeat = <T>(callback: () => T, count: number): T[] => {
   const result: T[] = [];
-  for(let i = 0; i < count; i++) {
-      result.push(callback());
+  for (let i = 0; i < count; i++) {
+    result.push(callback());
   }
   return result;
-}
+};
 
 export const readPlayerData2 = (data: ASData): PlayerData2Struct => {
   return {
@@ -27,5 +27,5 @@ export const readPlayerData2 = (data: ASData): PlayerData2Struct => {
     aiType: repeat(() => data.getUint8(), 16),
     separator: data.getUint32(),
     resources: repeat(() => readResourceStruct(data), 16)
-  }
-}
+  };
+};

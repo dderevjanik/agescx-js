@@ -1,4 +1,4 @@
-import ASData from "asdata";
+import ASData from 'asdata';
 
 export type BitmapStruct = {
   size: number;

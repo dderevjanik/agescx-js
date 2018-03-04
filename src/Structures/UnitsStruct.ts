@@ -8,16 +8,16 @@ export type UnitsStruct = {
   sections: {
     count: number;
     units: UnitStruct[];
-  }[]
+  }[];
 };
 
 const repeat = <T>(callback: () => T, count: number): T[] => {
   const result: T[] = [];
-  for(let i = 0; i < count; i++) {
-      result.push(callback());
+  for (let i = 0; i < count; i++) {
+    result.push(callback());
   }
   return result;
-}
+};
 
 export const readUnitsStruct = (data: ASData): UnitsStruct => {
   const sectionCount = data.getUint32();
@@ -31,5 +31,5 @@ export const readUnitsStruct = (data: ASData): UnitsStruct => {
         units: repeat(() => readUnit(data), unitCount)
       };
     }, sectionCount)
-  }
-}
+  };
+};
