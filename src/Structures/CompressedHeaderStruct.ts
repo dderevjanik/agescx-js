@@ -7,11 +7,9 @@ export type CompressedHeaderStruct = {
   playerNames: string[];
   playerNamesIDs: number[];
   playersData: PlayerData1Struct[];
-  conquestMode: number;
-  missionItemsCounter: number;
-  missionAvailable: number;
-  missionTimeline: number;
-  missionItem: string;
+  unknown1: number;
+  unknown2: string;
+  unknown3: number;
   originalFilename: string;
 };
 
@@ -30,11 +28,9 @@ export function readCompressedHeaderStruct(data: ASData): CompressedHeaderStruct
     playerNames: repeat(() => data.getChar(256), 16),
     playerNamesIDs: repeat(() => data.getUint32(), 16),
     playersData: repeat(() => readPlayerData1(data), 16),
-    conquestMode: data.getUint8(),
-    missionItemsCounter: data.getUint16(),
-    missionAvailable: data.getUint16(),
-    missionTimeline: data.getFloat32(),
-    missionItem: data.getCStr(30),
-    originalFilename: data.getChar(30)
+    unknown1: data.getUint32(),
+    unknown2: data.getChar(1),
+    unknown3: data.getFloat32(),
+    originalFilename: data.getStr16()
   };
 }

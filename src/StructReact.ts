@@ -5,8 +5,13 @@ import { readHeader} from './Structures/HeaderStruct';
 import { readCompressedHeaderStruct } from './Structures/CompressedHeaderStruct';
 import { readMessages }  from './Structures/MessagesStruct';
 import { readCinematic } from './Structures/CinematicStruct';
+import { readPlayerData2 } from './Structures/PlayerData2Struct';
 import Scenario from './Scenario';
 import { readImage } from './Structures/ImageStruct';
+import { readGoals } from './Structures/GoalsStruct';
+import { readDiplomacy } from './Structures/DiplomacyStruct';
+import { readDisablesStruct } from './Structures/DisablesStruct';
+import { readMapStruct } from './Structures/MapStruct';
 
 /**
  * NEW
@@ -21,14 +26,23 @@ const compressedHeader = readCompressedHeaderStruct(compressed);
 const messages = readMessages(compressed);
 const cinematics = readCinematic(compressed);
 const image = readImage(compressed);
-console.log(image);
+const playersData2 = readPlayerData2(compressed);
+const goals = readGoals(compressed);
+// console.log(goals);
+
+const diplomacies = readDiplomacy(compressed);
+
+const disables = readDisablesStruct(compressed);
+const map = readMapStruct(compressed);
+// console.log(map);
 
 
 /**
  * Old
  */
 const osc = Scenario.readScenarioFile('../scenarios/1.21/random/arabia.scx');
-console.log(osc.image);
+// console.log(osc.setup);
+// console.log(osc.image);
 // console.log(osc.header.size);
 // console.log(osc.setup.nextId);
 // console.log(osc.messages);

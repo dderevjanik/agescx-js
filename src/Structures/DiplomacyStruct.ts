@@ -1,73 +1,26 @@
-import ASData from "asdata";
+import ASData from 'asdata';
 
-export type StanceStruct = [
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number,
-  number
-];
 
-export type DiplomacyStruct = [
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct,
-  StanceStruct
-];
+const repeat = <T>(callback: () => T, count: number): T[] => {
+  const result: T[] = [];
+  for(let i = 0; i < count; i++) {
+      result.push(callback());
+  }
+  return result;
+}
 
-export function readDiplomacy(data: ASData) {
-  /**
-   * Age of Empires 2 scenario contains slots for 16 players, but
-   * only 8 players are playable, so other 8 slots are unused
-   * - they don't have any effects on scenario/game
-   */
-  const players = [
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-  ];
-  // for each player
-  players.forEach((player, p) => {
-    // get stance against other player
-    player.forEach((stance, s) => {
-      players[p][s] = data.getInt32();
-    });
-  });
-  return players;
+export type DiplomacyStruct = {
+  diplomacies: number[][];
+  unused: number;
+  separator: number;
+  alliedVictories: number[];
+}
+
+export function readDiplomacy(data: ASData): DiplomacyStruct {
+  return {
+    diplomacies: repeat(() => repeat(() => data.getUint32(), 16), 16),
+    unused: data.skip(11520),
+    separator: data.getUint32(),
+    alliedVictories: repeat(() => data.getUint32(), 16)
+  };
 }
