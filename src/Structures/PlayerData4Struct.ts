@@ -16,8 +16,8 @@ export type PlayerData4Struct = {
 export function readPlayerDat4(data: ASData): PlayerData4Struct {
   const partial1 = {
     constName: data.getStr16(),
-    startCam: [data.getFloat32(), data.getFloat32()],
-    startCam2: [data.getFloat32(), data.getFloat32()],
+    startCam: [data.getFloat32(), data.getFloat32()] as [number, number],
+    startCam2: [data.getFloat32(), data.getFloat32()] as [number, number],
     allyVictory: data.skip(1),
     diplomacyCount: data.getUint16()
   };

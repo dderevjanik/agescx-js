@@ -12,6 +12,7 @@ import { readGoals } from './Structures/GoalsStruct';
 import { readDiplomacy } from './Structures/DiplomacyStruct';
 import { readDisablesStruct } from './Structures/DisablesStruct';
 import { readMapStruct } from './Structures/MapStruct';
+import { readUnitsStruct } from './Structures/UnitsStruct';
 
 /**
  * NEW
@@ -34,7 +35,8 @@ const diplomacies = readDiplomacy(compressed);
 
 const disables = readDisablesStruct(compressed);
 const map = readMapStruct(compressed);
-// console.log(map);
+const units = readUnitsStruct(compressed);
+
 
 
 /**
