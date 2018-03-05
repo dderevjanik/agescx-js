@@ -59,7 +59,6 @@ export const readScenario = (data: ASData): ScenarioStruct => {
   compressed.skip(8); // Should be Float64, better version
   const triggersInstructionStart = compressed.getUint8();
   const triggersCount = compressed.getUint32();
-  console.log(triggersCount);
   const compressedPartial2 = {
     triggers: repeat(() => readTrigger(compressed), triggersCount),
     triggersOrd: repeat(() => data.getInt32(), triggersCount)

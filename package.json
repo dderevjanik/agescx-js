@@ -29,12 +29,16 @@
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
+    "@types/jsontoxml": "^1.0.0",
+    "@types/yamljs": "^0.2.30",
     "chalk": "^2.3.2",
     "jest": "^22.4.2",
+    "jsontoxml": "^1.0.0",
     "prettier": "^1.11.1",
     "ts-jest": "^22.4.1",
     "ts-node": "^5.0.1",
-    "typescript": "^2.7.2"
+    "typescript": "^2.7.2",
+    "yamljs": "^0.3.0"
   },
   "scripts": {
     "test": "jest",
