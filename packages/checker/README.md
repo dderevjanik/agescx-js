@@ -1,4 +1,4 @@
-# AgeScx - Scenario Checker
+# AgeScx - Checker
 
 ## Overall
 
