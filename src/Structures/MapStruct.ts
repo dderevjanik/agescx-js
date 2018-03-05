@@ -3,9 +3,18 @@ import { readTileStruct, TileStruct } from './TileStruct';
 
 export type MapStruct = {
   separator: number;
+  /**
+   * Starting camera [X, Y]
+   */
   startingCamera: [number, number];
   aiType: number;
+  /**
+   * Map width
+   */
   width: number;
+  /**
+   * Map Height
+   */
   height: number;
   terrain: TileStruct[];
 };

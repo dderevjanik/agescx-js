@@ -4,8 +4,17 @@ import { readResourceStruct, ResourceStruct } from './ResourceStruct';
 
 export type PlayerData2Struct = {
   unknown1: [string, string][];
+  /**
+   * Name of AI to control a player
+   */
   aiNames: string[];
+  /**
+   * Files that belongs to AI
+   */
   aiFiles: AIStruct[];
+  /**
+   * Type of AI
+   */
   aiType: number[];
   separator: number;
   resources: ResourceStruct[];

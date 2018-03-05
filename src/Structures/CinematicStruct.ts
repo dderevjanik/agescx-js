@@ -1,8 +1,17 @@
 import ASData from 'asdata';
 
 export type CinematicStruct = {
+  /**
+   * Intro video filename
+   */
   intro: string;
+  /**
+   * Defeat video filename
+   */
   defeat: string;
+  /**
+   * Victory video filename
+   */
   victory: string;
 };
 

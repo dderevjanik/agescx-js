@@ -15,7 +15,7 @@ export type EffectStruct = {
   source: number;
   target: number;
   tech: number;
-  instrId: number;
+  instructionId: number;
   soundId: number;
   instrTime: number;
   location: [number, number];
@@ -25,31 +25,32 @@ export type EffectStruct = {
   instrPanel: number;
   instrText: string;
   soundFile: string;
+  unitIDs: number[];
+};
+
+const repeat = <T>(callback: () => T, count: number): T[] => {
+  const result: T[] = [];
+  for (let i = 0; i < count; i++) {
+    result.push(callback());
+  }
+  return result;
 };
 
 export function readEffect(data: ASData): EffectStruct {
-  const type = data.getInt32();
-  const check = data.getInt32();
-  const aiGoal = data.getInt32();
-  const amount = data.getInt32();
-  const resource = data.getInt32();
-  const diplomacy = data.getInt32();
-  const unitsCount = data.getInt32();
-
-  return {
-    type,
-    check,
-    aiGoal,
-    amount,
-    resource,
-    diplomacy,
-    unitsCount,
+  const partial = {
+    type: data.getInt32(),
+    check: data.getInt32(),
+    aiGoal: data.getInt32(),
+    amount: data.getInt32(),
+    resource: data.getInt32(),
+    diplomacy: data.getInt32(),
+    unitsCount: data.getInt32(),
     unitId: data.getInt32(),
     unitName: data.getInt32(),
     source: data.getInt32(),
     target: data.getInt32(),
     tech: data.getInt32(),
-    instrId: data.getInt32(),
+    instructionId: data.getInt32(),
     soundId: data.getInt32(),
     instrTime: data.getInt32(),
     location: readLocation(data),
@@ -59,6 +60,7 @@ export function readEffect(data: ASData): EffectStruct {
     instrPanel: data.getInt32(),
     instrText: data.getStr32(),
     soundFile: data.getStr32()
-    // TODO
   };
+  const unitIDs = repeat(() => data.getInt32(), partial.unitsCount);
+  return Object.assign(partial, { unitIDs });
 }

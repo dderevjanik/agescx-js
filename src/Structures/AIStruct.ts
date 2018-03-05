@@ -3,6 +3,9 @@ import ASData from 'asdata';
 export type AIStruct = {
   unknown1: number;
   unknown2: number;
+  /**
+   * Name of AI.per file
+   */
   fileText: string;
 };
 

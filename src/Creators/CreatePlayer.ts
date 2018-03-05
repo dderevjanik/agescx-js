@@ -1,7 +1,7 @@
 import IPlayer from './../Interfaces/IPlayer';
-import eCivilization from './../Enums/eCivilization';
-import ePlayerColor from './../Enums/ePlayerColor';
-import eAge from './../Enums/eAge';
+import { Civilization } from './../Enums/Civilization';
+import { PlayerColor } from './../Enums/PlayerColors';
+import { Age } from './../Enums/Age';
 
 const createPlayer = (): IPlayer => ({
   name: '',
@@ -9,16 +9,16 @@ const createPlayer = (): IPlayer => ({
   constName: '',
   active: 0,
   human: 0,
-  civ: eCivilization.Britons,
+  civ: Civilization.Britons.id,
   unknown1: 0,
   unknown2: 0,
   unknown3: 0,
   aiName: '',
   aiSource: '',
   aiType: 0,
-  age: eAge.None,
+  age: Age.None,
   population: 100,
-  color: ePlayerColor.Gray,
+  color: PlayerColor.White.id,
   food: 0,
   wood: 0,
   gold: 0,

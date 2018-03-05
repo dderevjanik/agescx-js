@@ -18,6 +18,9 @@ const repeat = <T>(callback: () => T, count: number): T[] => {
 
 export function readImage(data: ASData): ImageStruct {
   const imageHeader = {
+    /**
+     * Image filename
+     */
     filename: data.getStr16(),
     included: data.getInt32(),
     width: data.getInt32(),

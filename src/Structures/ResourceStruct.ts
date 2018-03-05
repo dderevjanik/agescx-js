@@ -5,7 +5,13 @@ export type ResourceStruct = {
   wood: number;
   food: number;
   stone: number;
+  /**
+   * Ore is unused resource !
+   */
   ore: number;
+  /**
+   * Trade Goods
+   */
   goods: number;
 };
 

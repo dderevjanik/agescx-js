@@ -1,14 +1,35 @@
 import ASData from 'asdata';
 
 export type UnitStruct = {
+  /**
+   * X position
+   */
   x: number;
+  /**
+   * Y position
+   */
   y: number;
   unknown1: number;
+  /**
+   * Unit ID
+   */
   id: number;
+  /**
+   * Unit Type ID
+   */
   unit: number;
   unknown2: number;
+  /**
+   * Rotation in Radians
+   */
   rotation: number;
+  /**
+   * Initial Frame
+   */
   initialFrame: number;
+  /**
+   * In which unit is garissoned
+   */
   garissonId: number;
 };
 

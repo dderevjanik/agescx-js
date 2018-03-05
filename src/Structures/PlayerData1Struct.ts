@@ -1,8 +1,17 @@
 import ASData from 'asdata';
 
 export type PlayerData1Struct = {
+  /**
+   * Is player playable ?
+   */
   active: number;
+  /**
+   * Is player human ?
+   */
   human: number;
+  /**
+   * Civilization id
+   */
   civ: number;
   unknown1: number;
 };
