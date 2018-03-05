@@ -6,30 +6,32 @@ Age of empires 2 scenario de/compress module for NodeJs or Browser
 
 ![BigLogo](http://dderevjanik.github.io/agescx/img/aoe2-mediavel-small.jpg)
 
-Check [TODO.md List](TODO.md) for more information about project status
-
 ## About
 
-AgeScxJS is isomorphic module for nodejs written in Typescript. The main reason,
-why was this module created, is lack of functionality, which AoE2 in-game editor
+Is set of tools and utilities to work with `.scx` files.
+
+The main reason, why was this project created, is lack of functionality, which AoE2 in-game editor
 offers. You can't access scenario programmaticaly via some API. Also, scripts
-(triggers) in AoE2 are preaty useless, because you have to handle a thousends of
+(triggers) in AoE2 are pretty useless, because you have to handle a thousends of
 them when you're creating a big scenario with RPG element. Also, after some
-time, scripts are become like spaghetty code, you're not sure, which trigger is
-not needed, you have to click through all of them. AgeScxJS doesn't solve this
+time, scripts are become more-like spaghetty code. That means you're not sure, which trigger is
+not needed, you have to click through all of them to find out. AgeScxJS doesn't solve this
 problem, but you can use Javascript to create your own script language. You can
 also generate scenarios programmaticaly (mazzes, convert bitmap images,
 random, etc...). With AgeScxJS you can build your own web application for
 editing/converting or viewing scenarios. There's no restrictions what you can
-do with this module.
+do with those tools.
 
-Works on server or client side in same way.
+## Tools
 
-## Docs
+AgeScx comes with set of different tools:
 
-- [Scenario Structure](docs/Scenario.md) to see output structure of AgeScx
-- [List of Enums](docs/enums/README.md) used in Scenarios
-- See [Tutorial](docs/Tutorial.md) how to use agescx both in Browser and Node environments
+- [IO](./packages/io/README.md) read / write scenarios
+- [Checker](./packages/checker/README.md) check for errors/warning in scenario
+- [Diff](./packages/diff/README.md) differences between two scenarios
+- [Converter](./packages/converter/README.md) convert scenario to `.json`, `.xml` or `.yaml`
+- [Data](./packages/data/README.md) useful data
+- [Stats](./packages/stats/README.md) scenario stats in human-readable format
 
 ## Others
 

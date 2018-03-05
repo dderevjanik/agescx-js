@@ -7,11 +7,11 @@ export type TriggerStruct = {
   /**
    * Is trigger enabled at start ?
    */
-  enable: number;
+  isEnable: number;
   /**
    * Should trigger loop ?
    */
-  loop: number;
+  isLoop: number;
   /**
    * String Id
    */
@@ -46,8 +46,8 @@ export type TriggerStruct = {
 
 export const readTrigger = (data: ASData): TriggerStruct => {
   const partial = {
-    enable: data.getUint32(),
-    loop: data.getInt8(),
+    isEnabled: data.getUint32(),
+    isLoop: data.getInt8(),
     strId: data.getInt32(),
     desc: data.getInt8(),
     descOrd: data.getUint32(),

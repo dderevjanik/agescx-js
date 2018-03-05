@@ -1,11 +1,5 @@
 language: node_js
 node_js:
     - "5.7.1"
-before_script:
-    - npm install -g tslint
-    - npm install -g typings
-    - npm install -g jasmine
-    - typings install
 script:
     - npm run test
-    - npm run build

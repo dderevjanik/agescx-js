@@ -20,4 +20,13 @@ export const printStats = (scenario: ScenarioStruct) => {
       }
     }
   });
+  console.log(`${green('Triggers:')} ${scenario.triggersCount}`);
+  if (scenario.triggersCount > 0) {
+    const [effectsCount, conditionsCount] = scenario.triggers.reduce(
+      (acc, val) => [acc[0] + val.effectCount, acc[1] + val.conditionCount],
+      [0, 0]
+    );
+    console.log(`- ${yellow('Effects')} ${effectsCount}`);
+    console.log(`- ${yellow('Conditions')} ${conditionsCount}`);
+  }
 };
