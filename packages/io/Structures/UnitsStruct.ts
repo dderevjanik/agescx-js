@@ -1,6 +1,7 @@
 import ASData from 'asdata';
 import { PlayerData3Struct, readPlayerData3 } from './PlayerData3Struct';
 import { UnitStruct, readUnit } from './UnitStruct';
+import { repeat } from '../utils/StructureHelpers';
 
 export type UnitsStruct = {
   /**
@@ -21,14 +22,6 @@ export type UnitsStruct = {
     count: number;
     units: UnitStruct[];
   }[];
-};
-
-const repeat = <T>(callback: () => T, count: number): T[] => {
-  const result: T[] = [];
-  for (let i = 0; i < count; i++) {
-    result.push(callback());
-  }
-  return result;
 };
 
 export const readUnitsStruct = (data: ASData): UnitsStruct => {

@@ -11,7 +11,7 @@ export type UnitStruct = {
   y: number;
   unknown1: number;
   /**
-   * Unit ID
+   * Unit ID, this ID is used for triggers
    */
   id: number;
   /**

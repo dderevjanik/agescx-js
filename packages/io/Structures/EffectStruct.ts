@@ -1,6 +1,7 @@
 import ASData from 'asdata';
 import { readLocation } from './LocationStruct';
 import { readArea } from './AreaStruct';
+import { repeat } from '../utils/StructureHelpers';
 
 export type EffectStruct = {
   type: number;
@@ -17,7 +18,8 @@ export type EffectStruct = {
   tech: number;
   instructionId: number;
   soundId: number;
-  instrTime: number;
+  displayDuration: number;
+  triggerId: number;
   location: [number, number];
   area: [number, number, number, number];
   unitGroup: number;
@@ -26,14 +28,6 @@ export type EffectStruct = {
   instrText: string;
   soundFile: string;
   unitIDs: number[];
-};
-
-const repeat = <T>(callback: () => T, count: number): T[] => {
-  const result: T[] = [];
-  for (let i = 0; i < count; i++) {
-    result.push(callback());
-  }
-  return result;
 };
 
 export function readEffect(data: ASData): EffectStruct {
@@ -52,7 +46,8 @@ export function readEffect(data: ASData): EffectStruct {
     tech: data.getInt32(),
     instructionId: data.getInt32(),
     soundId: data.getInt32(),
-    instrTime: data.getInt32(),
+    displayDuration: data.getInt32(),
+    triggerId: data.getInt32(),
     location: readLocation(data),
     area: readArea(data),
     unitGroup: data.getInt32(),

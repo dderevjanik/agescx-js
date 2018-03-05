@@ -1,15 +1,40 @@
 import ASData from 'asdata';
 import { EffectStruct, readEffect } from './EffectStruct';
 import { ConditionStruct, readCondition } from './ConditionStruct';
+import { repeat } from '../utils/StructureHelpers';
 
-export type Trigger = {
+export type TriggerStruct = {
+  /**
+   * Is trigger enabled at start ?
+   */
   enable: number;
+  /**
+   * Should trigger loop ?
+   */
   loop: number;
+  /**
+   * String Id
+   */
   strId: number;
+  /**
+   * Description
+   */
   desc: number;
+  /**
+   * Description order
+   */
   descOrd: number;
+  /**
+   * After which amount of time to start
+   */
   timeStart: number;
+  /**
+   * Text
+   */
   text: string;
+  /**
+   * Trigger name, only 44 chars are displayed in UI
+   */
   name: string;
   effectCount: number;
   effects: EffectStruct[];
@@ -19,15 +44,7 @@ export type Trigger = {
   conditionsOrd: number[];
 };
 
-const repeat = <T>(callback: () => T, count: number): T[] => {
-  const result: T[] = [];
-  for (let i = 0; i < count; i++) {
-    result.push(callback());
-  }
-  return result;
-};
-
-export const readTrigger = (data: ASData): Trigger => {
+export const readTrigger = (data: ASData): TriggerStruct => {
   const partial = {
     enable: data.getUint32(),
     loop: data.getInt8(),

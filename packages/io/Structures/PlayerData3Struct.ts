@@ -1,4 +1,5 @@
 import ASData from 'asdata';
+import { repeat } from '../utils/StructureHelpers';
 
 export type PlayerData3Struct = {
   food: number;

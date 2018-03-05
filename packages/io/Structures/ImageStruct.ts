@@ -1,4 +1,5 @@
 import ASData from 'asdata';
+import { repeat } from '../utils/StructureHelpers';
 
 export type ImageStruct = {
   filename: string;
@@ -6,14 +7,6 @@ export type ImageStruct = {
   width: number;
   height: number;
   exists: number;
-};
-
-const repeat = <T>(callback: () => T, count: number): T[] => {
-  const result: T[] = [];
-  for (let i = 0; i < count; i++) {
-    result.push(callback());
-  }
-  return result;
 };
 
 export function readImage(data: ASData): ImageStruct {

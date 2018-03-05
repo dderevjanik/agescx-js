@@ -1,4 +1,5 @@
 import ASData from 'asdata';
+import { repeat } from '../utils/StructureHelpers';
 
 export type DisablesStruct = {
   disabledTechs: number[];
@@ -14,14 +15,6 @@ export type DisablesStruct = {
   navalMode: number;
   allTechs: number;
   startingAges: number[];
-};
-
-const repeat = <T>(callback: () => T, count: number): T[] => {
-  const result: T[] = [];
-  for (let i = 0; i < count; i++) {
-    result.push(callback());
-  }
-  return result;
 };
 
 export const readDisablesStruct = (data: ASData): DisablesStruct => {

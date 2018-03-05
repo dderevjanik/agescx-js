@@ -1,5 +1,6 @@
 import ASData from 'asdata';
 import { LocationStruct } from './LocationStruct';
+import { repeat } from '../utils/StructureHelpers';
 
 export type PlayerData4Struct = {
   /**
@@ -39,14 +40,6 @@ export type PlayerData4Struct = {
    */
   unknown7: number[];
   unknown8: number;
-};
-
-const repeat = <T>(callback: () => T, count: number): T[] => {
-  const result: T[] = [];
-  for (let i = 0; i < count; i++) {
-    result.push(callback());
-  }
-  return result;
 };
 
 export function readPlayerDat4(data: ASData): PlayerData4Struct {
