@@ -7,6 +7,5 @@ const runExample = (path: string) => {
   const scenario = readScenario(file);
   printStats(scenario);
 };
-
-runExample('../scenarios/1.21/aok/Castaway.scx');
+runExample('../scenarios/1.21/random/arabia.scx');
 // runExample('../scenarios/1.21/default.scx');
