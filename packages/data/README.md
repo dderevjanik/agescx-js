@@ -25,16 +25,21 @@ scenario.compressedHeader.playersData[1].civ = Civilization.Franks;
 
 ## List
 
-- **Age** Age ID
-- **AIType** AI type ID
-- **Civilization** Civilization ID
-- **DifficultyLevel** Difficulty level ID
-- **Player** Player Indexes
-- **PlayerColor** Player Colors (HEX)
-- **Resource**  InGame Resource IDs
-- **ScenarioSize** Scenario default size
-- **Terrain** Terrain IDs and their minimap colors (HEX)
-- **UnitGroup** List of Groups ant theirs unit IDs
+- [Age](./Age.ts) Age ID
+- [AIType](./AIType.ts) AI type ID
+- [Civilization](./Civilization.ts) Civilization ID
+- [DifficultyLevel](./DifficultyLevel.ts) Difficulty level ID
+- [Player](./Player.ts) Player Indexes
+- [PlayerColor](./PlayerColor.ts) Player Colors (HEX)
+- [Resource](./Resource.ts)  InGame Resource IDs
+- [ScenarioSize](./ScenarioSize.ts) Scenario default size
+- [Terrain](./Terrain.ts) Terrain IDs and their minimap colors (HEX)
+- [UnitGroup](./UnitGroup.ts) List of Groups ant theirs unit IDs
+- Effect
+- Condition
+- Unit
+- Tech
+- Building
 
 ## Download
 
