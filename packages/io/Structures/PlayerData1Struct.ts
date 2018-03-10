@@ -13,7 +13,7 @@ export type PlayerData1Struct = {
    * Civilization id
    */
   civilization: number;
-  unknown1: number;
+  CTYMode: number;
 };
 
 export function readPlayerData1(data: ASData): PlayerData1Struct {
@@ -21,6 +21,6 @@ export function readPlayerData1(data: ASData): PlayerData1Struct {
     active: data.getUint32(),
     human: data.getUint32(),
     civilization: data.getInt32(),
-    unknown1: data.getUint32()
+    CTYMode: data.getUint32()
   };
 }

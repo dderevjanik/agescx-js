@@ -24,7 +24,7 @@ export type CompressedHeaderStruct = {
   unknown2: string;
   unknown3: number;
   /**
-   * Original scenario filename
+   * Original scenario filename, created while first time scenario saved
    */
   originalFilename: string;
 };

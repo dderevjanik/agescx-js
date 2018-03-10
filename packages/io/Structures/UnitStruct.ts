@@ -18,7 +18,10 @@ export type UnitStruct = {
    * Unit Type ID
    */
   unit: number;
-  unknown2: number;
+  /**
+   * Unknown, usually 2
+   */
+  status: number;
   /**
    * Rotation in Radians
    */
@@ -40,7 +43,7 @@ export function readUnit(data: ASData): UnitStruct {
     unknown1: data.getFloat32(),
     id: data.getUint32(),
     unit: data.getUint16(),
-    unknown2: data.getUint8(),
+    status: data.getUint8(),
     rotation: data.getFloat32(),
     initialFrame: data.getUint16(),
     garissonId: data.getInt32()

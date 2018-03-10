@@ -17,6 +17,9 @@ export type PlayerData2Struct = {
    * Type of AI
    */
   aiType: number[];
+  /**
+   * 0xFFFFFF9D
+   */
   separator: number;
   resources: ResourceStruct[];
 };

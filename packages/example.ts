@@ -6,7 +6,8 @@ import { check } from './checker/Checker';
 const runExample = (path: string) => {
   const file = readFileSync(path);
   const scenario = readScenario(file);
-  // printStats(scenario);
+  printStats(scenario);
+  scenario.units.sections[0].units[0].x = 144;
   check(scenario);
 };
 runExample('../scenarios/1.21/aok/Castaway.scx');

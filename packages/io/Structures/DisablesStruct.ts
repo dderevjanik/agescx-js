@@ -14,6 +14,11 @@ export type DisablesStruct = {
   combatMode: number;
   navalMode: number;
   allTechs: number;
+  /**
+   * 0-8   Players
+   * 9     Gaia
+   * 10-16 Unused Players
+   */
   startingAges: number[];
 };
 
