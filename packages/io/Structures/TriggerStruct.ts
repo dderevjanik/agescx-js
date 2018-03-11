@@ -7,7 +7,7 @@ export type TriggerStruct = {
   /**
    * Is trigger enabled at start ?
    */
-  isEnable: number;
+  isEnabled: number;
   /**
    * Should trigger loop ?
    */

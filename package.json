@@ -35,8 +35,8 @@
     "jest": "^22.4.2",
     "prettier": "^1.11.1",
     "ts-jest": "^22.4.1",
-    "typescript": "^2.7.2",
-    "ts-node": "^5.0.1"
+    "ts-node": "^5.0.1",
+    "typescript": "^2.8.0-dev.20180308"
   },
   "scripts": {
     "test": "jest",

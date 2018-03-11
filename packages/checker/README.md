@@ -10,9 +10,9 @@
 
 ## Units
 
-- [ ] Unit id cannot be greeter or equal to scenario's `Next Unit Id`
+- [x] Unit id cannot be greeter or equal to scenario's `Next Unit Id`
 - [x] Check if all units have correct `unit type id`
-- [ ] Check if all units have correct `x` and `y`
+- [x] Check if all units have correct `x` and `y`
 - [x] Check if unit's garrison id really exists
 
 ## Triggers

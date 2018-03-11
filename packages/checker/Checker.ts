@@ -1,8 +1,8 @@
-import { ScenarioStruct } from '../io/structures/ScenarioStruct';
-import { UnitStruct } from '../io/Structures/UnitStruct';
-import { ConditionStruct } from '../io/Structures/ConditionStruct';
-import { EffectStruct } from '../io/Structures/EffectStruct';
-import { TriggerStruct } from '../io/Structures/TriggerStruct';
+import { ScenarioStruct } from 'io/Structures/ScenarioStruct';
+import { UnitStruct } from 'io/Structures/UnitStruct';
+import { ConditionStruct } from 'io/Structures/ConditionStruct';
+import { EffectStruct } from 'io/Structures/EffectStruct';
+import { TriggerStruct } from 'io/Structures/TriggerStruct';
 
 export const check = (scenario: ScenarioStruct) => {
   const allUnits = scenario.units.sections.reduce((acc, section) => [...acc, ...section.units], [] as UnitStruct[]);
@@ -17,12 +17,18 @@ export const check = (scenario: ScenarioStruct) => {
   // Check for garisson IDs
   const notExistsGarissonIds: UnitStruct[] = [];
   const notCorrectUnitCoords: UnitStruct[] = [];
+  const notCorrectUnitIds: UnitStruct[] = [];
   allUnits.forEach(unit => {
+    // Check for unit ID
+    if (unit.id < 0 && unit.id >= scenario.compressedHeader.nextUnitId) {
+      notCorrectUnitIds.push(unit);
+    }
+    // Check for garisson ID
     if (unit.garissonId > -1 && !unitIds.includes(unit.garissonId)) {
       notExistsGarissonIds.push(unit);
     }
+    // Check for unit coords
     if (unit.x < 0 || unit.x > scenario.map.width || unit.y < 0 || unit.y >= scenario.map.height) {
-      // TODO: make a test
       notCorrectUnitCoords.push(unit);
     }
   });
@@ -30,11 +36,11 @@ export const check = (scenario: ScenarioStruct) => {
   const notExistingTriggerId: EffectStruct[] = [];
   const notExistsEffectUnitId: EffectStruct[] = [];
   allEffects.forEach(effect => {
-    // Check for Effect's unit id
+    // Check for Effect's unit Id
     if (effect.unitId > -1 && !unitIds.includes(effect.unitId)) {
       notExistsEffectUnitId.push(effect);
     }
-    // Check for Effect's unit ids
+    // Check for Effect's unit Ids
     if (effect.unitIDs.length > 0) {
       effect.unitIDs.forEach(id => {
         if (id > -1 && !unitIds.includes(id)) {
@@ -42,25 +48,27 @@ export const check = (scenario: ScenarioStruct) => {
         }
       });
     }
-    // Check for trigger id
+    // Check for trigger's Id
     if (effect.triggerId > -1 && effect.triggerId > scenario.triggersCount - 1) {
       notExistingTriggerId.push(effect);
     }
   });
 
-  // Check for Condition's unit id
+  // Check for Condition's unit Id
   const notExistsConditionUnitId: ConditionStruct[] = [];
   allConditions.forEach(condition => {
+    // Check for condition's unit Id
     if (condition.unitId > -1 && !unitIds.includes(condition.unitId)) {
       notExistsConditionUnitId.push(condition);
     }
   });
 
-  console.log(
+  return {
+    notCorrectUnitIds,
     notExistsGarissonIds,
     notExistsEffectUnitId,
     notExistsConditionUnitId,
     notExistingTriggerId,
     notCorrectUnitCoords
-  );
+  };
 };

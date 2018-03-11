@@ -1,8 +1,8 @@
-import { ScenarioStruct } from '../io/IO';
-import { Age } from '../data/Age';
-import { Terrain } from '../data/Terrain';
-import { Civilization } from '../data/Civilization';
-import { MapStruct } from '../io/Structures/MapStruct';
+import { ScenarioStruct } from 'io/IO';
+import { Age } from 'data/Age';
+import { Terrain } from 'data/Terrain';
+import { Civilization } from 'data/Civilization';
+import { MapStruct } from 'io/Structures/MapStruct';
 import chalk from 'chalk';
 
 const { green, yellow } = chalk;

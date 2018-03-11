@@ -1,4 +1,4 @@
-import { ScenarioStruct } from '../io/Structures/ScenarioStruct';
+import { ScenarioStruct } from 'io/Structures/ScenarioStruct';
 import * as jsontoxml from 'jsontoxml';
 import * as yamljs from 'yamljs';
 
