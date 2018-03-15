@@ -12,7 +12,7 @@ import { Civilization } from '../packages/data/Civilization';
 import { DifficultyLevel } from '../packages/data/DifficultyLevel';
 import { GameExtension } from '../packages/data/GameExtension';
 import { Player } from '../packages/data/Player';
-import { PlayerColor } from '../packages/data/PlayerColors';
+import { PlayerColor } from '../packages/data/PlayerColor';
 import { Resource } from '../packages/data/Resource';
 import { ScenarioSize } from '../packages/data/ScenarioSize';
 import { Terrain } from '../packages/data/Terrain';

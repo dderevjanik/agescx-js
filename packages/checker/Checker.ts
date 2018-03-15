@@ -4,7 +4,7 @@ import { ConditionStruct } from 'io/Structures/ConditionStruct';
 import { EffectStruct } from 'io/Structures/EffectStruct';
 import { TriggerStruct } from 'io/Structures/TriggerStruct';
 
-export const check = (scenario: ScenarioStruct) => {
+export const checkScenario = (scenario: ScenarioStruct) => {
   const allUnits = scenario.units.sections.reduce((acc, section) => [...acc, ...section.units], [] as UnitStruct[]);
   const allConditions = scenario.triggers.reduce(
     (acc, trigger) => [...acc, ...trigger.conditions],

@@ -33,6 +33,16 @@ AgeScx comes with set of different tools:
 - [Data](./packages/data) useful data
 - [Stats](./packages/stats) scenario stats in human-readable format
 
+## Examples
+
+```javascript
+import { readFileSync } from 'fs';
+import { readScenario } from 'agescx';
+
+const file = readFileSync('../scenarios/1.21/aok/Castaway.scx');
+const scenario = readScenario(file);
+```
+
 ## Others
 
 Agescx has also several scenarios created in different Age of Empires 2

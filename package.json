@@ -1,8 +1,10 @@
 {
   "name": "agescx",
   "version": "1.0.0",
-  "description": "![Travis](https://travis-ci.com/dderevjanik/agescx-js.svg?token=4Xa5bKD1752yZy67EZmR&branch=master)\r ![CircleCi](https://circleci.com/gh/dderevjanik/agescx-js/tree/master.svg?style=shield&circle-token=300c71444e312588d73d59155a33fef4d33b8647)\r ![DavidDM](https://david-dm.org/dderevjanik/agescx-js.svg)\r ![CodeClimate](https://img.shields.io/codeclimate/github/dderevjanik/agescx-js.svg)",
-  "main": "webpack-dev.config.js",
+  "description": "Age of empires 2 scenario de/compress module for node and browser",
+  "main": "dist/Index.js",
+  "types": "dist/Index.d.ts",
+  "typings": "dist/Index.d.ts",
   "jest": {
     "transform": {
       ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
@@ -40,13 +42,18 @@
   },
   "scripts": {
     "test": "jest",
-    "lint": "prettier --write ./src/**/*.ts"
+    "lint": "prettier --write ./packages/**/*.ts",
+    "build": "tsc",
+    "data": "ts-node ./scripts/ConvertData.script.ts"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/dderevjanik/agescx-js.git"
   },
-  "author": "",
+  "author": {
+    "name": "Daniel Derevjanik",
+    "email": "daniel.derevjanik@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/dderevjanik/agescx-js/issues"
