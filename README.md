@@ -1,5 +1,7 @@
 # AgeScxJS
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dderevjanik/agescx-js.svg)](https://greenkeeper.io/)
+
 ![Travis](https://travis-ci.com/dderevjanik/agescx-js.svg?token=4Xa5bKD1752yZy67EZmR&branch=master)
 
 Age of empires 2 scenario de/compress module for node and browser
