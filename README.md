@@ -1,38 +1,47 @@
 # AgeScxJS
 
 ![Travis](https://travis-ci.com/dderevjanik/agescx-js.svg?token=4Xa5bKD1752yZy67EZmR&branch=master)
-![CircleCi](https://circleci.com/gh/dderevjanik/agescx-js/tree/master.svg?style=shield&circle-token=300c71444e312588d73d59155a33fef4d33b8647)
-![DavidDM](https://david-dm.org/dderevjanik/agescx-js.svg)
-![CodeClimate](https://img.shields.io/codeclimate/github/dderevjanik/agescx-js.svg)
 
-Age of empires 2 scenario de/compress module for NodeJs or Browser
+Age of empires 2 scenario de/compress module for node and browser
 
 ![BigLogo](http://dderevjanik.github.io/agescx/img/aoe2-mediavel-small.jpg)
 
-Check [TODO.md List](TODO.md) for more information about project status
-
 ## About
 
-AgeScxJS is isomorphic module for nodejs written in Typescript. The main reason,
-why was this module created, is lack of functionality, which AoE2 in-game editor
+Set of tools and utilities to work with `.scx` files.
+
+The main reason, why was this project created, is lack of functionality, which AoE2 in-game editor
 offers. You can't access scenario programmaticaly via some API. Also, scripts
-(triggers) in AoE2 are preaty useless, because you have to handle a thousends of
-them when you're creating a big scenario with RPG element. Also, after some
-time, scripts are become like spaghetty code, you're not sure, which trigger is
-not needed, you have to click through all of them. AgeScxJS doesn't solve this
+(triggers) in AoE2 are pretty useless, because you have to handle a thousends of
+them when you're creating a big scenario with RPG element. But after some
+time, triggers become more-like spaghetty code. That means you're not sure, which trigger is
+not needed, you have to click through all of them to find out. AgeScxJS doesn't solve this
 problem, but you can use Javascript to create your own script language. You can
 also generate scenarios programmaticaly (mazzes, convert bitmap images,
 random, etc...). With AgeScxJS you can build your own web application for
 editing/converting or viewing scenarios. There's no restrictions what you can
-do with this module.
+do with those tools.
 
-Works on server or client side in same way.
+## Tools
 
-## Docs
+AgeScx comes with set of different tools:
 
-- [Scenario Structure](docs/Scenario.md) to see output structure of AgeScx
-- [List of Enums](docs/enums/README.md) used in Scenarios
-- See [Tutorial](docs/Tutorial.md) how to use agescx both in Browser and Node environments
+- [IO](./packages/io) read / write scenarios
+- [Checker](./packages/checker) check for errors/warning in scenario
+- [Diff](./packages/diff) differences between two scenarios
+- [Converter](./packages/converter) convert scenario to `.json`, `.xml` or `.yaml`
+- [Data](./packages/data) useful data
+- [Stats](./packages/stats) scenario stats in human-readable format
+
+## Examples
+
+```javascript
+import { readFileSync } from 'fs';
+import { readScenario } from 'agescx';
+
+const file = readFileSync('../scenarios/1.21/aok/Castaway.scx');
+const scenario = readScenario(file);
+```
 
 ## Others
 

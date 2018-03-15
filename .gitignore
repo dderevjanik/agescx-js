@@ -1,6 +1,4 @@
 build/
+dist/
 node_modules/
 npm-debug.log
-typings/
-dist/**/*.js
-example/

@@ -1,0 +1,62 @@
+{
+  "name": "agescx",
+  "version": "1.0.0",
+  "description": "Age of empires 2 scenario de/compress module for node and browser",
+  "main": "dist/Index.js",
+  "types": "dist/Index.d.ts",
+  "typings": "dist/Index.d.ts",
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
+    "moduleFileExtensions": [
+      "js",
+      "ts",
+      "tsx"
+    ],
+    "collectCoverage": false,
+    "testEnvironment": "node"
+  },
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "dependencies": {
+    "@types/jest": "^22.1.4",
+    "@types/node": "^9.4.6",
+    "@types/jsontoxml": "^1.0.0",
+    "@types/yamljs": "^0.2.30",
+    "asdata": "git+https://git@github.com/dderevjanik/asdata.git",
+    "jsontoxml": "^1.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "chalk": "^2.3.2",
+    "jest": "^22.4.2",
+    "prettier": "^1.11.1",
+    "ts-jest": "^22.4.1",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.8.0-dev.20180308"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "prettier --write ./packages/**/*.ts",
+    "build": "tsc",
+    "data": "ts-node ./scripts/ConvertData.script.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dderevjanik/agescx-js.git"
+  },
+  "author": {
+    "name": "Daniel Derevjanik",
+    "email": "daniel.derevjanik@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dderevjanik/agescx-js/issues"
+  },
+  "homepage": "https://github.com/dderevjanik/agescx-js#readme"
+}
