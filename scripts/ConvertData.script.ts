@@ -19,8 +19,8 @@ import { Terrain } from '../packages/data/Terrain';
 import { UnitGroup } from '../packages/data/UnitGroup';
 // #endregion
 
-function createMDTemplate(name: string, data: string) {
-  const lines = data.split('\n');
+function createMDTemplate(name: string, dataYml: string) {
+  const lines = dataYml.split('\n');
   return `# ${name}
 
 - [${name}.json](./${name}.json)
@@ -29,8 +29,8 @@ function createMDTemplate(name: string, data: string) {
 
 ## Preview
 
-\`\`\`json
-${lines.slice(0, 100)}
+\`\`\`yaml
+${lines.slice(0, 100).join('\n')}
 ${lines.length > 100 ? `...\n--- More ${lines.length - 100} entries ---` : ''}
 \`\`\`
 `;
