@@ -1,0 +1,9 @@
+
+<Age>
+	<None>-1</None>
+	<Dark>0</Dark>
+	<Feudal>1</Feudal>
+	<Castle>2</Castle>
+	<Imperial>3</Imperial>
+	<PostImperial>4</PostImperial>
+</Age>

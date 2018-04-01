@@ -1,0 +1,39 @@
+
+<AiType>
+	<Default>2</Default>
+	<Arabia>9</Arabia>
+	<Archipelago>10</Archipelago>
+	<Baltic>11</Baltic>
+	<BlackForest>12</BlackForest>
+	<Coastal>13</Coastal>
+	<Continental>14</Continental>
+	<CraterLake>15</CraterLake>
+	<Fortress>16</Fortress>
+	<GoldRush>17</GoldRush>
+	<Highland>18</Highland>
+	<Islands>19</Islands>
+	<Mediterranean>20</Mediterranean>
+	<Migration>21</Migration>
+	<Rivers>22</Rivers>
+	<TeamIslands>23</TeamIslands>
+	<Scandinavia>25</Scandinavia>
+	<Mongolia>26</Mongolia>
+	<Yucatan>27</Yucatan>
+	<SaltMarsh>28</SaltMarsh>
+	<Arena>29</Arena>
+	<KingOfTheHill>30</KingOfTheHill>
+	<Oasis>31</Oasis>
+	<GhostLake>32</GhostLake>
+	<Nomad>33</Nomad>
+	<RealWorldSpain>34</RealWorldSpain>
+	<RealWorldBritain>35</RealWorldBritain>
+	<RealWorldMideast>36</RealWorldMideast>
+	<RealWorldTexas>37</RealWorldTexas>
+	<RealWorldItaly>38</RealWorldItaly>
+	<RealWorldCaribbean>39</RealWorldCaribbean>
+	<RealWorldFrance>40</RealWorldFrance>
+	<RealWorldJutland>41</RealWorldJutland>
+	<RealWorldNippon>42</RealWorldNippon>
+	<RealWorldByzantium>43</RealWorldByzantium>
+	<Custom>44</Custom>
+</AiType>

@@ -1,0 +1,263 @@
+
+<Terrain>
+	<Grass 1 (default terrain)>
+		<id>0</id>
+		<color>339927</color>
+</Grass 1 (default terrain)>
+	<Water, Shallow>
+		<id>1</id>
+		<color>007BBD</color>
+</Water, Shallow>
+	<Beach (no buildings)>
+		<id>2</id>
+		<color>E1E372</color>
+</Beach (no buildings)>
+	<Dirt 3 (grassy)>
+		<id>3</id>
+		<color>AEB65E</color>
+</Dirt 3 (grassy)>
+	<Shallows>
+		<id>4</id>
+		<color>5492b0</color>
+</Shallows>
+	<Leaves>
+		<id>5</id>
+		<color>935047</color>
+</Leaves>
+	<Dirt 1 (brown with occasional cactus)>
+		<id>6</id>
+		<color>EE9B5E</color>
+</Dirt 1 (brown with occasional cactus)>
+	<Farm>
+		<id>7</id>
+		<color>82884d</color>
+</Farm>
+	<Dead Farm>
+		<id>8</id>
+		<color>32381d</color>
+</Dead Farm>
+	<Grass 3 (brownish)>
+		<id>9</id>
+		<color>93AC4C</color>
+</Grass 3 (brownish)>
+	<Forest>
+		<id>10</id>
+		<color>157615</color>
+</Forest>
+	<Dirt 2 (dirt grass mixture)>
+		<id>11</id>
+		<color>95A661</color>
+</Dirt 2 (dirt grass mixture)>
+	<Grass 2 (lush / very green)>
+		<id>12</id>
+		<color>40cc30</color>
+</Grass 2 (lush / very green)>
+	<Palm Desert>
+		<id>13</id>
+		<color>FFE094</color>
+</Palm Desert>
+	<Desert (sandy and light colored)>
+		<id>14</id>
+		<color>FFD094</color>
+</Desert (sandy and light colored)>
+	<Water (not dockable)>
+		<id>15</id>
+		<color>3060a0</color>
+</Water (not dockable)>
+	<Looks like Grass 1 (can build, only siege can move)>
+		<id>16</id>
+		<color>33C027</color>
+</Looks like Grass 1 (can build, only siege can move)>
+	<Jungle>
+		<id>17</id>
+		<color>357615</color>
+</Jungle>
+	<Bamboo>
+		<id>18</id>
+		<color>557615</color>
+</Bamboo>
+	<Pine Forest>
+		<id>19</id>
+		<color>208020</color>
+</Pine Forest>
+	<Forest (says oak forest when clicking tree)>
+		<id>20</id>
+		<color>9C6800</color>
+</Forest (says oak forest when clicking tree)>
+	<Snow Pine Forest>
+		<id>21</id>
+		<color>258625</color>
+</Snow Pine Forest>
+	<Water, Deep>
+		<id>22</id>
+		<color>003587</color>
+</Water, Deep>
+	<Water, Medium>
+		<id>23</id>
+		<color>0054B0</color>
+</Water, Medium>
+	<Road>
+		<id>24</id>
+		<color>e09545</color>
+</Road>
+	<Road, Broken>
+		<id>25</id>
+		<color>d49242</color>
+</Road, Broken>
+	<Ice (no ships)>
+		<id>26</id>
+		<color>BDD1FD</color>
+</Ice (no ships)>
+	<Dirt 2 (no beach, building residue, dockable)>
+		<id>27</id>
+		<color>d59545</color>
+</Dirt 2 (no beach, building residue, dockable)>
+	<Water, Bridge (walkable, no ships)>
+		<id>28</id>
+		<color>905db6</color>
+</Water, Bridge (walkable, no ships)>
+	<Farm 1>
+		<id>29</id>
+		<color>42482d</color>
+</Farm 1>
+	<Farm 2>
+		<id>30</id>
+		<color>62683d</color>
+</Farm 2>
+	<Farm 3>
+		<id>31</id>
+		<color>708040</color>
+</Farm 3>
+	<Snow>
+		<id>32</id>
+		<color>EAEDFF</color>
+</Snow>
+	<Snow Dirt>
+		<id>33</id>
+		<color>b8c8ef</color>
+</Snow Dirt>
+	<Snow Grass>
+		<id>34</id>
+		<color>c8f8ff</color>
+</Snow Grass>
+	<Ice (allows ships)>
+		<id>35</id>
+		<color>D8DFFF</color>
+</Ice (allows ships)>
+	<Snow Dirt (building residue)>
+		<id>36</id>
+		<color>c8d8e0</color>
+</Snow Dirt (building residue)>
+	<Ice, Beach (allows ships, build walls only)>
+		<id>37</id>
+		<color>CFDAFF</color>
+</Ice, Beach (allows ships, build walls only)>
+	<Road, Snow>
+		<id>38</id>
+		<color>d8d8ff</color>
+</Road, Snow>
+	<Road, Fungus>
+		<id>39</id>
+		<color>c8f8ef</color>
+</Road, Fungus>
+	<Rock 1>
+		<id>40</id>
+		<color>e4a290</color>
+</Rock 1>
+	<Savannah>
+		<id>41</id>
+		<color>95A661</color>
+</Savannah>
+	<Dirt 4>
+		<id>42</id>
+		<color>d59545</color>
+</Dirt 4>
+	<Desert Road>
+		<id>43</id>
+		<color>d49242</color>
+</Desert Road>
+	<Grass 4>
+		<id>44</id>
+		<color>93AC4C</color>
+</Grass 4>
+	<Desert 2>
+		<id>45</id>
+		<color>FFD094</color>
+</Desert 2>
+	<Quicksand>
+		<id>46</id>
+		<color>AEB65E</color>
+</Quicksand>
+	<Black>
+		<id>47</id>
+		<color>000000</color>
+</Black>
+	<Dragon Forest>
+		<id>48</id>
+		<color>FFE094</color>
+</Dragon Forest>
+	<Baobab Forest>
+		<id>49</id>
+		<color>FFE094</color>
+</Baobab Forest>
+	<Acacia Forest>
+		<id>50</id>
+		<color>FFE094</color>
+</Acacia Forest>
+	<Beach 2>
+		<id>51</id>
+		<color>E1E372</color>
+</Beach 2>
+	<Beach 3>
+		<id>52</id>
+		<color>E1E372</color>
+</Beach 3>
+	<Beach 4>
+		<id>53</id>
+		<color>E1E372</color>
+</Beach 4>
+	<Mangrove Shallow>
+		<id>54</id>
+		<color>5492b0</color>
+</Mangrove Shallow>
+	<Mangrove Forest>
+		<id>55</id>
+		<color>94ffe0</color>
+</Mangrove Forest>
+	<Rainforest>
+		<id>56</id>
+		<color>94ffe0</color>
+</Rainforest>
+	<Jungle Grass>
+		<id>60</id>
+		<color>339927</color>
+</Jungle Grass>
+	<Jungle Road>
+		<id>61</id>
+		<color>e09545</color>
+</Jungle Road>
+	<Jungle Leaves>
+		<id>62</id>
+		<color>339927</color>
+</Jungle Leaves>
+	<Rice Farm>
+		<id>63</id>
+		<color>82884d</color>
+</Rice Farm>
+	<Dead Rice Farm>
+		<id>64</id>
+		<color>32381d</color>
+</Dead Rice Farm>
+	<Rice Farm 1>
+		<id>65</id>
+		<color>42482d</color>
+</Rice Farm 1>
+	<Rice Farm 2>
+		<id>66</id>
+		<color>62683d</color>
+</Rice Farm 2>
+	<Rice Farm 3>
+		<id>67</id>
+		<color>708040</color>
+</Rice Farm 3>
+</Terrain>

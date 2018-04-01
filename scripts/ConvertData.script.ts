@@ -1,4 +1,4 @@
-import { writeFileSync, write } from 'fs';
+import { writeFileSync, write, writeFile } from 'fs';
 
 // #region parsers
 import * as yamljs from 'yamljs';
@@ -18,6 +18,23 @@ import { ScenarioSize } from '../packages/data/ScenarioSize';
 import { Terrain } from '../packages/data/Terrain';
 import { UnitGroup } from '../packages/data/UnitGroup';
 // #endregion
+
+function createMDTemplate(name: string, data: string) {
+  const lines = data.split('\n');
+  return `# ${name}
+
+- [${name}.json](./${name}.json)
+- [${name}.yaml](./${name}.yaml)
+- [${name}.xml](./${name}.xml)
+
+## Preview
+
+\`\`\`json
+${lines.slice(0, 100)}
+${lines.length > 100 ? `...\n--- More ${lines.length - 100} entries ---` : ''}
+\`\`\`
+`;
+}
 
 (async () => {
   const data = {
@@ -41,8 +58,9 @@ import { UnitGroup } from '../packages/data/UnitGroup';
     const json = JSON.stringify(obj, null, 2);
     const yaml = yamljs.stringify(obj);
     const xml = jsontoxml({ [dataKey]: obj }, { prettyPrint: true });
-    writeFileSync(`../docs/data/${dataKey}.json`, json);
-    writeFileSync(`../docs/data/${dataKey}.yaml`, yaml);
-    writeFileSync(`../docs/data/${dataKey}.xml`, xml);
+    writeFileSync(`./docs/data/${dataKey}.json`, json);
+    writeFileSync(`./docs/data/${dataKey}.yaml`, yaml);
+    writeFileSync(`./docs/data/${dataKey}.xml`, xml);
+    writeFileSync(`./docs/data/${dataKey}.md`, createMDTemplate(dataKey, json));
   });
 })();

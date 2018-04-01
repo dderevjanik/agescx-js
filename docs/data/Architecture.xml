@@ -1,0 +1,13 @@
+
+<Architecture>
+	<WestEuropean>0</WestEuropean>
+	<CentralEuropean>1</CentralEuropean>
+	<FarEastern>2</FarEastern>
+	<MiddleEastern>3</MiddleEastern>
+	<MesoAmerican>4</MesoAmerican>
+	<Mediteranean>5</Mediteranean>
+	<EasternEuropean>6</EasternEuropean>
+	<Indians>7</Indians>
+	<African>8</African>
+	<FarSouthEastern>9</FarSouthEastern>
+</Architecture>

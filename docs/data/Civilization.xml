@@ -1,0 +1,158 @@
+
+<Civilization>
+	<Britons>
+		<id>1</id>
+		<architecture>0</architecture>
+		<gameExtension>-1</gameExtension>
+</Britons>
+	<Franks>
+		<id>2</id>
+		<architecture>0</architecture>
+		<gameExtension>-1</gameExtension>
+</Franks>
+	<Goths>
+		<id>3</id>
+		<architecture>1</architecture>
+		<gameExtension>-1</gameExtension>
+</Goths>
+	<Teutons>
+		<id>4</id>
+		<architecture>1</architecture>
+		<gameExtension>-1</gameExtension>
+</Teutons>
+	<Japanese>
+		<id>5</id>
+		<architecture>2</architecture>
+		<gameExtension>-1</gameExtension>
+</Japanese>
+	<Chinese>
+		<id>6</id>
+		<architecture>2</architecture>
+		<gameExtension>-1</gameExtension>
+</Chinese>
+	<Byzantines>
+		<id>7</id>
+		<architecture>3</architecture>
+		<gameExtension>-1</gameExtension>
+</Byzantines>
+	<Persians>
+		<id>8</id>
+		<architecture>3</architecture>
+		<gameExtension>-1</gameExtension>
+</Persians>
+	<Saracens>
+		<id>9</id>
+		<architecture>3</architecture>
+		<gameExtension>-1</gameExtension>
+</Saracens>
+	<Turks>
+		<id>10</id>
+		<architecture>3</architecture>
+		<gameExtension>-1</gameExtension>
+</Turks>
+	<Vikings>
+		<id>11</id>
+		<architecture>1</architecture>
+		<gameExtension>-1</gameExtension>
+</Vikings>
+	<Mongols>
+		<id>12</id>
+		<architecture>2</architecture>
+		<gameExtension>-1</gameExtension>
+</Mongols>
+	<Celts>
+		<id>13</id>
+		<architecture>0</architecture>
+		<gameExtension>-1</gameExtension>
+</Celts>
+	<Spanish>
+		<id>14</id>
+		<architecture>0</architecture>
+		<gameExtension>0</gameExtension>
+</Spanish>
+	<Aztecs>
+		<id>15</id>
+		<architecture>4</architecture>
+		<gameExtension>0</gameExtension>
+</Aztecs>
+	<Mayans>
+		<id>16</id>
+		<architecture>4</architecture>
+		<gameExtension>0</gameExtension>
+</Mayans>
+	<Huns>
+		<id>17</id>
+		<architecture>1</architecture>
+		<gameExtension>0</gameExtension>
+</Huns>
+	<Koreans>
+		<id>18</id>
+		<architecture>2</architecture>
+		<gameExtension>0</gameExtension>
+</Koreans>
+	<Italians>
+		<id>19</id>
+		<architecture>5</architecture>
+		<gameExtension>1</gameExtension>
+</Italians>
+	<Indians>
+		<id>20</id>
+		<architecture>7</architecture>
+		<gameExtension>1</gameExtension>
+</Indians>
+	<Incas>
+		<id>21</id>
+		<architecture>4</architecture>
+		<gameExtension>1</gameExtension>
+</Incas>
+	<Magyars>
+		<id>22</id>
+		<architecture>6</architecture>
+		<gameExtension>1</gameExtension>
+</Magyars>
+	<Slavs>
+		<id>23</id>
+		<architecture>6</architecture>
+		<gameExtension>1</gameExtension>
+</Slavs>
+	<Portuguese>
+		<id>24</id>
+		<architecture>5</architecture>
+		<gameExtension>2</gameExtension>
+</Portuguese>
+	<Ethiopians>
+		<id>25</id>
+		<architecture>8</architecture>
+		<gameExtension>2</gameExtension>
+</Ethiopians>
+	<Malians>
+		<id>26</id>
+		<architecture>8</architecture>
+		<gameExtension>2</gameExtension>
+</Malians>
+	<Berbers>
+		<id>27</id>
+		<architecture>3</architecture>
+		<gameExtension>2</gameExtension>
+</Berbers>
+	<Khmer>
+		<id>28</id>
+		<architecture>9</architecture>
+		<gameExtension>3</gameExtension>
+</Khmer>
+	<Malay>
+		<id>29</id>
+		<architecture>9</architecture>
+		<gameExtension>3</gameExtension>
+</Malay>
+	<Burmese>
+		<id>30</id>
+		<architecture>9</architecture>
+		<gameExtension>3</gameExtension>
+</Burmese>
+	<Vietnamese>
+		<id>31</id>
+		<architecture>9</architecture>
+		<gameExtension>3</gameExtension>
+</Vietnamese>
+</Civilization>

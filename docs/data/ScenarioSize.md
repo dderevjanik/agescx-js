@@ -1,0 +1,12 @@
+# ScenarioSize
+
+- [ScenarioSize.json](./ScenarioSize.json)
+- [ScenarioSize.yaml](./ScenarioSize.yaml)
+- [ScenarioSize.xml](./ScenarioSize.xml)
+
+## Preview
+
+```json
+{,  "tiny": [,    120,,    120,  ],,  "small": [,    144,,    144,  ],,  "medium": [,    168,,    168,  ],,  "normal": [,    200,,    200,  ],,  "large": [,    220,,    220,  ],,  "giant": [,    240,,    240,  ],}
+
+```

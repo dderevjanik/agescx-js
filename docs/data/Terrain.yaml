@@ -1,0 +1,195 @@
+'Grass 1 (default terrain)':
+    id: 0
+    color: '339927'
+'Water, Shallow':
+    id: 1
+    color: 007BBD
+'Beach (no buildings)':
+    id: 2
+    color: E1E372
+'Dirt 3 (grassy)':
+    id: 3
+    color: AEB65E
+Shallows:
+    id: 4
+    color: 5492b0
+Leaves:
+    id: 5
+    color: '935047'
+'Dirt 1 (brown with occasional cactus)':
+    id: 6
+    color: EE9B5E
+Farm:
+    id: 7
+    color: 82884d
+'Dead Farm':
+    id: 8
+    color: 32381d
+'Grass 3 (brownish)':
+    id: 9
+    color: 93AC4C
+Forest:
+    id: 10
+    color: '157615'
+'Dirt 2 (dirt grass mixture)':
+    id: 11
+    color: 95A661
+'Grass 2 (lush / very green)':
+    id: 12
+    color: 40cc30
+'Palm Desert':
+    id: 13
+    color: FFE094
+'Desert (sandy and light colored)':
+    id: 14
+    color: FFD094
+'Water (not dockable)':
+    id: 15
+    color: 3060a0
+'Looks like Grass 1 (can build, only siege can move)':
+    id: 16
+    color: 33C027
+Jungle:
+    id: 17
+    color: '357615'
+Bamboo:
+    id: 18
+    color: '557615'
+'Pine Forest':
+    id: 19
+    color: '208020'
+'Forest (says oak forest when clicking tree)':
+    id: 20
+    color: 9C6800
+'Snow Pine Forest':
+    id: 21
+    color: '258625'
+'Water, Deep':
+    id: 22
+    color: '003587'
+'Water, Medium':
+    id: 23
+    color: 0054B0
+Road:
+    id: 24
+    color: e09545
+'Road, Broken':
+    id: 25
+    color: d49242
+'Ice (no ships)':
+    id: 26
+    color: BDD1FD
+'Dirt 2 (no beach, building residue, dockable)':
+    id: 27
+    color: d59545
+'Water, Bridge (walkable, no ships)':
+    id: 28
+    color: 905db6
+'Farm 1':
+    id: 29
+    color: 42482d
+'Farm 2':
+    id: 30
+    color: 62683d
+'Farm 3':
+    id: 31
+    color: '708040'
+Snow:
+    id: 32
+    color: EAEDFF
+'Snow Dirt':
+    id: 33
+    color: b8c8ef
+'Snow Grass':
+    id: 34
+    color: c8f8ff
+'Ice (allows ships)':
+    id: 35
+    color: D8DFFF
+'Snow Dirt (building residue)':
+    id: 36
+    color: c8d8e0
+'Ice, Beach (allows ships, build walls only)':
+    id: 37
+    color: CFDAFF
+'Road, Snow':
+    id: 38
+    color: d8d8ff
+'Road, Fungus':
+    id: 39
+    color: c8f8ef
+'Rock 1':
+    id: 40
+    color: e4a290
+Savannah:
+    id: 41
+    color: 95A661
+'Dirt 4':
+    id: 42
+    color: d59545
+'Desert Road':
+    id: 43
+    color: d49242
+'Grass 4':
+    id: 44
+    color: 93AC4C
+'Desert 2':
+    id: 45
+    color: FFD094
+Quicksand:
+    id: 46
+    color: AEB65E
+Black:
+    id: 47
+    color: '000000'
+'Dragon Forest':
+    id: 48
+    color: FFE094
+'Baobab Forest':
+    id: 49
+    color: FFE094
+'Acacia Forest':
+    id: 50
+    color: FFE094
+'Beach 2':
+    id: 51
+    color: E1E372
+'Beach 3':
+    id: 52
+    color: E1E372
+'Beach 4':
+    id: 53
+    color: E1E372
+'Mangrove Shallow':
+    id: 54
+    color: 5492b0
+'Mangrove Forest':
+    id: 55
+    color: 94ffe0
+Rainforest:
+    id: 56
+    color: 94ffe0
+'Jungle Grass':
+    id: 60
+    color: '339927'
+'Jungle Road':
+    id: 61
+    color: e09545
+'Jungle Leaves':
+    id: 62
+    color: '339927'
+'Rice Farm':
+    id: 63
+    color: 82884d
+'Dead Rice Farm':
+    id: 64
+    color: 32381d
+'Rice Farm 1':
+    id: 65
+    color: 42482d
+'Rice Farm 2':
+    id: 66
+    color: 62683d
+'Rice Farm 3':
+    id: 67
+    color: '708040'

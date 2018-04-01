@@ -1,0 +1,209 @@
+'Food Storage': 0
+'Wood Storage': 1
+'Stone Storage': 2
+'Gold Storage': 3
+'Population Headroom': 4
+'Conversion Range (Unused)': 5
+'Current Age': 6
+'Relics Captured': 7
+'Trade Bonus (Unused?)': 8
+'Trade Goods (Unused?)': 9
+'Trade Production Rate (Unused?)': 10
+'Population (Current and Headroom)': 11
+'Corpse Decay Time (Unused?)': 12
+'Discovery (Unused?)': 13
+'Monuments/Ruins Captured': 14
+'Animal Food (Unused)': 15
+'Berries Food (Unused)': 16
+'Fish Storage': 17
+Unknown0: 18
+'Total Units Created': 19
+'Units Killed': 20
+'Research Count': 21
+'% Map Explored': 22
+'Castle Age?': 23
+'Imperial Age?': 24
+'Feudal Age?': 25
+Unknown1: 26
+Atonement: 27
+Redemption: 28
+Unknown2: 29
+'Building Limit': 30
+'Food Limit': 31
+'Bonus Population': 32
+'Maintenance (Unused?)': 33
+'Faith (Unused?)': 34
+'Faith Recharging Rate': 35
+'Farm Food Amount': 36
+'Civilian Units (Villager High)': 37
+Unknown3: 38
+'All Techs Achieved': 39
+'Military Units (Largest Army)': 40
+'Units and Buildings Converted': 41
+'Standing Wonders': 42
+'Buildings Razed': 43
+'Kill Ratio': 44
+'Survival to Finish': 45
+'Tribute Fee': 46
+'Gold Mining Productivity': 47
+'Town Center Unavailable': 48
+'Gold Counter': 49
+Cartography: 50
+'Houses (Unused)': 51
+'Monastery Count': 52
+'Tribute Sent': 53
+'All Ruins Have Been Captured': 54
+'All Relics Have Been Captured': 55
+'Ore Storage (Unused)': 56
+'Captured Units (Unused?)': 57
+'Dark Age?': 58
+'Trade Good Quality (Unused?)': 59
+'Trade Market Level (Unused?)': 60
+'Formations (Unused?)': 61
+'Building Housing Rate': 62
+'Gather Tax Rate': 63
+'Gather Accumulator': 64
+'Salvage Decay Rate': 65
+'Allow Formations': 66
+Conversions: 67
+'Hit Points Killed (Unused)': 68
+'Killed P1': 69
+'Killed P2': 70
+'Killed P3': 71
+'Killed P4': 72
+'Killed P5': 73
+'Killed P6': 74
+'Killed P7': 75
+'Killed P8': 76
+'Conversion Resistance': 77
+'Trade Fee': 78
+'Stone Mining Productivity': 79
+'Queued Units': 80
+'Training Count': 81
+'Start With Packed Town Center / Raider': 82
+'Boarding Recharge Rate': 83
+'Starting Villagers': 84
+'Researches'' Cost Multiplier': 85
+'Researches'' Time Multiplier': 86
+Boarding: 87
+'Fish Trap Food Amount': 88
+'Bonus Healing Rate': 89
+'Healing Range': 90
+'Bonus Starting Food': 91
+'Bonus Starting Wood': 92
+'Bonus Starting Stone': 93
+'Bonus Starting Gold': 94
+'Enable Town Center Packing / Raider Ability': 95
+'Self Healing Seconds (Berserkers)': 96
+'Sheep/Turkey Dominant LOS': 97
+'Economy Score': 98
+'Technology Score': 99
+'Relic Gold (Collected)': 100
+'Trade Profit': 101
+'P1 Tribute': 102
+'P2 Tribute': 103
+'P3 Tribute': 104
+'P4 Tribute': 105
+'P5 Tribute': 106
+'P6 Tribute': 107
+'P7 Tribute': 108
+'P8 Tribute': 109
+'P1 Kill Score': 110
+'P2 Kill Score': 111
+'P3 Kill Score': 112
+'P4 Kill Score': 113
+'P5 Kill Score': 114
+'P6 Kill Score': 115
+'P7 Kill Score': 116
+'P8 Kill Score': 117
+'P1 Razings': 118
+'P2 Razings': 119
+'P3 Razings': 120
+'P4 Razings': 121
+'P5 Razings': 122
+'P6 Razings': 123
+'P7 Razings': 124
+'P8 Razings': 125
+'P1 Razing Score': 126
+'P2 Razing Score': 127
+'P3 Razing Score': 128
+'P4 Razing Score': 129
+'P5 Razing Score': 130
+'P6 Razing Score': 131
+'P7 Razing Score': 132
+'P8 Razing Score': 133
+'Standing Castles': 134
+'Hit Points Razing (Unused)': 135
+'Kills By P1': 136
+'Kills By P2': 137
+'Kills By P3': 138
+'Kills By P4': 139
+'Kills By P5': 140
+'Kills By P6': 141
+'Kills By P7': 142
+'Kills By P8': 143
+'Razings By P1': 144
+'Razings By P2': 145
+'Razings By P3': 146
+'Razings By P4': 147
+'Razings By P5': 148
+'Razings By P6': 149
+'Razings By P7': 150
+'Razings By P8': 151
+'Units Lost Score': 152
+'Buildings Lost Score': 153
+'Units Lost': 154
+'Buildings Lost': 155
+'Tribute From P1': 156
+'Tribute From P2': 157
+'Tribute From P3': 158
+'Tribute From P4': 159
+'Tribute From P5': 160
+'Tribute From P6': 161
+'Tribute From P7': 162
+'Tribute From P8': 163
+'Current Units Score': 164
+'Current Buildings Score': 165
+'Food Collected': 166
+'Wood Collected': 167
+'Stone Collected': 168
+'Gold Collected': 169
+'Score: Military': 170
+'Tribute Received': 171
+'Razing Score': 172
+'Total Castles': 173
+'Total Wonders': 174
+'Score: Economy (Tribute)': 175
+'Convert Min Adjustment': 176
+'Convert Max Adjustment': 177
+'Convert Resist Min Adjustment': 178
+'Convert Resist Max Adjustment': 179
+'Convert Building Min': 180
+'Convert Building Max': 181
+'Convert Building Chance': 182
+Spies: 183
+'Society Score': 184
+'Food Score': 185
+'Wood Score': 186
+'Stone Score': 187
+'Gold Score': 188
+'Chopping Productivity': 189
+'Food-gathering Productivity': 190
+'Relic Gold Production Rate': 191
+Heresy: 192
+Theocracy: 193
+'Crenellations (Garrisoned Inf.)': 194
+'Build Rate (Except Wonders)': 195
+'Atheism (Wonder Bonus)': 196
+'Atheism (Spies Discount)': 197
+'Unk 198 (unused?)': 198
+'Unk 199 (unused?)': 199
+'Unk 200 (unused?)': 200
+'Unk 201 (unused?)': 201
+'Unk 202 (unused?)': 202
+'Unk 203 (unused?)': 203
+'Unk 204 (unused?)': 204
+'Feitoria Food Productivity': 205
+'Feitoria Wood Productivity': 206
+'Feitoria Stone Productivity': 207
+'Feitoria Gold Productivity': 208

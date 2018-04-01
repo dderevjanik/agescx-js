@@ -1,0 +1,39 @@
+
+<PlayerColor>
+	<Blue>
+		<id>0</id>
+		<color>FF3300</color>
+</Blue>
+	<Red>
+		<id>1</id>
+		<color>0000FF</color>
+</Red>
+	<Green>
+		<id>2</id>
+		<color>00FF00</color>
+</Green>
+	<Yellow>
+		<id>3</id>
+		<color>00FFFF</color>
+</Yellow>
+	<Cyan>
+		<id>4</id>
+		<color>FFFF00</color>
+</Cyan>
+	<Purple>
+		<id>5</id>
+		<color>FF00FF</color>
+</Purple>
+	<White>
+		<id>6</id>
+		<color>FFFFFF</color>
+</White>
+	<Orange>
+		<id>7</id>
+		<color>0077FF</color>
+</Orange>
+	<BlackGreen>
+		<id>8</id>
+		<color>004400</color>
+</BlackGreen>
+</PlayerColor>

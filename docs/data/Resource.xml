@@ -1,0 +1,212 @@
+
+<Resource>
+	<Food Storage>0</Food Storage>
+	<Wood Storage>1</Wood Storage>
+	<Stone Storage>2</Stone Storage>
+	<Gold Storage>3</Gold Storage>
+	<Population Headroom>4</Population Headroom>
+	<Conversion Range (Unused)>5</Conversion Range (Unused)>
+	<Current Age>6</Current Age>
+	<Relics Captured>7</Relics Captured>
+	<Trade Bonus (Unused?)>8</Trade Bonus (Unused?)>
+	<Trade Goods (Unused?)>9</Trade Goods (Unused?)>
+	<Trade Production Rate (Unused?)>10</Trade Production Rate (Unused?)>
+	<Population (Current and Headroom)>11</Population (Current and Headroom)>
+	<Corpse Decay Time (Unused?)>12</Corpse Decay Time (Unused?)>
+	<Discovery (Unused?)>13</Discovery (Unused?)>
+	<Monuments/Ruins Captured>14</Monuments/Ruins Captured>
+	<Animal Food (Unused)>15</Animal Food (Unused)>
+	<Berries Food (Unused)>16</Berries Food (Unused)>
+	<Fish Storage>17</Fish Storage>
+	<Unknown0>18</Unknown0>
+	<Total Units Created>19</Total Units Created>
+	<Units Killed>20</Units Killed>
+	<Research Count>21</Research Count>
+	<% Map Explored>22</% Map Explored>
+	<Castle Age?>23</Castle Age?>
+	<Imperial Age?>24</Imperial Age?>
+	<Feudal Age?>25</Feudal Age?>
+	<Unknown1>26</Unknown1>
+	<Atonement>27</Atonement>
+	<Redemption>28</Redemption>
+	<Unknown2>29</Unknown2>
+	<Building Limit>30</Building Limit>
+	<Food Limit>31</Food Limit>
+	<Bonus Population>32</Bonus Population>
+	<Maintenance (Unused?)>33</Maintenance (Unused?)>
+	<Faith (Unused?)>34</Faith (Unused?)>
+	<Faith Recharging Rate>35</Faith Recharging Rate>
+	<Farm Food Amount>36</Farm Food Amount>
+	<Civilian Units (Villager High)>37</Civilian Units (Villager High)>
+	<Unknown3>38</Unknown3>
+	<All Techs Achieved>39</All Techs Achieved>
+	<Military Units (Largest Army)>40</Military Units (Largest Army)>
+	<Units and Buildings Converted>41</Units and Buildings Converted>
+	<Standing Wonders>42</Standing Wonders>
+	<Buildings Razed>43</Buildings Razed>
+	<Kill Ratio>44</Kill Ratio>
+	<Survival to Finish>45</Survival to Finish>
+	<Tribute Fee>46</Tribute Fee>
+	<Gold Mining Productivity>47</Gold Mining Productivity>
+	<Town Center Unavailable>48</Town Center Unavailable>
+	<Gold Counter>49</Gold Counter>
+	<Cartography>50</Cartography>
+	<Houses (Unused)>51</Houses (Unused)>
+	<Monastery Count>52</Monastery Count>
+	<Tribute Sent>53</Tribute Sent>
+	<All Ruins Have Been Captured>54</All Ruins Have Been Captured>
+	<All Relics Have Been Captured>55</All Relics Have Been Captured>
+	<Ore Storage (Unused)>56</Ore Storage (Unused)>
+	<Captured Units (Unused?)>57</Captured Units (Unused?)>
+	<Dark Age?>58</Dark Age?>
+	<Trade Good Quality (Unused?)>59</Trade Good Quality (Unused?)>
+	<Trade Market Level (Unused?)>60</Trade Market Level (Unused?)>
+	<Formations (Unused?)>61</Formations (Unused?)>
+	<Building Housing Rate>62</Building Housing Rate>
+	<Gather Tax Rate>63</Gather Tax Rate>
+	<Gather Accumulator>64</Gather Accumulator>
+	<Salvage Decay Rate>65</Salvage Decay Rate>
+	<Allow Formations>66</Allow Formations>
+	<Conversions>67</Conversions>
+	<Hit Points Killed (Unused)>68</Hit Points Killed (Unused)>
+	<Killed P1>69</Killed P1>
+	<Killed P2>70</Killed P2>
+	<Killed P3>71</Killed P3>
+	<Killed P4>72</Killed P4>
+	<Killed P5>73</Killed P5>
+	<Killed P6>74</Killed P6>
+	<Killed P7>75</Killed P7>
+	<Killed P8>76</Killed P8>
+	<Conversion Resistance>77</Conversion Resistance>
+	<Trade Fee>78</Trade Fee>
+	<Stone Mining Productivity>79</Stone Mining Productivity>
+	<Queued Units>80</Queued Units>
+	<Training Count>81</Training Count>
+	<Start With Packed Town Center / Raider>82</Start With Packed Town Center / Raider>
+	<Boarding Recharge Rate>83</Boarding Recharge Rate>
+	<Starting Villagers>84</Starting Villagers>
+	<Researches' Cost Multiplier>85</Researches' Cost Multiplier>
+	<Researches' Time Multiplier>86</Researches' Time Multiplier>
+	<Boarding>87</Boarding>
+	<Fish Trap Food Amount>88</Fish Trap Food Amount>
+	<Bonus Healing Rate>89</Bonus Healing Rate>
+	<Healing Range>90</Healing Range>
+	<Bonus Starting Food>91</Bonus Starting Food>
+	<Bonus Starting Wood>92</Bonus Starting Wood>
+	<Bonus Starting Stone>93</Bonus Starting Stone>
+	<Bonus Starting Gold>94</Bonus Starting Gold>
+	<Enable Town Center Packing / Raider Ability>95</Enable Town Center Packing / Raider Ability>
+	<Self Healing Seconds (Berserkers)>96</Self Healing Seconds (Berserkers)>
+	<Sheep/Turkey Dominant LOS>97</Sheep/Turkey Dominant LOS>
+	<Economy Score>98</Economy Score>
+	<Technology Score>99</Technology Score>
+	<Relic Gold (Collected)>100</Relic Gold (Collected)>
+	<Trade Profit>101</Trade Profit>
+	<P1 Tribute>102</P1 Tribute>
+	<P2 Tribute>103</P2 Tribute>
+	<P3 Tribute>104</P3 Tribute>
+	<P4 Tribute>105</P4 Tribute>
+	<P5 Tribute>106</P5 Tribute>
+	<P6 Tribute>107</P6 Tribute>
+	<P7 Tribute>108</P7 Tribute>
+	<P8 Tribute>109</P8 Tribute>
+	<P1 Kill Score>110</P1 Kill Score>
+	<P2 Kill Score>111</P2 Kill Score>
+	<P3 Kill Score>112</P3 Kill Score>
+	<P4 Kill Score>113</P4 Kill Score>
+	<P5 Kill Score>114</P5 Kill Score>
+	<P6 Kill Score>115</P6 Kill Score>
+	<P7 Kill Score>116</P7 Kill Score>
+	<P8 Kill Score>117</P8 Kill Score>
+	<P1 Razings>118</P1 Razings>
+	<P2 Razings>119</P2 Razings>
+	<P3 Razings>120</P3 Razings>
+	<P4 Razings>121</P4 Razings>
+	<P5 Razings>122</P5 Razings>
+	<P6 Razings>123</P6 Razings>
+	<P7 Razings>124</P7 Razings>
+	<P8 Razings>125</P8 Razings>
+	<P1 Razing Score>126</P1 Razing Score>
+	<P2 Razing Score>127</P2 Razing Score>
+	<P3 Razing Score>128</P3 Razing Score>
+	<P4 Razing Score>129</P4 Razing Score>
+	<P5 Razing Score>130</P5 Razing Score>
+	<P6 Razing Score>131</P6 Razing Score>
+	<P7 Razing Score>132</P7 Razing Score>
+	<P8 Razing Score>133</P8 Razing Score>
+	<Standing Castles>134</Standing Castles>
+	<Hit Points Razing (Unused)>135</Hit Points Razing (Unused)>
+	<Kills By P1>136</Kills By P1>
+	<Kills By P2>137</Kills By P2>
+	<Kills By P3>138</Kills By P3>
+	<Kills By P4>139</Kills By P4>
+	<Kills By P5>140</Kills By P5>
+	<Kills By P6>141</Kills By P6>
+	<Kills By P7>142</Kills By P7>
+	<Kills By P8>143</Kills By P8>
+	<Razings By P1>144</Razings By P1>
+	<Razings By P2>145</Razings By P2>
+	<Razings By P3>146</Razings By P3>
+	<Razings By P4>147</Razings By P4>
+	<Razings By P5>148</Razings By P5>
+	<Razings By P6>149</Razings By P6>
+	<Razings By P7>150</Razings By P7>
+	<Razings By P8>151</Razings By P8>
+	<Units Lost Score>152</Units Lost Score>
+	<Buildings Lost Score>153</Buildings Lost Score>
+	<Units Lost>154</Units Lost>
+	<Buildings Lost>155</Buildings Lost>
+	<Tribute From P1>156</Tribute From P1>
+	<Tribute From P2>157</Tribute From P2>
+	<Tribute From P3>158</Tribute From P3>
+	<Tribute From P4>159</Tribute From P4>
+	<Tribute From P5>160</Tribute From P5>
+	<Tribute From P6>161</Tribute From P6>
+	<Tribute From P7>162</Tribute From P7>
+	<Tribute From P8>163</Tribute From P8>
+	<Current Units Score>164</Current Units Score>
+	<Current Buildings Score>165</Current Buildings Score>
+	<Food Collected>166</Food Collected>
+	<Wood Collected>167</Wood Collected>
+	<Stone Collected>168</Stone Collected>
+	<Gold Collected>169</Gold Collected>
+	<Score: Military>170</Score: Military>
+	<Tribute Received>171</Tribute Received>
+	<Razing Score>172</Razing Score>
+	<Total Castles>173</Total Castles>
+	<Total Wonders>174</Total Wonders>
+	<Score: Economy (Tribute)>175</Score: Economy (Tribute)>
+	<Convert Min Adjustment>176</Convert Min Adjustment>
+	<Convert Max Adjustment>177</Convert Max Adjustment>
+	<Convert Resist Min Adjustment>178</Convert Resist Min Adjustment>
+	<Convert Resist Max Adjustment>179</Convert Resist Max Adjustment>
+	<Convert Building Min>180</Convert Building Min>
+	<Convert Building Max>181</Convert Building Max>
+	<Convert Building Chance>182</Convert Building Chance>
+	<Spies>183</Spies>
+	<Society Score>184</Society Score>
+	<Food Score>185</Food Score>
+	<Wood Score>186</Wood Score>
+	<Stone Score>187</Stone Score>
+	<Gold Score>188</Gold Score>
+	<Chopping Productivity>189</Chopping Productivity>
+	<Food-gathering Productivity>190</Food-gathering Productivity>
+	<Relic Gold Production Rate>191</Relic Gold Production Rate>
+	<Heresy>192</Heresy>
+	<Theocracy>193</Theocracy>
+	<Crenellations (Garrisoned Inf.)>194</Crenellations (Garrisoned Inf.)>
+	<Build Rate (Except Wonders)>195</Build Rate (Except Wonders)>
+	<Atheism (Wonder Bonus)>196</Atheism (Wonder Bonus)>
+	<Atheism (Spies Discount)>197</Atheism (Spies Discount)>
+	<Unk 198 (unused?)>198</Unk 198 (unused?)>
+	<Unk 199 (unused?)>199</Unk 199 (unused?)>
+	<Unk 200 (unused?)>200</Unk 200 (unused?)>
+	<Unk 201 (unused?)>201</Unk 201 (unused?)>
+	<Unk 202 (unused?)>202</Unk 202 (unused?)>
+	<Unk 203 (unused?)>203</Unk 203 (unused?)>
+	<Unk 204 (unused?)>204</Unk 204 (unused?)>
+	<Feitoria Food Productivity>205</Feitoria Food Productivity>
+	<Feitoria Wood Productivity>206</Feitoria Wood Productivity>
+	<Feitoria Stone Productivity>207</Feitoria Stone Productivity>
+	<Feitoria Gold Productivity>208</Feitoria Gold Productivity>
+</Resource>
