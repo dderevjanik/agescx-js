@@ -1,12 +1,14 @@
 # Terrain
 
+## Download data
+
 - [Terrain.json](./Terrain.json)
 - [Terrain.yaml](./Terrain.yaml)
 - [Terrain.xml](./Terrain.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "Grass 1 (default terrain)": {
     "id": 0,
@@ -107,6 +109,6 @@
   "Road": {
     "id": 24,
     "color": "e09545"
-...
---- More 162 entries ---
+	... More 162 lines ...
+}
 ```

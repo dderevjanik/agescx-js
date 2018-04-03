@@ -1,12 +1,14 @@
 # DifficultyLevel
 
+## Download data
+
 - [DifficultyLevel.json](./DifficultyLevel.json)
 - [DifficultyLevel.yaml](./DifficultyLevel.yaml)
 - [DifficultyLevel.xml](./DifficultyLevel.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "Easiest": 0,
   "Standard": 1,

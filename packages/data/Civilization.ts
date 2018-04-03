@@ -1,5 +1,5 @@
-import { Architecture } from './Architecture';
-import { GameExtension } from './GameExtension';
+import { Architecture } from "./Architecture";
+import { GameExtension } from "./GameExtension";
 
 export type Civilization = {
   id: number;

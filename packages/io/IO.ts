@@ -1,6 +1,6 @@
-import ASData from 'asdata';
-export { ScenarioStruct } from './Structures/ScenarioStruct';
-import { readScenario as readScenarioStruct } from './Structures/ScenarioStruct';
+import ASData from "asdata";
+export { ScenarioStruct } from "./Structures/ScenarioStruct";
+import { readScenario as readScenarioStruct } from "./Structures/ScenarioStruct";
 
 /**
  * Read scenario file

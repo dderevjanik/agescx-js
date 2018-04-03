@@ -1,5 +1,5 @@
-import ASData from 'asdata';
-import { repeat } from '../utils/StructureHelpers';
+import ASData from "asdata";
+import { repeat } from "../utils/StructureHelpers";
 
 export type DisablesStruct = {
   disabledTechs: number[];

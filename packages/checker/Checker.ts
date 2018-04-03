@@ -1,18 +1,14 @@
-import { ScenarioStruct } from 'io/Structures/ScenarioStruct';
-import { UnitStruct } from 'io/Structures/UnitStruct';
-import { ConditionStruct } from 'io/Structures/ConditionStruct';
-import { EffectStruct } from 'io/Structures/EffectStruct';
-import { TriggerStruct } from 'io/Structures/TriggerStruct';
+import { ScenarioStruct } from "../io/Structures/ScenarioStruct";
+import { UnitStruct } from "../io/Structures/UnitStruct";
+import { ConditionStruct } from "../io/Structures/ConditionStruct";
+import { EffectStruct } from "../io/Structures/EffectStruct";
+import { getAllUnits, getAllUnitIds, getAllEffects, getAllConditions } from "../helpers/Helpers";
 
 export const checkScenario = (scenario: ScenarioStruct) => {
-  const allUnits = scenario.units.sections.reduce((acc, section) => [...acc, ...section.units], [] as UnitStruct[]);
-  const allConditions = scenario.triggers.reduce(
-    (acc, trigger) => [...acc, ...trigger.conditions],
-    [] as ConditionStruct[]
-  );
-  const allEffects = scenario.triggers.reduce((acc, trigger) => [...acc, ...trigger.effects], [] as EffectStruct[]);
-
-  const unitIds = allUnits.reduce((acc, unit) => [...acc, unit.id], [] as number[]);
+  const allUnits = getAllUnits(scenario);
+  const allConditions = getAllConditions(scenario);
+  const allEffects = getAllEffects(scenario);
+  const unitIds = getAllUnitIds(scenario);
 
   // Check for garisson IDs
   const notExistsGarissonIds: UnitStruct[] = [];

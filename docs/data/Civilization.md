@@ -1,12 +1,14 @@
 # Civilization
 
+## Download data
+
 - [Civilization.json](./Civilization.json)
 - [Civilization.yaml](./Civilization.yaml)
 - [Civilization.xml](./Civilization.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "Britons": {
     "id": 1,
@@ -107,6 +109,6 @@
     "id": 20,
     "architecture": 7,
     "gameExtension": 1
-...
---- More 57 entries ---
+	... More 57 lines ...
+}
 ```

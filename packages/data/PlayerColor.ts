@@ -7,13 +7,13 @@ export type PlayerColor = {
 };
 
 export const PlayerColor = {
-  Blue: { id: 0, color: 'FF3300' },
-  Red: { id: 1, color: '0000FF' },
-  Green: { id: 2, color: '00FF00' },
-  Yellow: { id: 3, color: '00FFFF' },
-  Cyan: { id: 4, color: 'FFFF00' },
-  Purple: { id: 5, color: 'FF00FF' },
-  White: { id: 6, color: 'FFFFFF' },
-  Orange: { id: 7, color: '0077FF' },
-  BlackGreen: { id: 8, color: '004400' }
+  Blue: { id: 0, color: "FF3300" },
+  Red: { id: 1, color: "0000FF" },
+  Green: { id: 2, color: "00FF00" },
+  Yellow: { id: 3, color: "00FFFF" },
+  Cyan: { id: 4, color: "FFFF00" },
+  Purple: { id: 5, color: "FF00FF" },
+  White: { id: 6, color: "FFFFFF" },
+  Orange: { id: 7, color: "0077FF" },
+  BlackGreen: { id: 8, color: "004400" }
 };

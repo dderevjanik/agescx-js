@@ -1,12 +1,14 @@
 # UnitGroup
 
+## Download data
+
 - [UnitGroup.json](./UnitGroup.json)
 - [UnitGroup.yaml](./UnitGroup.yaml)
 - [UnitGroup.xml](./UnitGroup.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "Archers": [
     4,
@@ -107,6 +109,6 @@
     45,
     47,
     49,
-...
---- More 871 entries ---
+	... More 871 lines ...
+}
 ```

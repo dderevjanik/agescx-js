@@ -1,4 +1,4 @@
-import ASData from 'asdata';
+import ASData from "asdata";
 
 /**
  * [0] - Terrain id

@@ -1,7 +1,7 @@
-import ASData from 'asdata';
-import { PlayerData3Struct, readPlayerData3 } from './PlayerData3Struct';
-import { UnitStruct, readUnit } from './UnitStruct';
-import { repeat } from '../utils/StructureHelpers';
+import ASData from "asdata";
+import { PlayerData3Struct, readPlayerData3 } from "./PlayerData3Struct";
+import { UnitStruct, readUnit } from "./UnitStruct";
+import { repeat } from "../utils/StructureHelpers";
 
 export type UnitsStruct = {
   /**

@@ -23,15 +23,17 @@ function createMDTemplate(name: string, dataYml: string) {
   const lines = dataYml.split('\n');
   return `# ${name}
 
+## Download data
+
 - [${name}.json](./${name}.json)
 - [${name}.yaml](./${name}.yaml)
 - [${name}.xml](./${name}.xml)
 
 ## Preview
 
-\`\`\`yaml
+\`\`\`json
 ${lines.slice(0, 100).join('\n')}
-${lines.length > 100 ? `...\n--- More ${lines.length - 100} entries ---` : ''}
+${lines.length > 100 ? `\t... More ${lines.length - 100} lines ...\n}` : ''}
 \`\`\`
 `;
 }

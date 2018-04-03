@@ -1,12 +1,14 @@
 # Architecture
 
+## Download data
+
 - [Architecture.json](./Architecture.json)
 - [Architecture.yaml](./Architecture.yaml)
 - [Architecture.xml](./Architecture.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "WestEuropean": 0,
   "CentralEuropean": 1,

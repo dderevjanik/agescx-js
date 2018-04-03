@@ -1,12 +1,14 @@
 # Player
 
+## Download data
+
 - [Player.json](./Player.json)
 - [Player.yaml](./Player.yaml)
 - [Player.xml](./Player.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "GAIA": 0,
   "Player1": 1,

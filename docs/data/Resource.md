@@ -1,12 +1,14 @@
 # Resource
 
+## Download data
+
 - [Resource.json](./Resource.json)
 - [Resource.yaml](./Resource.yaml)
 - [Resource.xml](./Resource.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "Food Storage": 0,
   "Wood Storage": 1,
@@ -107,6 +109,6 @@
   "Self Healing Seconds (Berserkers)": 96,
   "Sheep/Turkey Dominant LOS": 97,
   "Economy Score": 98,
-...
---- More 111 entries ---
+	... More 111 lines ...
+}
 ```

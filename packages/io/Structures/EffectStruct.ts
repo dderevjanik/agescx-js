@@ -1,7 +1,7 @@
-import ASData from 'asdata';
-import { readLocation } from './LocationStruct';
-import { readArea } from './AreaStruct';
-import { repeat } from '../utils/StructureHelpers';
+import ASData from "asdata";
+import { readLocation } from "./LocationStruct";
+import { readArea } from "./AreaStruct";
+import { repeat } from "../utils/StructureHelpers";
 
 export type EffectStruct = {
   type: number;

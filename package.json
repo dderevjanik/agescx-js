@@ -46,7 +46,8 @@
   "scripts": {
     "test": "jest",
     "lint": "prettier --write ./packages/**/*.ts",
-    "build": "tsc",
+    "build": "npm test && npm run build:node && npm run build:web",
+    "build:node": "tsc",
     "build:web": "webpack --mode production --config webpack.config.web.js",
     "data": "ts-node ./scripts/ConvertData.script.ts"
   },

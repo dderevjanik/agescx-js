@@ -1,12 +1,14 @@
 # AiType
 
+## Download data
+
 - [AiType.json](./AiType.json)
 - [AiType.yaml](./AiType.yaml)
 - [AiType.xml](./AiType.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "Default": 2,
   "Arabia": 9,

@@ -1,7 +1,7 @@
-import ASData from 'asdata';
-import { AIStruct, readAIStruct } from './AIStruct';
-import { readResourceStruct, ResourceStruct } from './ResourceStruct';
-import { repeat } from '../utils/StructureHelpers';
+import ASData from "asdata";
+import { AIStruct, readAIStruct } from "./AIStruct";
+import { readResourceStruct, ResourceStruct } from "./ResourceStruct";
+import { repeat } from "../utils/StructureHelpers";
 
 export type PlayerData2Struct = {
   unknown1: [string, string][];

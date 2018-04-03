@@ -1,12 +1,14 @@
 # GameExtension
 
+## Download data
+
 - [GameExtension.json](./GameExtension.json)
 - [GameExtension.yaml](./GameExtension.yaml)
 - [GameExtension.xml](./GameExtension.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "None": -1,
   "TheConquerors": 0,

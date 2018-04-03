@@ -1,7 +1,7 @@
-import ASData from 'asdata';
-import { EffectStruct, readEffect } from './EffectStruct';
-import { ConditionStruct, readCondition } from './ConditionStruct';
-import { repeat } from '../utils/StructureHelpers';
+import ASData from "asdata";
+import { EffectStruct, readEffect } from "./EffectStruct";
+import { ConditionStruct, readCondition } from "./ConditionStruct";
+import { repeat } from "../utils/StructureHelpers";
 
 export type TriggerStruct = {
   /**

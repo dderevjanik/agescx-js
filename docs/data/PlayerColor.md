@@ -1,12 +1,14 @@
 # PlayerColor
 
+## Download data
+
 - [PlayerColor.json](./PlayerColor.json)
 - [PlayerColor.yaml](./PlayerColor.yaml)
 - [PlayerColor.xml](./PlayerColor.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "Blue": {
     "id": 0,

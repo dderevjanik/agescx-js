@@ -1,6 +1,5 @@
-import ASData from 'asdata';
-import { LocationStruct } from './LocationStruct';
-import { repeat } from '../utils/StructureHelpers';
+import ASData from "asdata";
+import { repeat } from "../utils/StructureHelpers";
 
 export type PlayerData4Struct = {
   /**

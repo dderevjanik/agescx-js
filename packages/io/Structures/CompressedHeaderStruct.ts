@@ -1,6 +1,6 @@
-import ASData from 'asdata';
-import { PlayerData1Struct, readPlayerData1 } from './PlayerData1Struct';
-import { repeat } from '../utils/StructureHelpers';
+import ASData from "asdata";
+import { PlayerData1Struct, readPlayerData1 } from "./PlayerData1Struct";
+import { repeat } from "../utils/StructureHelpers";
 
 export type CompressedHeaderStruct = {
   /**

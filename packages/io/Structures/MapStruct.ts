@@ -1,6 +1,6 @@
-import ASData from 'asdata';
-import { readTileStruct, TileStruct } from './TileStruct';
-import { repeat } from '../utils/StructureHelpers';
+import ASData from "asdata";
+import { readTileStruct, TileStruct } from "./TileStruct";
+import { repeat } from "../utils/StructureHelpers";
 
 export type MapStruct = {
   separator: number;

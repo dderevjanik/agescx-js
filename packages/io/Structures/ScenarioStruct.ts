@@ -1,20 +1,20 @@
-import ASData from 'asdata';
-import { repeat } from '../utils/StructureHelpers';
+import ASData from "asdata";
+import { repeat } from "../utils/StructureHelpers";
 
 // #region structures
-import { HeaderStruct, readHeader } from './HeaderStruct';
-import { readCompressedHeaderStruct, CompressedHeaderStruct } from './CompressedHeaderStruct';
-import { readMessages, MessagesStruct } from './MessagesStruct';
-import { readCinematic, CinematicStruct } from './CinematicStruct';
-import { readImage, ImageStruct } from './ImageStruct';
-import { readPlayerData2, PlayerData2Struct } from './PlayerData2Struct';
-import { readGoals, GoalsStruct } from './GoalsStruct';
-import { readDiplomacy, DiplomacyStruct } from './DiplomacyStruct';
-import { readDisablesStruct, DisablesStruct } from './DisablesStruct';
-import { readMapStruct, MapStruct } from './MapStruct';
-import { readUnitsStruct, UnitsStruct } from './UnitsStruct';
-import { readPlayerDat4, PlayerData4Struct } from './PlayerData4Struct';
-import { readTrigger, TriggerStruct } from './TriggerStruct';
+import { HeaderStruct, readHeader } from "./HeaderStruct";
+import { readCompressedHeaderStruct, CompressedHeaderStruct } from "./CompressedHeaderStruct";
+import { readMessages, MessagesStruct } from "./MessagesStruct";
+import { readCinematic, CinematicStruct } from "./CinematicStruct";
+import { readImage, ImageStruct } from "./ImageStruct";
+import { readPlayerData2, PlayerData2Struct } from "./PlayerData2Struct";
+import { readGoals, GoalsStruct } from "./GoalsStruct";
+import { readDiplomacy, DiplomacyStruct } from "./DiplomacyStruct";
+import { readDisablesStruct, DisablesStruct } from "./DisablesStruct";
+import { readMapStruct, MapStruct } from "./MapStruct";
+import { readUnitsStruct, UnitsStruct } from "./UnitsStruct";
+import { readPlayerDat4, PlayerData4Struct } from "./PlayerData4Struct";
+import { readTrigger, TriggerStruct } from "./TriggerStruct";
 // #endregion
 
 export type ScenarioStruct = {

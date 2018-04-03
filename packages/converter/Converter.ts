@@ -1,11 +1,11 @@
-import { ScenarioStruct } from 'io/Structures/ScenarioStruct';
-import * as jsontoxml from 'jsontoxml';
-import * as yamljs from 'yamljs';
+import { ScenarioStruct } from "../io/Structures/ScenarioStruct";
+import * as jsontoxml from "jsontoxml";
+import * as yamljs from "yamljs";
 
 const supportedFormats = {
-  json: 'json',
-  xml: 'xml',
-  yaml: 'yaml'
+  json: "json",
+  xml: "xml",
+  yaml: "yaml"
 };
 type SupportedFormats = keyof typeof supportedFormats;
 
@@ -18,13 +18,13 @@ type SupportedFormats = keyof typeof supportedFormats;
 export const convertScenario = (scenario: ScenarioStruct, format: SupportedFormats, section?: keyof ScenarioStruct) => {
   const selectedSection = section ? scenario[section] : scenario;
   switch (format) {
-    case 'json': {
+    case "json": {
       return JSON.stringify(selectedSection, null, 2);
     }
-    case 'xml': {
-      return jsontoxml({ [section ? section : 'scenario']: scenario }, { prettyPrint: true });
+    case "xml": {
+      return jsontoxml({ [section ? section : "scenario"]: scenario }, { prettyPrint: true });
     }
-    case 'yaml': {
+    case "yaml": {
       return yamljs.stringify(selectedSection);
     }
     default: {

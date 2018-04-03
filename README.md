@@ -12,13 +12,13 @@ Age of empires 2 scenario de/compress module for node and browser
 Set of tools and utilities to work with `.scx` files.
 
 The main reason, why was this project created, is lack of functionality, which AoE2 in-game editor
-offers. You can't access scenario programmaticaly via some API. Also, scripts
-(triggers) in AoE2 are pretty useless, because you have to handle a thousends of
+offers. You can't access scenario programmatically via some API. Also, scripts
+(triggers) in AoE2 are pretty useless, because you have to handle a thousands of
 them when you're creating a big scenario with RPG element. But after some
-time, triggers become more-like spaghetty code. That means you're not sure, which trigger is
+time, triggers become more-like spaghetti code. That means you're not sure, which trigger is
 not needed, you have to click through all of them to find out. AgeScxJS doesn't solve this
 problem, but you can use Javascript to create your own script language. You can
-also generate scenarios programmaticaly (mazzes, convert bitmap images,
+also generate scenarios programmatically (mazes, convert bitmap images,
 random, etc...). With AgeScxJS you can build your own web application for
 editing/converting or viewing scenarios. There's no restrictions what you can
 do with those tools.

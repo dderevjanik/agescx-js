@@ -1,7 +1,7 @@
-export { checkScenario } from './checker/Checker';
-export { convertScenario } from './converter/Converter';
-export { readScenario, ScenarioStruct } from './io/IO';
-export { printStats } from './stats/Stats';
+export { checkScenario } from "./checker/Checker";
+export { convertScenario } from "./converter/Converter";
+export { readScenario, ScenarioStruct } from "./io/IO";
+export { printStats } from "./stats/Stats";
 
 // import { readFileSync } from 'fs';
 // import { readScenario } from './io/IO';

@@ -1,12 +1,14 @@
 # ScenarioSize
 
+## Download data
+
 - [ScenarioSize.json](./ScenarioSize.json)
 - [ScenarioSize.yaml](./ScenarioSize.yaml)
 - [ScenarioSize.xml](./ScenarioSize.xml)
 
 ## Preview
 
-```yaml
+```json
 {
   "tiny": [
     120,
