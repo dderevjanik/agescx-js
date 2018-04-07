@@ -1,26 +1,28 @@
-import { writeFileSync, write, writeFile } from 'fs';
+import { writeFileSync, write, writeFile } from "fs";
 
 // #region parsers
-import * as yamljs from 'yamljs';
-import * as jsontoxml from 'jsontoxml';
+import * as yamljs from "yamljs";
+import * as jsontoxml from "jsontoxml";
 // #endregion
 // #region data
-import { Age } from '../packages/data/Age';
-import { AIType } from '../packages/data/AIType';
-import { Architecture } from '../packages/data/Architecture';
-import { Civilization } from '../packages/data/Civilization';
-import { DifficultyLevel } from '../packages/data/DifficultyLevel';
-import { GameExtension } from '../packages/data/GameExtension';
-import { Player } from '../packages/data/Player';
-import { PlayerColor } from '../packages/data/PlayerColor';
-import { Resource } from '../packages/data/Resource';
-import { ScenarioSize } from '../packages/data/ScenarioSize';
-import { Terrain } from '../packages/data/Terrain';
-import { UnitGroup } from '../packages/data/UnitGroup';
+import { Age } from "../packages/data/Age";
+import { AIType } from "../packages/data/AIType";
+import { Architecture } from "../packages/data/Architecture";
+import { Civilization } from "../packages/data/Civilization";
+import { DifficultyLevel } from "../packages/data/DifficultyLevel";
+import { GameExtension } from "../packages/data/GameExtension";
+import { Player } from "../packages/data/Player";
+import { PlayerColor } from "../packages/data/PlayerColor";
+import { Resource } from "../packages/data/Resource";
+import { ScenarioSize } from "../packages/data/ScenarioSize";
+import { Tech } from "../packages/data/Tech";
+import { Terrain } from "../packages/data/Terrain";
+import { Unit } from "../packages/data/Unit";
+import { UnitGroup } from "../packages/data/UnitGroup";
 // #endregion
 
 function createMDTemplate(name: string, dataYml: string) {
-  const lines = dataYml.split('\n');
+  const lines = dataYml.split("\n");
   return `# ${name}
 
 ## Download data
@@ -32,8 +34,8 @@ function createMDTemplate(name: string, dataYml: string) {
 ## Preview
 
 \`\`\`json
-${lines.slice(0, 100).join('\n')}
-${lines.length > 100 ? `\t... More ${lines.length - 100} lines ...\n}` : ''}
+${lines.slice(0, 100).join("\n")}
+${lines.length > 100 ? `\t... More ${lines.length - 100} lines ...\n}` : ""}
 \`\`\`
 `;
 }
@@ -50,7 +52,9 @@ ${lines.length > 100 ? `\t... More ${lines.length - 100} lines ...\n}` : ''}
     PlayerColor: PlayerColor,
     Resource: Resource,
     ScenarioSize: ScenarioSize,
+    Tech: Tech,
     Terrain: Terrain,
+    Unit: Unit,
     UnitGroup: UnitGroup
   };
 

@@ -45,5 +45,7 @@ AgeScx comes with set of different tools:
 - [PlayerColor](./data/PlayerColor.md)
 - [Resource](./data/Resource.md)
 - [ScenarioSize](./data/ScenarioSize.md)
+- [Tech](./data/Tech.md);
 - [Terrain](./data/Terrain.md)
+- [Unit](./data/Unit.md)
 - [UnitGroup](./data/UnitGroup.md)

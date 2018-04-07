@@ -1,0 +1,651 @@
+
+<Tech>
+	<New Research 0 (U)(GAI)>0</New Research 0 (U)(GAI)>
+	<Tarkan (A)(HUN)>1</Tarkan (A)(HUN)>
+	<Elite Tarkan (HUN)>2</Elite Tarkan (HUN)>
+	<Yeomen (BRI)>3</Yeomen (BRI)>
+	<El Dorado (MAY)>4</El Dorado (MAY)>
+	<Furor Celtica (CEL)>5</Furor Celtica (CEL)>
+	<Drill (MON)>6</Drill (MON)>
+	<Mahouts (PER)>7</Mahouts (PER)>
+	<Town Watch>8</Town Watch>
+	<Zealotry (SAR)>9</Zealotry (SAR)>
+	<Artillery (TUR)>10</Artillery (TUR)>
+	<Crenellations (TEU)>11</Crenellations (TEU)>
+	<Crop Rotation>12</Crop Rotation>
+	<Heavy Plow>13</Heavy Plow>
+	<Horse Collar>14</Horse Collar>
+	<Guilds>15</Guilds>
+	<Anarchy (GOT)>16</Anarchy (GOT)>
+	<Banking>17</Banking>
+	<Barracks Huskarl (GOT)>18</Barracks Huskarl (GOT)>
+	<Cartography>19</Cartography>
+	<Currency (U)>20</Currency (U)>
+	<Atheism (HUN)>21</Atheism (HUN)>
+	<Loom>22</Loom>
+	<Coinage>23</Coinage>
+	<Garland Wars (AZT)>24</Garland Wars (AZT)>
+	<Stable (A)>25</Stable (A)>
+	<Plumed Archer (A)(MAY)>26</Plumed Archer (A)(MAY)>
+	<Elite Plumed Archer (MAY)>27</Elite Plumed Archer (MAY)>
+	<Compass (U)>28</Compass (U)>
+	<Atonement +5 Monk HP (AZT)>29</Atonement +5 Monk HP (AZT)>
+	<Sanctity +5 Monk HP (AZT)>30</Sanctity +5 Monk HP (AZT)>
+	<Fervor +5 Monk HP (AZT)>31</Fervor +5 Monk HP (AZT)>
+	<Redemption +5 Monk HP (AZT)>32</Redemption +5 Monk HP (AZT)>
+	<Faith +5 Monk HP (AZT)>33</Faith +5 Monk HP (AZT)>
+	<War Galley>34</War Galley>
+	<Galleon>35</Galleon>
+	<Illumination +5 Monk HP (AZT)>36</Illumination +5 Monk HP (AZT)>
+	<Cannon Galleon>37</Cannon Galleon>
+	<Block Printing +5 Monk HP (AZT)>38</Block Printing +5 Monk HP (AZT)>
+	<Husbandry>39</Husbandry>
+	<Heresy +5 Monk HP (AZT)>40</Heresy +5 Monk HP (AZT)>
+	<Theocracy +5 Monk HP (AZT)>41</Theocracy +5 Monk HP (AZT)>
+	<Infantry +1 attack (U)(AZT)>42</Infantry +1 attack (U)(AZT)>
+	<Infantry +2 attack (U)(AZT)>43</Infantry +2 attack (U)(AZT)>
+	<Infantry +3 attack (U)(AZT)>44</Infantry +3 attack (U)(AZT)>
+	<Faith>45</Faith>
+	<Block printing (U)>46</Block printing (U)>
+	<Chemistry>47</Chemistry>
+	<Caravan>48</Caravan>
+	<Berserkergang (VIK)>49</Berserkergang (VIK)>
+	<Masonry>50</Masonry>
+	<Architecture>51</Architecture>
+	<Rocketry (CHI)>52</Rocketry (CHI)>
+	<Archers -20% Cost (MAY)>53</Archers -20% Cost (MAY)>
+	<Treadmill Crane>54</Treadmill Crane>
+	<Gold Mining>55</Gold Mining>
+	<Archers -30% Cost (MAY)>56</Archers -30% Cost (MAY)>
+	<Spanish Cannon Galleon (U)>57</Spanish Cannon Galleon (U)>
+	<Conquistador (A)(SPA)>58</Conquistador (A)(SPA)>
+	<Kataparuto (JAP)>59</Kataparuto (JAP)>
+	<Elite Conquistador (SPA)>60</Elite Conquistador (SPA)>
+	<Logistica (BYZ)>61</Logistica (BYZ)>
+	<Upgrade Castle to Fortress (U)(GAI)>62</Upgrade Castle to Fortress (U)(GAI)>
+	<Keep>63</Keep>
+	<Bombard Tower>64</Bombard Tower>
+	<Gillnets>65</Gillnets>
+	<New Research 66 (U)(GAI)>66</New Research 66 (U)(GAI)>
+	<Forging>67</Forging>
+	<Iron Casting>68</Iron Casting>
+	<Villagers +30 AP vs Animals (MAG)>69</Villagers +30 AP vs Animals (MAG)>
+	<Start with eagle (U)(INC)>70</Start with eagle (U)(INC)>
+	<Stone Wall / Gate x2 HP>71</Stone Wall / Gate x2 HP>
+	<Fortified Wall / Gate x2 HP (U)>72</Fortified Wall / Gate x2 HP (U)>
+	<Inf, 2H Swordsman, Pikeman, Spearman +1 MA (U)(GAI)>73</Inf, 2H Swordsman, Pikeman, Spearman +1 MA (U)(GAI)>
+	<Scale Mail Armor>74</Scale Mail Armor>
+	<Blast Furnace>75</Blast Furnace>
+	<Chain Mail Armor>76</Chain Mail Armor>
+	<Plate Mail Armor>77</Plate Mail Armor>
+	<New Research 78 (U)(GAI)>78</New Research 78 (U)(GAI)>
+	<Cavalry, Cav Archers +1/+1 Armor (U)(GAI)>79</Cavalry, Cav Archers +1/+1 Armor (U)(GAI)>
+	<Plate Barding Armor>80</Plate Barding Armor>
+	<Scale Barding Armor>81</Scale Barding Armor>
+	<Chain Barding Armor>82</Chain Barding Armor>
+	<Bearded Axe (FRA)>83</Bearded Axe (FRA)>
+	<Missionary (A)(SPA)>84</Missionary (A)(SPA)>
+	<Hand Cannoneer (A)>85</Hand Cannoneer (A)>
+	<Allow Formations (U)(GAI)>86</Allow Formations (U)(GAI)>
+	<Spearman (A)>87</Spearman (A)>
+	<New Research 88 (U)(GAI)>88</New Research 88 (U)(GAI)>
+	<Siege Weapons +20% AP vs Buildings (U)(GAI)>89</Siege Weapons +20% AP vs Buildings (U)(GAI)>
+	<Tracking>90</Tracking>
+	<New Research 91 (U)(GAI)>91</New Research 91 (U)(GAI)>
+	<New Research 92 (U)(GAI)>92</New Research 92 (U)(GAI)>
+	<Ballistics>93</Ballistics>
+	<Scorpion (A)>94</Scorpion (A)>
+	<Free Hussar (U)(TUR)>95</Free Hussar (U)(TUR)>
+	<Capped Ram>96</Capped Ram>
+	<New Research 97 (U)(GAI)>97</New Research 97 (U)(GAI)>
+	<Elite Skirmisher>98</Elite Skirmisher>
+	<Skirmisher (A)>99</Skirmisher (A)>
+	<Crossbowman>100</Crossbowman>
+	<Feudal Age>101</Feudal Age>
+	<Castle Age>102</Castle Age>
+	<Imperial Age>103</Imperial Age>
+	<Dark Age>104</Dark Age>
+	<New Research 105 (U)(GAI)>105</New Research 105 (U)(GAI)>
+	<Shadow Blacksmith Age 1 (U)>106</Shadow Blacksmith Age 1 (U)>
+	<Shadow Monastery Age 1 (U)>107</Shadow Monastery Age 1 (U)>
+	<Shadow Dock Age 1 (U)>108</Shadow Dock Age 1 (U)>
+	<Shadow Farm Age 1 (U)>109</Shadow Farm Age 1 (U)>
+	<Shadow Mill Age 1 (U)>110</Shadow Mill Age 1 (U)>
+	<Camelry (H)>111</Camelry (H)>
+	<Fishing Ship (U)>112</Fishing Ship (U)>
+	<New Research 113 (U)(GAI)>113</New Research 113 (U)(GAI)>
+	<Spearman (U)>114</Spearman (U)>
+	<New Research 115 (U)(GAI)>115</New Research 115 (U)(GAI)>
+	<Villager (U)>116</Villager (U)>
+	<Palisade Wall (U)>117</Palisade Wall (U)>
+	<Shadow Town Center Age 1 (U)>118</Shadow Town Center Age 1 (U)>
+	<New Research 119 (U)(GAI)>119</New Research 119 (U)(GAI)>
+	<Shadow Node Age 2 (U)>120</Shadow Node Age 2 (U)>
+	<New Research 121 (U)(GAI)>121</New Research 121 (U)(GAI)>
+	<Shadow Barracks Age 2 (U)>122</Shadow Barracks Age 2 (U)>
+	<Shadow Blacksmith Age 2 (U)>123</Shadow Blacksmith Age 2 (U)>
+	<Shadow Monastery Age 2 (U)>124</Shadow Monastery Age 2 (U)>
+	<Shadow Dock Age 2 (U)>125</Shadow Dock Age 2 (U)>
+	<Shadow Farm Age 2 (U)>126</Shadow Farm Age 2 (U)>
+	<Watch Tower (A)>127</Watch Tower (A)>
+	<Shadow Market Age 2 (U)>128</Shadow Market Age 2 (U)>
+	<Shadow Mill Age 2 (U)>129</Shadow Mill Age 2 (U)>
+	<Shadow Stable Age 2 (U)>130</Shadow Stable Age 2 (U)>
+	<Shadow Trade WorkShop Age 2 (U)>131</Shadow Trade WorkShop Age 2 (U)>
+	<Shadow Archery Range Age 2 (U)>132</Shadow Archery Range Age 2 (U)>
+	<Upgrade Palisade Wall to Stone Wall (U)>133</Upgrade Palisade Wall to Stone Wall (U)>
+	<Upgrade Barracks to Archery Range (U)>134</Upgrade Barracks to Archery Range (U)>
+	<Shadow Node Age 3 (U)>135</Shadow Node Age 3 (U)>
+	<Castle (U)(GAI)>136</Castle (U)(GAI)>
+	<Castle (A)>137</Castle (A)>
+	<Shadow Siege Workshop Age 3 (U)>138</Shadow Siege Workshop Age 3 (U)>
+	<Fortified Wall (U)(GAI)>139</Fortified Wall (U)(GAI)>
+	<Guard Tower>140</Guard Tower>
+	<Castles +10 MA, +20% HP, +2 Armor (U)(GAI)>141</Castles +10 MA, +20% HP, +2 Armor (U)(GAI)>
+	<Shadow Node Age 4 (U)>142</Shadow Node Age 4 (U)>
+	<Shadow Tower Age 4 (U)>143</Shadow Tower Age 4 (U)>
+	<Wonder (A)>144</Wonder (A)>
+	<New Research 145 (U)(GAI)>145</New Research 145 (U)(GAI)>
+	<Shadow University Age 3 (U)>146</Shadow University Age 3 (U)>
+	<Archery Range (A)>147</Archery Range (A)>
+	<Market (A)>148</Market (A)>
+	<Siege Workshop (A)>149</Siege Workshop (A)>
+	<University (A)>150</University (A)>
+	<Archer (A)>151</Archer (A)>
+	<Cavalry Archer (U)(GAI)>152</Cavalry Archer (U)(GAI)>
+	<Trade Cog (U)(GAI)>153</Trade Cog (U)(GAI)>
+	<Skirmisher (U)(GAI)>154</Skirmisher (U)(GAI)>
+	<War Galley (U)(GAI)>155</War Galley (U)(GAI)>
+	<Light Camel (U)>156</Light Camel (U)>
+	<Monk (A)>157</Monk (A)>
+	<Spearman (U)(COPY)>158</Spearman (U)(COPY)>
+	<Bandit (U)(GAI)>159</Bandit (U)(GAI)>
+	<Man-At-Arms (U)>160</Man-At-Arms (U)>
+	<Trade Cart (A)>161</Trade Cart (A)>
+	<Battering Ram (A)>162</Battering Ram (A)>
+	<Crossbowman (U)(GAI)>163</Crossbowman (U)(GAI)>
+	<Elite Skirmisher (U)(GAI)>164</Elite Skirmisher (U)(GAI)>
+	<Heavy Swordsman (U)(GAI)>165</Heavy Swordsman (U)(GAI)>
+	<Knight (A)>166</Knight (A)>
+	<Mangonel (U)(GAI)>167</Mangonel (U)(GAI)>
+	<OMTBO (U)(GAI)>168</OMTBO (U)(GAI)>
+	<Scorpion (U)(GAI)>169</Scorpion (U)(GAI)>
+	<Galleon (U)(GAI)>170</Galleon (U)(GAI)>
+	<Capped Ram (U)(GAI)>171</Capped Ram (U)(GAI)>
+	<Bombard Cannon (U)>172</Bombard Cannon (U)>
+	<Cannon Galleon (U)(GAI)>173</Cannon Galleon (U)(GAI)>
+	<Hand Cannoner (U)>174</Hand Cannoner (U)>
+	<Cavalier (U)>175</Cavalier (U)>
+	<PMANG (U)(GAI)>176</PMANG (U)(GAI)>
+	<Trade Boats Carry +50% (U)(GAI)>177</Trade Boats Carry +50% (U)(GAI)>
+	<All Ages (U)>178</All Ages (U)>
+	<New Research 179 (U)(GAI)>179</New Research 179 (U)(GAI)>
+	<Trade Cog (A)>180</Trade Cog (A)>
+	<New Research 181 (U)(GAI)>181</New Research 181 (U)(GAI)>
+	<Gold Shaft Mining>182</Gold Shaft Mining>
+	<New Research 183 (U)(GAI)>183</New Research 183 (U)(GAI)>
+	<Port (U)(GAI)>184</Port (U)(GAI)>
+	<Cathedral (U)(GAI)>185</Cathedral (U)(GAI)>
+	<Long Swordsman (H)>186</Long Swordsman (H)>
+	<Town Center (A)>187</Town Center (A)>
+	<Bombard Cannon (A)>188</Bombard Cannon (A)>
+	<Stone Wall / Gate (A)>189</Stone Wall / Gate (A)>
+	<New Research 190 (U)(GAI)>190</New Research 190 (U)(GAI)>
+	<New Research 191 (U)(GAI)>191</New Research 191 (U)(GAI)>
+	<Cavalry Archer (A)>192</Cavalry Archer (A)>
+	<New Research 193 (U)(GAI)>193</New Research 193 (U)(GAI)>
+	<Fortified Walls>194</Fortified Walls>
+	<New Research 195 (U)(GAI)>195</New Research 195 (U)(GAI)>
+	<New Research 196 (U)(GAI)>196</New Research 196 (U)(GAI)>
+	<Pikeman>197</Pikeman>
+	<New Research 198 (U)(GAI)>198</New Research 198 (U)(GAI)>
+	<Fletching>199</Fletching>
+	<Bodkin Arrow>200</Bodkin Arrow>
+	<Bracer>201</Bracer>
+	<Double-Bit Axe>202</Double-Bit Axe>
+	<Bow Saw>203</Bow Saw>
+	<Scout Cavalry (A)>204</Scout Cavalry (A)>
+	<New Research 205 (U)(GAI)>205</New Research 205 (U)(GAI)>
+	<New Research 206 (U)(GAI)>206</New Research 206 (U)(GAI)>
+	<Long Swordsman>207</Long Swordsman>
+	<New Research 208 (U)(GAI)>208</New Research 208 (U)(GAI)>
+	<Cavalier>209</Cavalier>
+	<Monastery (A)>210</Monastery (A)>
+	<Padded Archer Armor>211</Padded Archer Armor>
+	<Leather Archer Armor>212</Leather Archer Armor>
+	<Wheel Barrow>213</Wheel Barrow>
+	<New Research 214 (U)(GAI)>214</New Research 214 (U)(GAI)>
+	<Squires>215</Squires>
+	<Farm (A)>216</Farm (A)>
+	<Two-Handed Swordsman>217</Two-Handed Swordsman>
+	<Heavy Cavalry Archer>218</Heavy Cavalry Archer>
+	<Ring Archer Armor>219</Ring Archer Armor>
+	<Barracks (A)>220</Barracks (A)>
+	<Two-Man Saw>221</Two-Man Saw>
+	<Man-at-Arms>222</Man-at-Arms>
+	<New Research 223 (U)(GAI)>223</New Research 223 (U)(GAI)>
+	<New Research 224 (U)(GAI)>224</New Research 224 (U)(GAI)>
+	<New Research 225 (U)(GAI)>225</New Research 225 (U)(GAI)>
+	<New Research 226 (U)(GAI)>226</New Research 226 (U)(GAI)>
+	<New Research 227 (U)(GAI)>227</New Research 227 (U)(GAI)>
+	<New Research 228 (U)(GAI)>228</New Research 228 (U)(GAI)>
+	<New Research 229 (U)(GAI)>229</New Research 229 (U)(GAI)>
+	<Block Printing>230</Block Printing>
+	<Sanctity>231</Sanctity>
+	<New Research 232 (U)(GAI)>232</New Research 232 (U)(GAI)>
+	<Illumination>233</Illumination>
+	<Conversion Enabler (H)>234</Conversion Enabler (H)>
+	<Camel (A)>235</Camel (A)>
+	<Heavy Camel>236</Heavy Camel>
+	<Arbalest>237</Arbalest>
+	<New Research 238 (U)(GAI)>238</New Research 238 (U)(GAI)>
+	<Heavy Scorpion>239</Heavy Scorpion>
+	<Galley (A)>240</Galley (A)>
+	<New Research 241 (U)(GAI)>241</New Research 241 (U)(GAI)>
+	<Demolition Ship (A)>242</Demolition Ship (A)>
+	<Fire Ship (A)>243</Fire Ship (A)>
+	<Heavy Demolition Ship>244</Heavy Demolition Ship>
+	<New Research 245 (U)(GAI)>245</New Research 245 (U)(GAI)>
+	<Fast Fire Ship>246</Fast Fire Ship>
+	<New Research 247 (U)(GAI)>247</New Research 247 (U)(GAI)>
+	<New Research 248 (U)(GAI)>248</New Research 248 (U)(GAI)>
+	<Hand Cart>249</Hand Cart>
+	<New Research 250 (U)(GAI)>250</New Research 250 (U)(GAI)>
+	<New Research 251 (U)(GAI)>251</New Research 251 (U)(GAI)>
+	<Fervor>252</Fervor>
+	<New Research 253 (U)(GAI)>253</New Research 253 (U)(GAI)>
+	<Light Cavalry>254</Light Cavalry>
+	<Siege Ram>255</Siege Ram>
+	<Trebuchet, Packed (A)>256</Trebuchet, Packed (A)>
+	<Onager>257</Onager>
+	<Shadow Saw Mill 1 (U)>258</Shadow Saw Mill 1 (U)>
+	<New Research 259 (U)(GAI)>259</New Research 259 (U)(GAI)>
+	<New Research 260 (U)(GAI)>260</New Research 260 (U)(GAI)>
+	<Transport Ship (A)>261</Transport Ship (A)>
+	<Samurai (A)(JAP)>262</Samurai (A)(JAP)>
+	<Longbowman (A)(BRI)>263</Longbowman (A)(BRI)>
+	<Champion>264</Champion>
+	<Paladin>265</Paladin>
+	<Castle Built (U)>266</Castle Built (U)>
+	<Cataphract (A)(BYZ)>267</Cataphract (A)(BYZ)>
+	<Chu Ko Nu (A)(CHI)>268</Chu Ko Nu (A)(CHI)>
+	<Mameluke (A)(SAR)>269</Mameluke (A)(SAR)>
+	<Berserker (U)(GOT)>270</Berserker (U)(GOT)>
+	<Jannisary (A)(TUR)>271</Jannisary (A)(TUR)>
+	<Longboat (A)(VIK)>272</Longboat (A)(VIK)>
+	<Mangudai (A)(MON)>273</Mangudai (A)(MON)>
+	<War Elephant (A)(PER)>274</War Elephant (A)(PER)>
+	<Throwing Axemen (A)(FRA)>275</Throwing Axemen (A)(FRA)>
+	<Teutonic Knight (A)(TEU)>276</Teutonic Knight (A)(TEU)>
+	<Woad Raider (A)(CEL)>277</Woad Raider (A)(CEL)>
+	<Stone Mining>278</Stone Mining>
+	<Stone Shaft Mining>279</Stone Shaft Mining>
+	<Town Patrol>280</Town Patrol>
+	<Blacksmith (A)>281</Blacksmith (A)>
+	<Mine has been built (U)>282</Mine has been built (U)>
+	<Buildings +10% HP (BYZ)>283</Buildings +10% HP (BYZ)>
+	<Trash Units Cost -25% (BYZ)>284</Trash Units Cost -25% (BYZ)>
+	<Free Chemistry (U)(TUR)>285</Free Chemistry (U)(TUR)>
+	<Cannon Galleons +25% HP (TUR)>286</Cannon Galleons +25% HP (TUR)>
+	<Free Horse Collar (U)(FRA)>287</Free Horse Collar (U)(FRA)>
+	<Free Heavy Plow (U)(FRA)>288</Free Heavy Plow (U)(FRA)>
+	<Free Crop Rotation (U)(FRA)>289</Free Crop Rotation (U)(FRA)>
+	<Knights +20% HP (FRA)>290</Knights +20% HP (FRA)>
+	<Infantry Cost -50% (H)>291</Infantry Cost -50% (H)>
+	<New Research 292 (U)(GAI)>292</New Research 292 (U)(GAI)>
+	<Fishing Ships, Trade Cogs +20% MS (H)>293</Fishing Ships, Trade Cogs +20% MS (H)>
+	<Units 2 Conversion Resistance (H)>294</Units 2 Conversion Resistance (H)>
+	<New Research 295 (U)(GAI)>295</New Research 295 (U)(GAI)>
+	<New Research 296 (U)(GAI)>296</New Research 296 (U)(GAI)>
+	<New Research 297 (U)(GAI)>297</New Research 297 (U)(GAI)>
+	<New Research 298 (U)(GAI)>298</New Research 298 (U)(GAI)>
+	<New Research 299 (U)(GAI)>299</New Research 299 (U)(GAI)>
+	<Gold Miners +15% WS (TUR)>300</Gold Miners +15% WS (TUR)>
+	<Gunpowder Units +25% HP (TUR)>301</Gunpowder Units +25% HP (TUR)>
+	<Start With 6 Villagers (CHI)>302</Start With 6 Villagers (CHI)>
+	<New Research 303 (U)(GAI)>303</New Research 303 (U)(GAI)>
+	<Techs Cost -0% (CHI)>304</Techs Cost -0% (CHI)>
+	<New Research 305 (U)(GAI)>305</New Research 305 (U)(GAI)>
+	<Fishing Ships X2 HP, +5% WS, +2 PA (JAP)>306</Fishing Ships X2 HP, +5% WS, +2 PA (JAP)>
+	<New Research 307 (U)(GAI)>307</New Research 307 (U)(GAI)>
+	<New Research 308 (U)(GAI)>308</New Research 308 (U)(GAI)>
+	<New Research 309 (U)(GAI)>309</New Research 309 (U)(GAI)>
+	<New Research 310 (U)(GAI)>310</New Research 310 (U)(GAI)>
+	<Transport Ships x2 HP, x2 Garrison (U)>311</Transport Ships x2 HP, x2 Garrison (U)>
+	<Cav Archers +4 AP vs Buildings (SAR)>312</Cav Archers +4 AP vs Buildings (SAR)>
+	<New Research 313 (U)(GAI)>313</New Research 313 (U)(GAI)>
+	<Farms Cost -33% (TEU)>314</Farms Cost -33% (TEU)>
+	<Conscription>315</Conscription>
+	<Redemption>316</Redemption>
+	<Boarding (H)>317</Boarding (H)>
+	<New Research 318 (U)(GAI)>318</New Research 318 (U)(GAI)>
+	<Atonement>319</Atonement>
+	<Siege Onager>320</Siege Onager>
+	<Sappers>321</Sappers>
+	<Murder Holes>322</Murder Holes>
+	<New Research 323 (U)(GAI)>323</New Research 323 (U)(GAI)>
+	<New Research 324 (U)(GAI)>324</New Research 324 (U)(GAI)>
+	<Castles Cost -25% (FRA)>325</Castles Cost -25% (FRA)>
+	<New Research 326 (U)(GAI)>326</New Research 326 (U)(GAI)>
+	<Infantry +1 AP vs Buildings (GOT)>327</Infantry +1 AP vs Buildings (GOT)>
+	<New Research 328 (U)(GAI)>328</New Research 328 (U)(GAI)>
+	<New Research 329 (U)(GAI)>329</New Research 329 (U)(GAI)>
+	<New Research 330 (U)(GAI)>330</New Research 330 (U)(GAI)>
+	<Houses Cost, Creation Time 1/3 (U)(GOT)>331</Houses Cost, Creation Time 1/3 (U)(GOT)>
+	<Outpost (A)>332</Outpost (A)>
+	<Towers +4 Max Arrows (U)(TEU)>333</Towers +4 Max Arrows (U)(TEU)>
+	<New Research 334 (U)(GAI)>334</New Research 334 (U)(GAI)>
+	<New Research 335 (U)(GAI)>335</New Research 335 (U)(GAI)>
+	<Town Centers +10 Garrison (TEU)>336</Town Centers +10 Garrison (TEU)>
+	<Transport Ships x2 HP, x2 Garrison (SAR)>337</Transport Ships x2 HP, x2 Garrison (SAR)>
+	<Archers 87% Accuracy (H)>338</Archers 87% Accuracy (H)>
+	<Galleys x2 LoS (U)(JAP)>339</Galleys x2 LoS (U)(JAP)>
+	<Mills, Lumber/Mining Camps Cost -50% (JAP)>340</Mills, Lumber/Mining Camps Cost -50% (JAP)>
+	<Infantry +25% AS (JAP)>341</Infantry +25% AS (JAP)>
+	<Town Center x2 HP (PER)>342</Town Center x2 HP (PER)>
+	<Infantry Cost -0% (GOT)>343</Infantry Cost -0% (GOT)>
+	<Infantry Cost -25% (GOT)>344</Infantry Cost -25% (GOT)>
+	<Infantry Cost -35% (U)(GOT)>345</Infantry Cost -35% (U)(GOT)>
+	<Infantry Cost -50% (U)(GOT)>346</Infantry Cost -50% (U)(GOT)>
+	<Monks 8 Healing Range (TEU)>347</Monks 8 Healing Range (TEU)>
+	<New Research 348 (U)(GAI)>348</New Research 348 (U)(GAI)>
+	<Docks x2 HP (PER)>349</Docks x2 HP (PER)>
+	<Techs Cost -10% (CHI)>350</Techs Cost -10% (CHI)>
+	<Techs Cost -15% (CHI)>351</Techs Cost -15% (CHI)>
+	<Techs Cost -20% (CHI)>352</Techs Cost -20% (CHI)>
+	<Towers +5 Garrison, +4 Max Arrows (TEU)>353</Towers +5 Garrison, +4 Max Arrows (TEU)>
+	<Castle (A)(TUR)>354</Castle (A)(TUR)>
+	<Markets Tax 5%, Cost -75 Wood (SAR)>355</Markets Tax 5%, Cost -75 Wood (SAR)>
+	<Techs Cost -50% (U)>356</Techs Cost -50% (U)>
+	<Fish Trap (A)>357</Fish Trap (A)>
+	<Mangonel (A)>358</Mangonel (A)>
+	<Sub-Shadow Age4 (U)>359</Sub-Shadow Age4 (U)>
+	<Elite Longbowman (BRI)>360</Elite Longbowman (BRI)>
+	<Elite Cataphract (BYZ)>361</Elite Cataphract (BYZ)>
+	<Elite Chu Ko Nu (CHI)>362</Elite Chu Ko Nu (CHI)>
+	<Elite Throwing Axeman (FRA)>363</Elite Throwing Axeman (FRA)>
+	<Elite Teutonic Knight (TEU)>364</Elite Teutonic Knight (TEU)>
+	<Elite Huskarl (GOT)>365</Elite Huskarl (GOT)>
+	<Elite Samurai (JAP)>366</Elite Samurai (JAP)>
+	<Elite War Elephant (PER)>367</Elite War Elephant (PER)>
+	<Elite Mameluke (SAR)>368</Elite Mameluke (SAR)>
+	<Elite Janissary (TUR)>369</Elite Janissary (TUR)>
+	<Elite Woad Raider (CEL)>370</Elite Woad Raider (CEL)>
+	<Elite Mangudai (MON)>371</Elite Mangudai (MON)>
+	<Elite Longboat (VIK)>372</Elite Longboat (VIK)>
+	<Shipwright>373</Shipwright>
+	<Careening>374</Careening>
+	<Dry Dock>375</Dry Dock>
+	<Elite Cannon Galleon>376</Elite Cannon Galleon>
+	<Siege Engineers>377</Siege Engineers>
+	<New Research 378 (U)(GAI)>378</New Research 378 (U)(GAI)>
+	<Hoardings>379</Hoardings>
+	<Heated Shot>380</Heated Shot>
+	<TCs Cost -50% Wood (BRI)>381</TCs Cost -50% Wood (BRI)>
+	<Foot Archers +1 Range (BRI)>382</Foot Archers +1 Range (BRI)>
+	<Shepherds +25% WS (BRI)>383</Shepherds +25% WS (BRI)>
+	<Eagle Warrior>384</Eagle Warrior>
+	<Lumberjacks +15% WS (CEL)>385</Lumberjacks +15% WS (CEL)>
+	<Siege Weapons +20% AS (CEL)>386</Siege Weapons +20% AS (CEL)>
+	<Eagle Scout extra AP (INC)>387</Eagle Scout extra AP (INC)>
+	<Light Cavalry, Hussar +30% HP (MON)>388</Light Cavalry, Hussar +30% HP (MON)>
+	<Hunters +50% WS (MON)>389</Hunters +50% WS (MON)>
+	<Fortifications Built 25% Faster (KOR)>390</Fortifications Built 25% Faster (KOR)>
+	<Infantry +20% HP (VIK)>391</Infantry +20% HP (VIK)>
+	<Free Wheelbarrow (U)(VIK)>392</Free Wheelbarrow (U)(VIK)>
+	<Infantry +15% MS (CEL)>393</Infantry +15% MS (CEL)>
+	<Cav Archers +20% AS (MON)>394</Cav Archers +20% AS (MON)>
+	<Boats 10% Cheaper (VIK)>395</Boats 10% Cheaper (VIK)>
+	<Demolition Ships +50% HP (CHI)>396</Demolition Ships +50% HP (CHI)>
+	<Fire Ships +20% AS (BYZ)>397</Fire Ships +20% AS (BYZ)>
+	<Elite Berserk (VIK)>398</Elite Berserk (VIK)>
+	<Berserk (A)(VIK)>399</Berserk (A)(VIK)>
+	<Free Hand Cart (U)(VIK)>400</Free Hand Cart (U)(VIK)>
+	<Farmers +15% WS (U)(BYZ)>401</Farmers +15% WS (U)(BYZ)>
+	<Hunters +5 AP vs Boars, Carry +15 (GOT)>402</Hunters +5 AP vs Boars, Carry +15 (GOT)>
+	<Foot Archers +2 Range (BRI)>403</Foot Archers +2 Range (BRI)>
+	<Galleys +20% AS (SAR)>404</Galleys +20% AS (SAR)>
+	<Sheep Conversion Resistance (CEL)>405</Sheep Conversion Resistance (CEL)>
+	<Bonus Population +10 (GOT)>406</Bonus Population +10 (GOT)>
+	<Monks 4 Healing Range (H)>407</Monks 4 Healing Range (H)>
+	<Spies/Treason>408</Spies/Treason>
+	<TCs +10%/+15%/+20% WS (PER)>409</TCs +10%/+15%/+20% WS (PER)>
+	<TCs +15% WS (U)(PER)>410</TCs +15% WS (U)(PER)>
+	<TCs +20% WS (U)(PER)>411</TCs +20% WS (U)(PER)>
+	<Docks +10/+15%/+20% WS (PER)>412</Docks +10/+15%/+20% WS (PER)>
+	<Docks +15% WS (U)(PER)>413</Docks +15% WS (U)(PER)>
+	<Docks +20% WS (U)(PER)>414</Docks +20% WS (U)(PER)>
+	<Infantry +15% HP (VIK)>415</Infantry +15% HP (VIK)>
+	<Infantry +10% HP (VIK)>416</Infantry +10% HP (VIK)>
+	<Buildings +20% HP (BYZ)>417</Buildings +20% HP (BYZ)>
+	<Buildings +30% HP (BYZ)>418</Buildings +30% HP (BYZ)>
+	<Buildings +40% HP (BYZ)>419</Buildings +40% HP (BYZ)>
+	<Infantry +15% AS (U)(JAP)>420</Infantry +15% AS (U)(JAP)>
+	<Infantry +20% AS (U)(JAP)>421</Infantry +20% AS (U)(JAP)>
+	<Fishing Ships +10% WS (JAP)>422</Fishing Ships +10% WS (JAP)>
+	<Fishing Ships +15% WS (JAP)>423</Fishing Ships +15% WS (JAP)>
+	<Fishing Ships +20% WS (JAP)>424</Fishing Ships +20% WS (JAP)>
+	<Town Centers +5 Pop (CHI)>425</Town Centers +5 Pop (CHI)>
+	<Petard (A)>426</Petard (A)>
+	<Genitour (A)>427</Genitour (A)>
+	<Hussar>428</Hussar>
+	<Halberdier>429</Halberdier>
+	<Elite Genitour>430</Elite Genitour>
+	<Jaguar Warrior (A)(AZT)>431</Jaguar Warrior (A)(AZT)>
+	<Elite Jaguar Warrior (AZT)>432</Elite Jaguar Warrior (AZT)>
+	<Eagle Scout (A)>433</Eagle Scout (A)>
+	<Elite Eagle Warrior>434</Elite Eagle Warrior>
+	<Bloodlines>435</Bloodlines>
+	<Parthian Tactics>436</Parthian Tactics>
+	<Thumb Ring>437</Thumb Ring>
+	<Theocracy>438</Theocracy>
+	<Heresy>439</Heresy>
+	<Supremacy (SPA)>440</Supremacy (SPA)>
+	<Herbal Medicine>441</Herbal Medicine>
+	<Free Guard Tower (KOR)>442</Free Guard Tower (KOR)>
+	<Free Keep (KOR)>443</Free Keep (KOR)>
+	<Free Bombard Tower (KOR)>444</Free Bombard Tower (KOR)>
+	<Shinkichon (KOR)>445</Shinkichon (KOR)>
+	<Huskarl (A)(GOT)>446</Huskarl (A)(GOT)>
+	<Turtle Ship (A)(KOR)>447</Turtle Ship (A)(KOR)>
+	<Elite Turtle Ship (KOR)>448</Elite Turtle Ship (KOR)>
+	<War Wagon (A)(KOR)>449</War Wagon (A)(KOR)>
+	<Elite War Wagon (KOR)>450</Elite War Wagon (KOR)>
+	<Tower +1 range (U)(KOR)>451</Tower +1 range (U)(KOR)>
+	<Tower +2 range (KOR)>452</Tower +2 range (KOR)>
+	<Tower +3 range (KOR)>453</Tower +3 range (KOR)>
+	<Eagle Scout extra AP (AZT)>454</Eagle Scout extra AP (AZT)>
+	<Eagle Scout extra AP (MAY)>455</Eagle Scout extra AP (MAY)>
+	<Herbal Medicine +5 Monk HP (AZT)>456</Herbal Medicine +5 Monk HP (AZT)>
+	<Perfusion (GOT)>457</Perfusion (GOT)>
+	<Cav Archers Cost -25% (HUN)>458</Cav Archers Cost -25% (HUN)>
+	<Cav Archers Cost -30% (HUN)>459</Cav Archers Cost -30% (HUN)>
+	<Atlatl (AZT)>460</Atlatl (AZT)>
+	<Warwolf (BRI)>461</Warwolf (BRI)>
+	<Great Wall (CHI)>462</Great Wall (CHI)>
+	<Chieftains (VIK)>463</Chieftains (VIK)>
+	<Greek Fire (BYZ)>464</Greek Fire (BYZ)>
+	<Cartography (U)>465</Cartography (U)>
+	<Free War Galley (ITA)>466</Free War Galley (ITA)>
+	<Genoese Crossbowman (A)(ITA)>467</Genoese Crossbowman (A)(ITA)>
+	<Elite Genoese Crossbowman (ITA)>468</Elite Genoese Crossbowman (ITA)>
+	<New Research (U)(GAI)>469</New Research (U)(GAI)>
+	<Wonder Built (U)(GAI)>470</Wonder Built (U)(GAI)>
+	<Magyar Huszar (A)(MAG)>471</Magyar Huszar (A)(MAG)>
+	<Elite Magyar Huszar (MAG)>472</Elite Magyar Huszar (MAG)>
+	<Scouts 10% Cheaper (MAG)>473</Scouts 10% Cheaper (MAG)>
+	<Vil Forging (INC)>474</Vil Forging (INC)>
+	<Vil Iron Casting (INC)>475</Vil Iron Casting (INC)>
+	<Vil Blast Furnace (INC)>476</Vil Blast Furnace (INC)>
+	<Vil Scale Armor (INC)>477</Vil Scale Armor (INC)>
+	<Vil Chain Armor (INC)>478</Vil Chain Armor (INC)>
+	<Vil Plate Armor (INC)>479</Vil Plate Armor (INC)>
+	<Elephant Archer (A)(IND)>480</Elephant Archer (A)(IND)>
+	<Elite Elephant Archer (IND)>481</Elite Elephant Archer (IND)>
+	<Stronghold (CEL)>482</Stronghold (CEL)>
+	<Marauders (HUN)>483</Marauders (HUN)>
+	<Yasama (JAP)>484</Yasama (JAP)>
+	<Tlatoani (MAY)>485</Tlatoani (MAY)>
+	<Panokseon (KOR)>486</Panokseon (KOR)>
+	<Nomads (MON)>487</Nomads (MON)>
+	<Boiling Oil (PER)>488</Boiling Oil (PER)>
+	<Ironclad (TEU)>489</Ironclad (TEU)>
+	<Madrasah (SARA)>490</Madrasah (SARA)>
+	<Sipahi (TUR)>491</Sipahi (TUR)>
+	<Inquisition (SPA)>492</Inquisition (SPA)>
+	<Chivalry (FRA)>493</Chivalry (FRA)>
+	<Pavise (ITA)>494</Pavise (ITA)>
+	<Houses +5 pop (INC)>495</Houses +5 pop (INC)>
+	<Villager Cost -10% (IND)>496</Villager Cost -10% (IND)>
+	<Villager Cost -20% (IND)>497</Villager Cost -20% (IND)>
+	<Villager Cost -30% (IND)>498</Villager Cost -30% (IND)>
+	<Silk Road (ITA)>499</Silk Road (ITA)>
+	<Gunpowder Units 15% Cheaper (ITA)>500</Gunpowder Units 15% Cheaper (ITA)>
+	<Boats 15% Cheaper (VIK)>501</Boats 15% Cheaper (VIK)>
+	<Boats 20% Cheaper (VIK)>502</Boats 20% Cheaper (VIK)>
+	<Boyar (A)(SLA)>503</Boyar (A)(SLA)>
+	<Elite Boyar (SLA)>504</Elite Boyar (SLA)>
+	<Camels +1/+1 Armor (IND)>505</Camels +1/+1 Armor (IND)>
+	<Sultans (IND)>506</Sultans (IND)>
+	<Shatagni (IND)>507</Shatagni (IND)>
+	<Kamayuk (A)(INC)>508</Kamayuk (A)(INC)>
+	<Elite Kamayuk (INC)>509</Elite Kamayuk (INC)>
+	<Siege Tower (U)>510</Siege Tower (U)>
+	<Siege 15% Cheaper (SLA)>511</Siege 15% Cheaper (SLA)>
+	<Orthodoxy (SLA)>512</Orthodoxy (SLA)>
+	<Druzhina (SLA)>513</Druzhina (SLA)>
+	<Mercenaries (MAG)>514</Mercenaries (MAG)>
+	<Recurve Bow (MAG)>515</Recurve Bow (MAG)>
+	<Andean Sling (INC)>516</Andean Sling (INC)>
+	<Couriers (INC)>517</Couriers (INC)>
+	<Fisher Carry +25 (IND)>518</Fisher Carry +25 (IND)>
+	<Buildings Cost -20% Stone (INC)>519</Buildings Cost -20% Stone (INC)>
+	<Archer HP (U)(MAG)>520</Archer HP (U)(MAG)>
+	<Imperial Camel (IND)>521</Imperial Camel (IND)>
+	<Condottiero (A)>522</Condottiero (A)>
+	<Palisade Gate (A)>523</Palisade Gate (A)>
+	<Foragers +25% WS (FRA)>524</Foragers +25% WS (FRA)>
+	<Revetments (H)>525</Revetments (H)>
+	<Hunting Dogs>526</Hunting Dogs>
+	<Fire Tower (A)(H)>527</Fire Tower (A)(H)>
+	<Slinger (A)(INC)>528</Slinger (A)(INC)>
+	<Civ: Britons (BRI)>529</Civ: Britons (BRI)>
+	<Civ: Franks (FRA)>530</Civ: Franks (FRA)>
+	<Civ: Goths (GOT)>531</Civ: Goths (GOT)>
+	<Civ: Teutons (TEU)>532</Civ: Teutons (TEU)>
+	<Civ: Japanese (JAP)>533</Civ: Japanese (JAP)>
+	<Civ: Chinese (CHI)>534</Civ: Chinese (CHI)>
+	<Civ: Byzantines (BYZ)>535</Civ: Byzantines (BYZ)>
+	<Civ: Persians (PER)>536</Civ: Persians (PER)>
+	<Civ: Saracens (SAR)>537</Civ: Saracens (SAR)>
+	<Civ: Turks (TUR)>538</Civ: Turks (TUR)>
+	<Civ: Vikings (VIK)>539</Civ: Vikings (VIK)>
+	<Civ: Mongols (MON)>540</Civ: Mongols (MON)>
+	<Civ: Celts (CEL)>541</Civ: Celts (CEL)>
+	<Civ: Spanish (SPA)>542</Civ: Spanish (SPA)>
+	<Civ: Aztecs (AZT)>543</Civ: Aztecs (AZT)>
+	<Civ: Mayans (MAY)>544</Civ: Mayans (MAY)>
+	<Civ: Huns (HUN)>545</Civ: Huns (HUN)>
+	<Civ: Koreans (KOR)>546</Civ: Koreans (KOR)>
+	<Civ: Italians (ITA)>547</Civ: Italians (ITA)>
+	<Civ: Indians (IND)>548</Civ: Indians (IND)>
+	<Civ: Incas (INC)>549</Civ: Incas (INC)>
+	<Civ: Magyars (MAG)>550</Civ: Magyars (MAG)>
+	<Civ: Slavs (SLA)>551</Civ: Slavs (SLA)>
+	<Hunting Dogs (MON)>552</Hunting Dogs (MON)>
+	<Villager cost -25% (IND)>553</Villager cost -25% (IND)>
+	<C-Bonus, Start w/ 4 villagers (MAY)>554</C-Bonus, Start w/ 4 villagers (MAY)>
+	<Enable Sheep>555</Enable Sheep>
+	<Enable Llamas>556</Enable Llamas>
+	<Enable Cows>557</Enable Cows>
+	<Enable Turkeys>558</Enable Turkeys>
+	<All units -15% gold (POR)>559</All units -15% gold (POR)>
+	<Ships +10% HP (POR)>560</Ships +10% HP (POR)>
+	<University +80% faster (POR)>561</University +80% faster (POR)>
+	<Organ Gun (A) (POR)>562</Organ Gun (A) (POR)>
+	<Elite Organ Gun (POR)>563</Elite Organ Gun (POR)>
+	<Camel Archer (A) (BER)>564</Camel Archer (A) (BER)>
+	<Elite Camel Archer (BER)>565</Elite Camel Archer (BER)>
+	<Gbeto (A) (MAL)>566</Gbeto (A) (MAL)>
+	<Elite Gbeto (MAL)>567</Elite Gbeto (MAL)>
+	<Shotel Warrior (A) (ETH)>568</Shotel Warrior (A) (ETH)>
+	<Elite Shotel Warrior (ETH)>569</Elite Shotel Warrior (ETH)>
+	<Feitoria (A)>570</Feitoria (A)>
+	<Animals Decay (U)>571</Animals Decay (U)>
+	<Carrack (POR)>572</Carrack (POR)>
+	<Arquebus (POR)>573</Arquebus (POR)>
+	<Royal Heirs (ETH)>574</Royal Heirs (ETH)>
+	<Torsion Engines (ETH)>575</Torsion Engines (ETH)>
+	<Tigui (MAL)>576</Tigui (MAL)>
+	<Farimba(MAL)>577</Farimba(MAL)>
+	<Kasbah (BER)>578</Kasbah (BER)>
+	<Maghrabi Camels (BER)>579</Maghrabi Camels (BER)>
+	<Civ: Portuguese (POR)>580</Civ: Portuguese (POR)>
+	<Civ: Ethiopians (ETH)>581</Civ: Ethiopians (ETH)>
+	<Civ: Malians (MAL)>582</Civ: Malians (MAL)>
+	<Civ: Berbers (BER)>583</Civ: Berbers (BER)>
+	<Villagers +10% faster (BER)>584</Villagers +10% faster (BER)>
+	<Ships +10% faster (BER)>585</Ships +10% faster (BER)>
+	<Stable units cost -20% (BER)>586</Stable units cost -20% (BER)>
+	<+100 gold/food, Feudal (ETH)>587</+100 gold/food, Feudal (ETH)>
+	<+100 gold/food, Castle (ETH)>588</+100 gold/food, Castle (ETH)>
+	<+100 gold/food, Imperial (ETH)>589</+100 gold/food, Imperial (ETH)>
+	<Free spear-line upgrades (ETH)>590</Free spear-line upgrades (ETH)>
+	<+1 pierce armor infantry, Feudal (MAL)>591</+1 pierce armor infantry, Feudal (MAL)>
+	<+1 pierce armor infantry, Castle (MAL)>592</+1 pierce armor infantry, Castle (MAL)>
+	<+1 pierce armor infantry, Imperial (MAL)>593</+1 pierce armor infantry, Imperial (MAL)>
+	<Free mining upgrades (MAL)>594</Free mining upgrades (MAL)>
+	<Buildings cost -25% wood (MAL)>595</Buildings cost -25% wood (MAL)>
+	<Caravel (A) (POR)>596</Caravel (A) (POR)>
+	<Elite Caravel (POR)>597</Elite Caravel (POR)>
+	<Berbers Genitour (A) (U) (BER)>598</Berbers Genitour (A) (U) (BER)>
+	<Elite Berbers Genitour (BER)>599</Elite Berbers Genitour (BER)>
+	<Dark Cartography (T) (POR)>600</Dark Cartography (T) (POR)>
+	<Berbers Genitour, Dummy (A)>601</Berbers Genitour, Dummy (A)>
+	<Arson>602</Arson>
+	<Siege Tower (A)>603</Siege Tower (A)>
+	<Fire Galley (A)>604</Fire Galley (A)>
+	<Demolition Galley (A)>605</Demolition Galley (A)>
+	<Elite Berbers Genitour (REV)>606</Elite Berbers Genitour (REV)>
+	<Archers fire +15% faster (ETH)>607</Archers fire +15% faster (ETH)>
+	<Arrowslits>608</Arrowslits>
+	<Ballisita Elephant (A) (KHM)>614</Ballisita Elephant (A) (KHM)>
+	<Elite Ballisita Elephant (KHM)>615</Elite Ballisita Elephant (KHM)>
+	<Karambit Warrior (A) (MLY)>616</Karambit Warrior (A) (MLY)>
+	<Elite Karambit Warrior (MLY)>617</Elite Karambit Warrior (MLY)>
+	<Arambai (A) (BUR)>618</Arambai (A) (BUR)>
+	<Elite Arambai (BUR)>619</Elite Arambai (BUR)>
+	<Rattan Archer (A) (VIT)>620</Rattan Archer (A) (VIT)>
+	<Elite Rattan Archer (VIT)>621</Elite Rattan Archer (VIT)>
+	<Tusk Swords (KHM)>622</Tusk Swords (KHM)>
+	<Double Crossbow (KHM)>623</Double Crossbow (KHM)>
+	<Thalassocracy (MLY)>624</Thalassocracy (MLY)>
+	<Forced Levy (MLY)>625</Forced Levy (MLY)>
+	<Howdah (BUR)>626</Howdah (BUR)>
+	<Manipur Cavalry (BUR)>627</Manipur Cavalry (BUR)>
+	<Chatras (VIT)>628</Chatras (VIT)>
+	<Paper Money (VIT)>629</Paper Money (VIT)>
+	<Battle Elephant (A)>630</Battle Elephant (A)>
+	<Elite Battle Elephant>631</Elite Battle Elephant>
+	<Archer HP +10% (VIT)>632</Archer HP +10% (VIT)>
+	<Infantry +1 Attack, Dark Age (BUR)>633</Infantry +1 Attack, Dark Age (BUR)>
+	<Age up Faster (MLY)>634</Age up Faster (MLY)>
+	<Fishing Ships Fish Traps -33% Cheaper (MLY)>635</Fishing Ships Fish Traps -33% Cheaper (MLY)>
+	<Free Lumberjack Upgrade (BUR)>645</Free Lumberjack Upgrade (BUR)>
+	<Infantry +1 Attack, Fedual Age (BUR)>646</Infantry +1 Attack, Fedual Age (BUR)>
+	<Infantry +1 Attack, Castle Age (BUR)>647</Infantry +1 Attack, Castle Age (BUR)>
+	<Infantry +1 Attack, Imperial Age (BUR)>648</Infantry +1 Attack, Imperial Age (BUR)>
+	<Monastery Techs -50% Cheaper (BUR)>649</Monastery Techs -50% Cheaper (BUR)>
+	<Civ: Khmer (KHM)>650</Civ: Khmer (KHM)>
+	<Civ: Malay (MLY)>651</Civ: Malay (MLY)>
+	<Civ: Burmese (BUR)>652</Civ: Burmese (BUR)>
+	<Civ: Vietnamese (VIT)>653</Civ: Vietnamese (VIT)>
+	<Imperial Skirmisher>655</Imperial Skirmisher>
+	<Imperial Skirmisher (REV)>656</Imperial Skirmisher (REV)>
+	<Houses Garrison (KHM)>657</Houses Garrison (KHM)>
+	<Age up Faster (MLY)(COPY)>662</Age up Faster (MLY)(COPY)>
+	<Archer HP +15% (VIT)>663</Archer HP +15% (VIT)>
+	<Archer HP +20% (VIT)>664</Archer HP +20% (VIT)>
+	<Disable Vietnamese Vision (VIT)>665</Disable Vietnamese Vision (VIT)>
+	<Battle Elephant +15% Faster (KHM)>672</Battle Elephant +15% Faster (KHM)>
+</Tech>
