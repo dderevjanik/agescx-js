@@ -1,6 +1,6 @@
 {
   "name": "agescx",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Age of empires 2 scenario de/compress module for node and browser",
   "main": "dist/Index.js",
   "types": "dist/Index.d.ts",

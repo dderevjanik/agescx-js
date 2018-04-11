@@ -1,5 +1,5 @@
 export { checkScenario } from "./checker/Checker";
-export { convertScenario } from "./converter/Converter";
+// export { convertScenario } from "./converter/Converter";
 export { readScenario, ScenarioStruct } from "./io/IO";
 export { printStats } from "./stats/Stats";
 export { Paint } from "./paint/Paint";
