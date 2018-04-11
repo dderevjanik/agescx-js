@@ -2,7 +2,7 @@ import { ScenarioStruct } from "../io/IO";
 import { TileStruct } from "../io/Structures/TileStruct";
 import { getMap2dArray } from "../helpers/Helpers";
 
-class Cursor {
+export class Cursor {
   x: number;
   y: number;
   paint: boolean = false;
@@ -21,7 +21,6 @@ class Cursor {
 }
 
 export class Paint {
-  private _scenario: ScenarioStruct;
   private _tiles: TileStruct[][];
 
   cursor: Cursor;
@@ -35,7 +34,6 @@ export class Paint {
   }
 
   constructor(scenario: ScenarioStruct) {
-    this._scenario = scenario;
     this._tiles = getMap2dArray(scenario);
     this.cursor = new Cursor(0, 0, 0);
   }
