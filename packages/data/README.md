@@ -34,13 +34,12 @@ scenario.compressedHeader.playersData[1].civ = Civilization.Franks;
 - [PlayerColor](./PlayerColor.ts) Player Colors (HEX)
 - [Resource](./Resource.ts)  InGame Resource IDs
 - [ScenarioSize](./ScenarioSize.ts) Scenario default size
+- [Tech](./Tech.ts) Tech name to ID
 - [Terrain](./Terrain.ts) Terrain IDs and their minimap colors (HEX)
+- [Unit](./Unit.ts) Unit name to ID
 - [UnitGroup](./UnitGroup.ts) List of Groups ant theirs unit IDs
 - [Effect](./Effect.ts) Effect types
 - [Condition](./Condition.ts) Condition types
-- Unit
-- Tech
-- Building
 
 ## Download
 

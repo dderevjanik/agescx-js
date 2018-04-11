@@ -31,6 +31,7 @@ AgeScx comes with set of different tools:
 - [Checker](./packages/checker) check for errors/warning in scenario
 - [Diff](./packages/diff) differences between two scenarios
 - [Converter](./packages/converter) convert scenario to `.json`, `.xml` or `.yaml`
+- [Paint](./packages/paint) paint your minimap
 - [Data](./packages/data) useful data
 - [Stats](./packages/stats) scenario stats in human-readable format
 

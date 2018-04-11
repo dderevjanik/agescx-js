@@ -2,6 +2,11 @@ export { checkScenario } from "./checker/Checker";
 export { convertScenario } from "./converter/Converter";
 export { readScenario, ScenarioStruct } from "./io/IO";
 export { printStats } from "./stats/Stats";
+export { Paint } from "./paint/Paint";
+export { Data } from "./data/All";
+
+import * as ScenarioHelpers from "./helpers/Helpers";
+export const Helpers = ScenarioHelpers;
 
 // import { readFileSync } from 'fs';
 // import { readScenario } from './io/IO';

@@ -20,7 +20,7 @@ class Cursor {
   }
 }
 
-class Paint {
+export class Paint {
   private _scenario: ScenarioStruct;
   private _tiles: TileStruct[][];
 

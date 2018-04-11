@@ -1,5 +1,0 @@
-# Paint
-
-## Usage
-
-
