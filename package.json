@@ -23,7 +23,7 @@
     "test": "test"
   },
   "dependencies": {
-    "@types/jest": "^22.1.4",
+    "@types/jest": "^23.0.0",
     "@types/node": "^10.0.7",
     "@types/jsontoxml": "^1.0.0",
     "@types/yamljs": "^0.2.30",
