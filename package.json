@@ -23,28 +23,27 @@
     "test": "test"
   },
   "dependencies": {
-    "@types/jest": "^22.1.4",
-    "@types/node": "^9.4.6",
+    "@types/jasmine": "^2.8.9",
     "@types/jsontoxml": "^1.0.0",
+    "@types/node": "^10.12.2",
     "@types/yamljs": "^0.2.30",
-    "asdata": "git+https://git@github.com/dderevjanik/asdata.git",
-    "jsontoxml": "^1.0.0",
+    "jsontoxml": "^1.0.1",
     "yamljs": "^0.3.0"
   },
   "devDependencies": {
     "@types/chalk": "^2.2.0",
-    "chalk": "^2.3.2",
-    "jest": "^22.4.2",
-    "prettier": "^1.11.1",
-    "ts-jest": "^22.4.1",
-    "ts-loader": "^4.1.0",
-    "ts-node": "^5.0.1",
-    "typescript": "^2.8.0-dev.20180308",
-    "webpack": "^4.2.0",
-    "webpack-cli": "^2.0.13"
+    "chalk": "^2.4.1",
+    "jasmine": "^3.3.0",
+    "jasmine-ts": "^0.3.0",
+    "prettier": "^1.14.3",
+    "ts-loader": "^5.3.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.1.6",
+    "webpack": "^4.24.0",
+    "webpack-cli": "^3.1.2"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jasmine-ts packages/**/*.test.ts",
     "lint": "prettier --write ./packages/**/*.ts",
     "build": "npm test && npm run build:node && npm run build:web",
     "build:node": "tsc",

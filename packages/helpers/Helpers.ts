@@ -5,6 +5,7 @@ import { EffectStruct } from "../io/Structures/EffectStruct";
 import { TileStruct } from "../io/Structures/TileStruct";
 
 /**
+ * Get all units in scenario
  * @param scenario
  * @param includeGaia - should also returns gaia units ?
  */
@@ -29,6 +30,7 @@ export const getAllEffects = (scenario: ScenarioStruct) =>
   scenario.triggers.reduce((acc, trigger) => [...acc, ...trigger.effects], [] as EffectStruct[]);
 
 /**
+ * Get all units ids
  * @param scenario
  * @param includeGaia - should also includes gaia unit ids ?
  */
@@ -84,22 +86,22 @@ export const getTile = (scenario: ScenarioStruct, row: number, col: number) => {
 /**
  * Receive dominant terrain Id
  * @param scenario
+ * @returns array of tuples [terrainId, count]
  */
-export const getDominantTerrain = (scenario: ScenarioStruct) => {
-  const dict: { [id: number]: number } = {};
-  let dominant: [string, number] = ["0", 0];
-  scenario.map.terrain.forEach(ter => {
-    const id = ter[0];
-    if (id in dict) {
-      dict[id] = dict[id] + 1;
-    } else {
-      dict[id] = 1;
-    }
-  });
-  Object.entries(dict).forEach(ter => {
-    if (ter[1] > dominant[1]) {
-      dominant = ter;
-    }
-  });
-  return dominant;
+export const getSortedTerrainByTiles = (scenario: ScenarioStruct) => {
+  const dict = scenario.map.terrain.reduce(
+    (acc, tile) => {
+      const terrainId = tile[0];
+      if (acc[terrainId]) {
+        acc[terrainId] = acc[terrainId] + 1;
+        return acc;
+      } else {
+        acc[terrainId] = 1;
+        return acc;
+      }
+    },
+    {} as { [terrainId: number]: number }
+  );
+  const sorted = Object.entries(dict).sort((a, b) => a[1] - b[1]);
+  return sorted;
 };
