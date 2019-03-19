@@ -23,7 +23,7 @@
     "test": "test"
   },
   "dependencies": {
-    "@types/jasmine": "^2.8.9",
+    "@types/jasmine": "^3.3.12",
     "@types/jsontoxml": "^1.0.0",
     "@types/node": "^10.12.2",
     "@types/yamljs": "^0.2.30",
